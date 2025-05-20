@@ -12,14 +12,15 @@
     "lint:fix": "npm run lint && npm run format"
   },
   "dependencies": {
-    "@react-native-google-signin/google-signin": "^14.0.1",
     "eas-cli": "^16.6.1",
     "expo": "~53.0.9",
-    "expo-dev-client": "~5.1.8",
     "expo-status-bar": "~2.2.3",
     "firebase": "^11.7.3",
     "react": "19.0.0",
-    "react-native": "0.79.2"
+    "react-native": "0.79.2",
+    "expo-auth-session": "~6.1.5",
+    "expo-web-browser": "~14.1.6",
+    "expo-constants": "~17.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
