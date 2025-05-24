@@ -10,9 +10,9 @@ import { signInWithGoogle } from './src/utils/googleAuth';
 
 GoogleSignin.configure({
   webClientId:
-    '949524228403-3ltlchcotpfrh9efhbstgm45b4t15dco.apps.googleusercontent.com',
+    '439324955389-0dkpolmb920s9ba82olit3ur61forej9.apps.googleusercontent.com',
   iosClientId:
-    '949524228403-l4pu5jft22afamenqll0boo8q3i22l02.apps.googleusercontent.com',
+    '439324955389-46l54ijdland5rqplt3thi66kskhaaqm.apps.googleusercontent.com',
 });
 
 export default function App() {
