@@ -8,30 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		30AD13DEA81546659BC9C6BD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2865695BD42A7EA9760DAE37 /* PrivacyInfo.xcprivacy */; };
+		379C0ED76CED7D3AC21A24ED /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 7DED6B41FB707B217D9CA50A /* PrivacyInfo.xcprivacy */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		665EA121A305031E23A8A79F /* libPods-mynihongo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3C053AD0143D7090171546 /* libPods-mynihongo.a */; };
-		963354B6BB3B4D608B6D1135 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 400D379CABDB4048A1F9D484 /* GoogleService-Info.plist */; };
+		A25E17F5149B862FA012CB2A /* libPods-mynihongo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC76752AFD9C05125C84D52A /* libPods-mynihongo.a */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		D40745817117BBF49E5EFBA4 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5FDC9700C57F413D85F9B /* ExpoModulesProvider.swift */; };
+		E317BB6EAA23E0568DF36F85 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEE1C9675CDEF9CB0B500FC /* ExpoModulesProvider.swift */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
+		FDEAB4B5D970473681F40084 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C276028C2E540B8B987631E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13B07F961A680F5B00A75B9A /* mynihongo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mynihongo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mynihongo/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mynihongo/Info.plist; sourceTree = "<group>"; };
-		2865695BD42A7EA9760DAE37 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = mynihongo/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		400D379CABDB4048A1F9D484 /* GoogleService-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "mynihongo/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1CE69BC9080C88F6DC927C2F /* Pods-mynihongo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mynihongo.debug.xcconfig"; path = "Target Support Files/Pods-mynihongo/Pods-mynihongo.debug.xcconfig"; sourceTree = "<group>"; };
+		2C276028C2E540B8B987631E /* GoogleService-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "mynihongo/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7DED6B41FB707B217D9CA50A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = mynihongo/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = mynihongo/SplashScreen.storyboard; sourceTree = "<group>"; };
+		ADEE1C9675CDEF9CB0B500FC /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-mynihongo/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		BDA5FDC9700C57F413D85F9B /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-mynihongo/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		BEA5EEB3B6B888E3D5883F86 /* Pods-mynihongo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mynihongo.debug.xcconfig"; path = "Target Support Files/Pods-mynihongo/Pods-mynihongo.debug.xcconfig"; sourceTree = "<group>"; };
+		CC76752AFD9C05125C84D52A /* libPods-mynihongo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mynihongo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBA89F51D3982C0C3EDC458 /* Pods-mynihongo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mynihongo.release.xcconfig"; path = "Target Support Files/Pods-mynihongo/Pods-mynihongo.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = mynihongo/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* mynihongo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "mynihongo-Bridging-Header.h"; path = "mynihongo/mynihongo-Bridging-Header.h"; sourceTree = "<group>"; };
-		F155AC797D4D85D6B8441D05 /* Pods-mynihongo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mynihongo.release.xcconfig"; path = "Target Support Files/Pods-mynihongo/Pods-mynihongo.release.xcconfig"; sourceTree = "<group>"; };
-		FC3C053AD0143D7090171546 /* libPods-mynihongo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mynihongo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,23 +39,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				665EA121A305031E23A8A79F /* libPods-mynihongo.a in Frameworks */,
+				A25E17F5149B862FA012CB2A /* libPods-mynihongo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10CDB8D341D35DF386AE71CE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BEA5EEB3B6B888E3D5883F86 /* Pods-mynihongo.debug.xcconfig */,
-				F155AC797D4D85D6B8441D05 /* Pods-mynihongo.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		13B07FAE1A68108700A75B9A /* mynihongo */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,27 +55,37 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				400D379CABDB4048A1F9D484 /* GoogleService-Info.plist */,
-				2865695BD42A7EA9760DAE37 /* PrivacyInfo.xcprivacy */,
+				2C276028C2E540B8B987631E /* GoogleService-Info.plist */,
+				7DED6B41FB707B217D9CA50A /* PrivacyInfo.xcprivacy */,
 			);
 			name = mynihongo;
 			sourceTree = "<group>";
 		};
-		2AF963A70892086489D710AC /* ExpoModulesProviders */ = {
+		1D6E53332F1279D1C4EB09E4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A6AAD4CCB1D1C4577BD00224 /* mynihongo */,
+				1CE69BC9080C88F6DC927C2F /* Pods-mynihongo.debug.xcconfig */,
+				DDBA89F51D3982C0C3EDC458 /* Pods-mynihongo.release.xcconfig */,
 			);
-			name = ExpoModulesProviders;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				FC3C053AD0143D7090171546 /* libPods-mynihongo.a */,
+				CC76752AFD9C05125C84D52A /* libPods-mynihongo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50272A2011521EEF0D1D0DBA /* mynihongo */ = {
+			isa = PBXGroup;
+			children = (
+				ADEE1C9675CDEF9CB0B500FC /* ExpoModulesProvider.swift */,
+			);
+			name = mynihongo;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -102,8 +102,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				10CDB8D341D35DF386AE71CE /* Pods */,
-				2AF963A70892086489D710AC /* ExpoModulesProviders */,
+				1D6E53332F1279D1C4EB09E4 /* Pods */,
+				BFC079D306905DD84166C02F /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -118,14 +118,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A6AAD4CCB1D1C4577BD00224 /* mynihongo */ = {
-			isa = PBXGroup;
-			children = (
-				BDA5FDC9700C57F413D85F9B /* ExpoModulesProvider.swift */,
-			);
-			name = mynihongo;
-			sourceTree = "<group>";
-		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +125,14 @@
 			);
 			name = Supporting;
 			path = mynihongo/Supporting;
+			sourceTree = "<group>";
+		};
+		BFC079D306905DD84166C02F /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				50272A2011521EEF0D1D0DBA /* mynihongo */,
+			);
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,13 +143,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "mynihongo" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				7A6493D445E7F7B255AF2A64 /* [Expo] Configure project */,
+				8DE235577D38C376A50F1D46 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				91CE1526F37DB8230615642D /* [CP] Embed Pods Frameworks */,
+				F0AAD69B848943CF862F6E7F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,8 +199,8 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				963354B6BB3B4D608B6D1135 /* GoogleService-Info.plist in Resources */,
-				30AD13DEA81546659BC9C6BD /* PrivacyInfo.xcprivacy in Resources */,
+				FDEAB4B5D970473681F40084 /* GoogleService-Info.plist in Resources */,
+				379C0ED76CED7D3AC21A24ED /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,25 +244,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7A6493D445E7F7B255AF2A64 /* [Expo] Configure project */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[Expo] Configure project";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-mynihongo/expo-configure-project.sh\"\n";
-		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,7 +286,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mynihongo/Pods-mynihongo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		91CE1526F37DB8230615642D /* [CP] Embed Pods Frameworks */ = {
+		8DE235577D38C376A50F1D46 /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-mynihongo/expo-configure-project.sh\"\n";
+		};
+		F0AAD69B848943CF862F6E7F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,7 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				D40745817117BBF49E5EFBA4 /* ExpoModulesProvider.swift in Sources */,
+				E317BB6EAA23E0568DF36F85 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +340,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEA5EEB3B6B888E3D5883F86 /* Pods-mynihongo.debug.xcconfig */;
+			baseConfigurationReference = 1CE69BC9080C88F6DC927C2F /* Pods-mynihongo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -376,7 +376,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F155AC797D4D85D6B8441D05 /* Pods-mynihongo.release.xcconfig */;
+			baseConfigurationReference = DDBA89F51D3982C0C3EDC458 /* Pods-mynihongo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
