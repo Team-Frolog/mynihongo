@@ -16,7 +16,7 @@ GoogleSignin.configure({
 });
 
 export default function App() {
-  const { setUser } = useUserStore();
+  const setUser = useUserStore((state) => state.setUser);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 

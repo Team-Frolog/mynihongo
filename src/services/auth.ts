@@ -5,8 +5,6 @@ import { useUserStore } from '@/stores/useUserStore';
 
 export const signIn = async () => {
   try {
-    const setUser = useUserStore((state) => state.setUser);
-
     await GoogleSignin.hasPlayServices();
 
     const userInfo = await GoogleSignin.signIn();
@@ -15,8 +13,6 @@ export const signIn = async () => {
     const result = await signInWithCredential(auth, credential);
 
     const user = result.user;
-
-    setUser(user);
 
     return user;
   } catch (error) {
