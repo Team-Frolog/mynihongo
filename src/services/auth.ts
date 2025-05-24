@@ -1,7 +1,6 @@
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
 import { auth } from '../../firebaseConfig';
 import { GoogleAuthProvider, signInWithCredential } from 'firebase/auth';
-import { useUserStore } from '@/stores/useUserStore';
 
 export const signIn = async () => {
   try {
@@ -10,11 +9,7 @@ export const signIn = async () => {
     const userInfo = await GoogleSignin.signIn();
 
     const credential = GoogleAuthProvider.credential(userInfo.data?.idToken);
-    const result = await signInWithCredential(auth, credential);
-
-    const user = result.user;
-
-    return user;
+    await signInWithCredential(auth, credential);
   } catch (error) {
     console.log(error);
   }
