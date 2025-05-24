@@ -11,10 +11,8 @@ import { auth } from 'firebaseConfig';
 import { useUserStore } from '@/stores/useUserStore';
 
 GoogleSignin.configure({
-  webClientId:
-    '439324955389-0dkpolmb920s9ba82olit3ur61forej9.apps.googleusercontent.com',
-  iosClientId:
-    '439324955389-46l54ijdland5rqplt3thi66kskhaaqm.apps.googleusercontent.com',
+  webClientId: process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID,
+  iosClientId: process.env.EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID,
 });
 
 export default function App() {
