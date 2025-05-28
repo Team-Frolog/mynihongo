@@ -9,7 +9,7 @@ function Main() {
       <View style={styles.status}>
         <View style={styles.progressbar}>
           <View style={styles.progressbarInner}></View>
-          <Text>22 / 50 [44%]</Text>
+          <Text style={styles.progressbarText}>22 / 500 [44%]</Text>
         </View>
         <Text style={styles.statusText}>1번째 방문!</Text>
       </View>
@@ -35,7 +35,6 @@ const styles = StyleSheet.create({
     color: '#313239',
     fontSize: 36,
     fontWeight: 700,
-    lineHeight: 34,
   },
   status: {
     width: '100%',
@@ -68,6 +67,11 @@ const styles = StyleSheet.create({
 
     backgroundColor: '#ffdada',
     borderRadius: 8,
+  },
+  progressbarText: {
+    fontSize: 16,
+    fontWeight: 500,
+    lineHeight: 18,
   },
   statusText: {
     fontSize: 16,
