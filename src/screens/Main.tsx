@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import ThemeList from '@/components/ThemeList';
+import ThemeList from '@/components/Main/ThemeList';
 
 function Main() {
   return (
