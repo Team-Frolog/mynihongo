@@ -1,11 +1,15 @@
 import { View, Text, StyleSheet } from 'react-native';
 import ChevronLeftArrow from 'assets/icons/ChevronLeftArrow';
 
-function BackHeader() {
+interface Props {
+  title: string;
+}
+
+function BackHeader({ title }: Props) {
   return (
     <View style={styles.header}>
       <ChevronLeftArrow />
-      <Text style={styles.headerTitle}>공항</Text>
+      <Text style={styles.headerTitle}>{title}</Text>
     </View>
   );
 }
