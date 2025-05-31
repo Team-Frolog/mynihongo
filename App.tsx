@@ -4,13 +4,14 @@ import Main from './src/screens/Main';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import Practice from './src/screens/Practice';
 import Quiz from './src/screens/Quiz';
+import Real from './src/screens/Real';
 
 export default function App() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.safeArea}>
         <StatusBar style="auto" />
-        <Quiz />
+        <Real />
       </SafeAreaView>
     </SafeAreaProvider>
   );
