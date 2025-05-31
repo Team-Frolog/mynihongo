@@ -1,16 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import ThemeList from '@/components/Main/ThemeList';
+import ProgressBar from '@/components/commons/ProgressBar';
 
 function Main() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>MYnihongo</Text>
       <View style={styles.status}>
-        <View style={styles.progressbar}>
-          <View style={styles.progressbarInner}></View>
-          <Text style={styles.progressbarText}>22 / 500 [44%]</Text>
-        </View>
+        <ProgressBar text="22 / 500 [44%]" />
         <Text style={styles.statusText}>1번째 방문!</Text>
       </View>
       <ThemeList />
@@ -43,36 +41,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
   },
-  progressbar: {
-    position: 'relative',
 
-    width: '60%',
-    height: 24,
-    padding: 3,
-
-    alignItems: 'center',
-    justifyContent: 'center',
-
-    borderWidth: 1,
-    borderColor: '#313239',
-    borderRadius: 8,
-  },
-  progressbarInner: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-
-    height: 22,
-    width: '44%',
-
-    backgroundColor: '#ffdada',
-    borderRadius: 8,
-  },
-  progressbarText: {
-    fontSize: 16,
-    fontWeight: 500,
-    lineHeight: 18,
-  },
   statusText: {
     fontSize: 16,
     fontWeight: 700,

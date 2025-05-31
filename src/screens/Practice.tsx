@@ -33,7 +33,7 @@ function Practice() {
 
   return (
     <View style={styles.container}>
-      <BackHeader />
+      <BackHeader title="공항" />
       <View style={wordStyles.container}>
         <Image
           source={require('../../assets/images/word-mock.png')}
