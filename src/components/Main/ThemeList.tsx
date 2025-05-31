@@ -1,5 +1,5 @@
 import { FlatList, StyleSheet, Text, View } from 'react-native';
-import ChevronRight from '../../assets/icons/ChevronRightArrow';
+import ChevronRight from '../../../assets/icons/ChevronRightArrow';
 import StudyProgressStatus from '@/components/Main/StudyProgressStatus';
 
 const theme = [
