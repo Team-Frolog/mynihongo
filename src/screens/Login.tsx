@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import {
   GoogleSignin,
   GoogleSigninButton,
@@ -9,6 +9,7 @@ import { signIn } from '@/services/auth';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from 'firebaseConfig';
 import { useUserStore } from '@/stores/useUserStore';
+import { styles } from '@/styles/Login/Login.style';
 
 GoogleSignin.configure({
   webClientId: process.env.EXPO_PUBLIC_WEB_CLIENT_ID,
@@ -60,12 +61,3 @@ export default function App() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
