@@ -1,5 +1,6 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { Svg, Path } from 'react-native-svg';
+import { styles } from '@/styles/Main/StudyProgressStatus.style';
 
 interface Props {
   width: number;
@@ -20,24 +21,5 @@ function StudyProgressStatus({ width, height, color = '#B4B4B4' }: Props) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    position: 'relative',
-  },
-  status: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    bottom: 10,
-    zIndex: 1,
-    textAlign: 'center',
-
-    color: '#faf8f4',
-    fontSize: 14,
-    fontWeight: 700,
-    lineHeight: 18,
-  },
-});
 
 export default StudyProgressStatus;
