@@ -9,9 +9,8 @@ export interface UserInfo {
     totalVisited: number;
   };
   themeStatus: {
-    [themeName: string]: {
-      status: ThemeStatus;
-      words: number;
-    };
+    themeName: string;
+    status: ThemeStatus;
+    words: number;
   }[];
 }
