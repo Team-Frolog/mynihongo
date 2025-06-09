@@ -2,27 +2,19 @@ import { FlatList, Text, View } from 'react-native';
 import ChevronRight from '../../../assets/icons/ChevronRightArrow';
 import StudyProgressStatus from '@/components/Main/StudyProgressStatus';
 import { styles } from '@/styles/Main/ThemeList.style';
-
-const theme = [
-  { title: '공항', hanza: '空港' },
-  { title: '공항', hanza: '空港' },
-  { title: '공항', hanza: '空港' },
-  { title: '공항', hanza: '空港' },
-  { title: '공항', hanza: '空港' },
-  { title: '공항', hanza: '空港' },
-];
+import { themeData } from '@/data/theme';
 
 function ThemeList() {
   return (
     <FlatList
       contentContainerStyle={styles.list}
-      data={theme}
+      data={themeData}
       showsVerticalScrollIndicator={false}
       renderItem={({ item }) => (
         <View style={styles.listItem}>
           <View style={styles.titleWrapper}>
-            <Text style={styles.title}>{item.title}</Text>
-            <Text style={styles.titleHanza}>{item.hanza}</Text>
+            <Text style={styles.title}>{item.name}</Text>
+            <Text style={styles.titleHanza}>{item.japaneseName}</Text>
           </View>
           <View style={styles.stepStatusWrapper}>
             <Text style={styles.stepStatus}>0 / 10</Text>
@@ -31,7 +23,7 @@ function ThemeList() {
           </View>
         </View>
       )}
-      keyExtractor={(item, index) => item.title + index}
+      keyExtractor={(item) => item.id}
     />
   );
 }
