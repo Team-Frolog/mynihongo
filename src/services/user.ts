@@ -1,13 +1,13 @@
 import { db } from 'firebaseConfig';
-import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
 
-export const createUserIfNotExists = async (userId: string) => {
+export const createOrGetUserInfo = async (userId: string) => {
   if (!userId) return;
 
   const initialUserData = {
     uid: userId,
-    createdAt: serverTimestamp(),
-    updatedAt: serverTimestamp(),
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
     visitedDate: { lastDate: '', totalVisited: 0 },
     themeStatus: [],
   };
@@ -17,5 +17,8 @@ export const createUserIfNotExists = async (userId: string) => {
 
   if (!userDoc.exists()) {
     await setDoc(userRef, initialUserData);
+    return initialUserData;
   }
+
+  return userDoc.data();
 };

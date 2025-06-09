@@ -1,12 +1,12 @@
 import { create } from 'zustand';
-import { User } from 'firebase/auth';
+import { UserInfo } from '@/types/user';
 
 interface Store {
-  user: User | null;
-  setUser: (user: User | null) => void;
+  userInfo: UserInfo | null;
+  setUser: (userInfo: UserInfo) => void;
 }
 
 export const useUserStore = create<Store>((set) => ({
-  user: null,
-  setUser: (user) => set({ user }),
+  userInfo: null,
+  setUser: (userInfo) => set({ userInfo }),
 }));
