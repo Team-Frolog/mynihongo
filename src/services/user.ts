@@ -1,5 +1,5 @@
 import { db } from 'firebaseConfig';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
 
 export const createOrGetUserInfo = async (userId: string) => {
   if (!userId) return;
@@ -21,4 +21,22 @@ export const createOrGetUserInfo = async (userId: string) => {
   }
 
   return userDoc.data();
+};
+
+export const updateUserVisitedDate = async (userId: string) => {
+  const userRef = doc(db, 'users', userId);
+  const userDoc = await getDoc(userRef);
+
+  const today = new Date().toISOString().split('T')[0];
+
+  const visitedDate = userDoc.data()?.visitedDate;
+
+  if (visitedDate.lastDate === today) return;
+
+  const newVisitedDate = {
+    lastDate: today,
+    totalVisited: visitedDate.totalVisited + 1,
+  };
+
+  await updateDoc(userRef, { visitedDate: newVisitedDate });
 };

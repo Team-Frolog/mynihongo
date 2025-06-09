@@ -11,6 +11,7 @@ import Quiz from '@/screens/Quiz';
 import Real from '@/screens/Real';
 import Complete from '@/screens/Complete';
 import * as SplashScreen from 'expo-splash-screen';
+import { useVisitedDate } from '@/hooks/useVisitedDate';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -19,11 +20,12 @@ const Stack = createNativeStackNavigator();
 function AppNavigator() {
   const { createUser, isLoggedIn } = useUser();
   const [isLoading, setIsLoading] = useState(true);
-
+  const { updateVisitedDate } = useVisitedDate();
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       if (user) {
         createUser(user.uid);
+        updateVisitedDate(user.uid);
       } else {
         setIsLoading(false);
       }

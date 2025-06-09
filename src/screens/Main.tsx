@@ -3,8 +3,13 @@ import { Text, View } from 'react-native';
 import ThemeList from '@/components/Main/ThemeList';
 import ProgressBar from '@/components/commons/ProgressBar';
 import { styles } from '@/styles/Main/Main.style';
+import { useUserStore } from '@/stores/useUserStore';
 
 function Main() {
+  const userInfo = useUserStore((state) => state.userInfo);
+
+  console.log(userInfo);
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>MYnihongo</Text>
