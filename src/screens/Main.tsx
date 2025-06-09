@@ -8,14 +8,14 @@ import { useUserStore } from '@/stores/useUserStore';
 function Main() {
   const userInfo = useUserStore((state) => state.userInfo);
 
-  console.log(userInfo);
-
   return (
     <View style={styles.container}>
       <Text style={styles.title}>MYnihongo</Text>
       <View style={styles.status}>
         <ProgressBar text="22 / 500 [44%]" />
-        <Text style={styles.statusText}>1번째 방문!</Text>
+        <Text style={styles.statusText}>
+          {userInfo?.visitedDate.totalVisited}번째 방문!
+        </Text>
       </View>
       <ThemeList />
     </View>
