@@ -1,20 +1,20 @@
-import { useMutation } from '@tanstack/react-query';
-import { createOrGetUserInfo } from '../services/user';
+import { useMutation, useQuery } from '@tanstack/react-query';
+import { createUserIfNotExists, getUserInfo } from '../services/user';
+import { useState } from 'react';
 import { useUserStore } from '@/stores/useUserStore';
 import { UserInfo } from '@/types/user';
-import { useState } from 'react';
 
 export const useUser = () => {
-  const setUser = useUserStore((state) => state.setUser);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const { userId, setUserId } = useUserStore();
 
   const { mutate: createUser } = useMutation({
     mutationFn: async (userId: string) => {
-      return await createOrGetUserInfo(userId);
+      return await createUserIfNotExists(userId);
     },
-    onSuccess: (data) => {
-      setUser(data as UserInfo);
+    onSuccess: (userId) => {
       setIsLoggedIn(true);
+      setUserId(userId!);
     },
     onError: (error) => {
       console.log(error);
@@ -22,5 +22,14 @@ export const useUser = () => {
     },
   });
 
-  return { createUser, isLoggedIn };
+  const { data: userInfo } = useQuery({
+    queryKey: ['user', userId],
+    queryFn: async () => {
+      const userInfo = await getUserInfo(userId);
+      return userInfo as UserInfo;
+    },
+    enabled: userId !== '',
+  });
+
+  return { createUser, isLoggedIn, userInfo };
 };

@@ -1,7 +1,7 @@
 import { db } from 'firebaseConfig';
 import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
 
-export const createOrGetUserInfo = async (userId: string) => {
+export const createUserIfNotExists = async (userId: string) => {
   if (!userId) return;
 
   const initialUserData = {
@@ -17,9 +17,13 @@ export const createOrGetUserInfo = async (userId: string) => {
 
   if (!userDoc.exists()) {
     await setDoc(userRef, initialUserData);
-    return initialUserData;
+    return userId;
   }
+};
 
+export const getUserInfo = async (userId: string) => {
+  const userRef = doc(db, 'users', userId);
+  const userDoc = await getDoc(userRef);
   return userDoc.data();
 };
 
