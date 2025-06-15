@@ -1,12 +1,12 @@
-import { FlatList, Text, View } from 'react-native';
-import ChevronRight from '../../../assets/icons/ChevronRightArrow';
-import StudyProgressStatus from '@/components/Main/StudyProgressStatus';
+import { FlatList } from 'react-native';
 import { styles } from '@/styles/Main/ThemeList.style';
 import { themeData } from '@/data/theme';
-import { useUserStore } from '@/stores/useUserStore';
+import { useUser } from '@/hooks/useUser';
+import ThemeListItem from './ThemeListItem';
 
 function ThemeList() {
-  const themeStatus = useUserStore((state) => state.userInfo?.themeStatus);
+  const { userInfo } = useUser();
+  const themeStatus = userInfo?.themeStatus;
 
   return (
     <FlatList
@@ -21,26 +21,7 @@ function ThemeList() {
         const status = targetThemeData?.status;
         const words = targetThemeData?.words;
 
-        const listItemStyle = {
-          borderRightWidth: status ? 0 : 1,
-          paddingRight: status ? 0 : 15,
-        };
-
-        return (
-          <View style={[styles.listItem, listItemStyle]}>
-            <View style={styles.titleWrapper}>
-              <Text style={styles.title}>{item.name}</Text>
-              <Text style={styles.titleHanza}>{item.japaneseName}</Text>
-            </View>
-            <View style={styles.stepStatusWrapper}>
-              <Text style={styles.stepStatus}>{words ? words : 0} / 10</Text>
-              <ChevronRight width={24} height={24} />
-              {status && (
-                <StudyProgressStatus status={status} width={59} height={100} />
-              )}
-            </View>
-          </View>
-        );
+        return <ThemeListItem item={item} status={status} words={words} />;
       }}
       keyExtractor={(item) => item.id}
     />
