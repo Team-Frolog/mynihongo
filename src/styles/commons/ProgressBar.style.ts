@@ -21,7 +21,6 @@ export const styles = StyleSheet.create({
     left: 0,
 
     height: 22,
-    width: '44%',
 
     backgroundColor: '#ffdada',
     borderRadius: 8,
