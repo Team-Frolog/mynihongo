@@ -12,8 +12,15 @@ import Animated, {
 import { useEffect } from 'react';
 import BackHeader from '../components/commons/BackHeader';
 import { styles } from '@/styles/Practice/Practice.style';
+import { RouteProp, useRoute } from '@react-navigation/native';
+import { wordData } from '@/data/word';
 
 function Practice() {
+  const route = useRoute<RouteProp<any>>();
+  const themeName = route.params?.themeName;
+
+  const words = wordData.filter((word) => word.theme === themeName);
+
   const translateX = useSharedValue(0);
 
   useEffect(() => {
