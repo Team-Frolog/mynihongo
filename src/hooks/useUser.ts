@@ -12,7 +12,7 @@ export const useUser = () => {
     mutationFn: async (userId: string) => {
       return await createUserIfNotExists(userId);
     },
-    onSuccess: (userId) => {
+    onSuccess: (_, userId) => {
       setIsLoggedIn(true);
       setUserId(userId!);
     },

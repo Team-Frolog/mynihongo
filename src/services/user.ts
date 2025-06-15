@@ -17,13 +17,14 @@ export const createUserIfNotExists = async (userId: string) => {
 
   if (!userDoc.exists()) {
     await setDoc(userRef, initialUserData);
-    return userId;
   }
+  return userId;
 };
 
 export const getUserInfo = async (userId: string) => {
   const userRef = doc(db, 'users', userId);
   const userDoc = await getDoc(userRef);
+
   return userDoc.data();
 };
 
