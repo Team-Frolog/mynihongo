@@ -23,8 +23,9 @@ export const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   titleWrapper: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
     gap: 10,
   },
   title: {
@@ -32,8 +33,8 @@ export const styles = StyleSheet.create({
     fontWeight: 700,
   },
   titleHanza: {
-    fontSize: 24,
-    fontWeight: 700,
+    fontSize: 16,
+    fontWeight: 500,
     color: '#C0C0C0',
   },
   stepStatusWrapper: {

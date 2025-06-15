@@ -3,12 +3,13 @@ import { styles } from '@/styles/commons/ProgressBar.style';
 
 interface Props {
   text: string;
+  status: number;
 }
 
-function ProgressBar({ text }: Props) {
+function ProgressBar({ text, status }: Props) {
   return (
     <View style={styles.progressbar}>
-      <View style={styles.progressbarInner}></View>
+      <View style={[styles.progressbarInner, { width: `${status}%` }]}></View>
       <Text style={styles.progressbarText}>{text}</Text>
     </View>
   );
