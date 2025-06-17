@@ -48,7 +48,10 @@ function ThemeListItem({ item, status, words }: Props) {
       onPressIn={handlePressIn}
       onPressOut={handlePressOut}
       onPress={() => {
-        navigation.navigate('Practice', { themeName: item.name });
+        navigation.navigate('Practice', {
+          themeName: item.name,
+          themeId: item.id,
+        });
       }}
     >
       <View style={styles.titleWrapper}>

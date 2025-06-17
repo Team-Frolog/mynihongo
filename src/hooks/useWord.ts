@@ -6,8 +6,11 @@ export const useWord = () => {
   const userId = useUserStore((state) => state.userId);
 
   const { mutate: updateWordToLearned } = useMutation({
-    mutationFn: async (data: { wordId: string; themeName: string }) => {
-      await updateWordLearningStatus(userId, data.wordId, data.themeName);
+    mutationFn: async (data: { wordId: string; themeId: string }) => {
+      return await updateWordLearningStatus(userId, data.wordId, data.themeId);
+    },
+    onError: (error) => {
+      console.log(error);
     },
   });
 

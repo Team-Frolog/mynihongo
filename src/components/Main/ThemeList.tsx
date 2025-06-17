@@ -15,9 +15,8 @@ function ThemeList() {
       showsVerticalScrollIndicator={false}
       renderItem={({ item }) => {
         const targetThemeData = themeStatus?.find(
-          (theme) => theme.themeName === item.id,
-        )!;
-
+          (theme) => theme.themeId === item.id,
+        );
         const status = targetThemeData?.status;
         const words = targetThemeData?.words;
 

@@ -8,17 +8,29 @@ import { wordData } from '@/data/word';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import SwipeCard from '@/components/Practice/SwipeCard';
 import { useWord } from '@/hooks/useWord';
+import { useUser } from '@/hooks/useUser';
 
 function Practice() {
   const route = useRoute<RouteProp<any>>();
-  const themeName = route.params?.themeName;
+  const themeId = route.params?.themeId;
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isShowGestureGuide, setIsShowGestureGuide] = useState(true);
 
   const { updateWordToLearned } = useWord();
+  const { userInfo } = useUser();
 
-  const words = wordData.filter((word) => word.theme === themeName);
+  const currentThemeWords =
+    userInfo?.themeStatus.find((theme) => theme.themeId === themeId)?.words ||
+    [];
+
+  const isLearnning = currentThemeWords.length !== 0;
+
+  const words = isLearnning
+    ? wordData
+        .filter((word) => word.themeId === themeId)
+        .filter((word) => !currentThemeWords.includes(word.id))
+    : wordData.filter((word) => word.themeId === themeId);
 
   useEffect(() => {
     setTimeout(() => {
@@ -33,7 +45,7 @@ function Practice() {
 
   // 앎
   const handleSwipeRight = () => {
-    updateWordToLearned({ wordId: words[currentIndex].id, themeName });
+    updateWordToLearned({ wordId: words[currentIndex].id, themeId });
     setCurrentIndex((prev) => prev + 1);
     // Todo 마지막 카드일때 화면 전환
   };
