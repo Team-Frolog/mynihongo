@@ -28,7 +28,13 @@ export const updateWordLearningStatus = async (
           ? currentWords
           : [...currentWords, wordId];
 
-        return { ...theme, status: 'learning', words: newWords };
+        const isCompleted = newWords.length === 10;
+
+        return {
+          ...theme,
+          status: isCompleted ? 'quiz' : 'learning',
+          words: newWords,
+        };
       }
       return theme;
     });

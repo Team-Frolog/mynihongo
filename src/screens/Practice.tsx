@@ -48,7 +48,6 @@ function Practice() {
   const handleSwipeRight = () => {
     updateWordToLearned({ wordId: words[currentIndex].id, themeId });
     setCurrentIndex((prev) => prev + 1);
-    // Todo 마지막 카드일때 화면 전환
   };
 
   return (
