@@ -1,30 +1,43 @@
 import { db } from 'firebaseConfig';
 import { doc, getDoc, updateDoc } from 'firebase/firestore';
+import { UserInfo } from '@/types/user';
 
 export const updateWordLearningStatus = async (
   userId: string,
   wordId: string,
-  themeName: string,
+  themeId: string,
 ) => {
   const userRef = doc(db, 'users', userId);
   const userDoc = await getDoc(userRef);
+  const userData = userDoc.data() as UserInfo;
 
   if (!userDoc.exists()) return;
 
-  const themeStatus = userDoc.data()?.themeStatus || [];
+  const themeStatus = userData?.themeStatus || [];
+  const existingThemeIndex = themeStatus.findIndex(
+    (theme) => theme.themeId === themeId,
+  );
 
-  const updatedThemeStatus = themeStatus.map((theme: any) => {
-    if (theme.themeName === themeName) {
-      const currentWords = Array.isArray(theme.words) ? theme.words : [];
-      return {
-        ...theme,
-        words: currentWords.includes(wordId)
+  let updatedThemeStatus: UserInfo['themeStatus'];
+
+  if (existingThemeIndex !== -1) {
+    updatedThemeStatus = themeStatus.map((theme, index) => {
+      if (index === existingThemeIndex) {
+        const currentWords = Array.isArray(theme.words) ? theme.words : [];
+        const newWords = currentWords.includes(wordId)
           ? currentWords
-          : [...currentWords, wordId],
-      };
-    }
-    return theme;
-  });
+          : [...currentWords, wordId];
+
+        return { ...theme, status: 'learning', words: newWords };
+      }
+      return theme;
+    });
+  } else {
+    updatedThemeStatus = [
+      ...themeStatus,
+      { themeId, status: 'learning', words: [wordId] },
+    ];
+  }
 
   await updateDoc(userRef, {
     themeStatus: updatedThemeStatus,
