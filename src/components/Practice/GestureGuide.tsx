@@ -9,6 +9,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useEffect } from 'react';
 import { styles } from '@/styles/Practice/Practice.style';
+import GestureGuideIcon from '../../../assets/icons/GestureGuide';
 
 function GestureGuide() {
   const translateX = useSharedValue(0);
@@ -28,13 +29,14 @@ function GestureGuide() {
   const animatedStyle = useAnimatedStyle(() => ({
     transform: [{ translateX: translateX.value }],
   }));
+
   return (
     <View style={styles.gestureGuideWrapper}>
       <Text style={styles.gestureGuide}>
         모르면 왼쪽으로,{'\n'} 안다면 오른쪽으로 넘기세요
       </Text>
       <Animated.View style={animatedStyle}>
-        <GestureGuide />
+        <GestureGuideIcon />
       </Animated.View>
     </View>
   );
