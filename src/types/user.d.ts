@@ -11,6 +11,6 @@ export interface UserInfo {
   themeStatus: {
     themeName: string;
     status: ThemeStatus;
-    words: number;
+    words: string[];
   }[];
 }

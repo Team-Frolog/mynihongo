@@ -11,7 +11,7 @@ function Main() {
   if (!userInfo) return <Text>Loading...</Text>;
 
   const progress = userInfo.themeStatus.reduce((acc, cur) => {
-    return acc + cur.words;
+    return acc + cur.words.length;
   }, 0);
   const status = Math.round((progress / 500) * 100);
 

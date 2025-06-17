@@ -15,7 +15,7 @@ import { NavigationProp, useNavigation } from '@react-navigation/native';
 interface Props {
   item: Theme;
   status?: ThemeStatus;
-  words?: number;
+  words?: string[];
 }
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
@@ -56,7 +56,7 @@ function ThemeListItem({ item, status, words }: Props) {
         <Text style={styles.titleHanza}>{item.japaneseName}</Text>
       </View>
       <View style={styles.stepStatusWrapper}>
-        <Text style={styles.stepStatus}>{words ? words : 0} / 10</Text>
+        <Text style={styles.stepStatus}>{words ? words.length : 0} / 10</Text>
         <ChevronRight width={24} height={24} />
         {status && (
           <StudyProgressStatus status={status} width={59} height={100} />
