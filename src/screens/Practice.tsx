@@ -13,6 +13,7 @@ import { useUser } from '@/hooks/useUser';
 function Practice() {
   const route = useRoute<RouteProp<any>>();
   const themeId = route.params?.themeId;
+  const themeName = route.params?.themeName;
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isShowGestureGuide, setIsShowGestureGuide] = useState(true);
@@ -53,7 +54,7 @@ function Practice() {
   return (
     <GestureHandlerRootView>
       <View style={styles.container}>
-        <BackHeader title="공항" />
+        <BackHeader title={themeName} />
 
         {/* 다음 카드들을 미리 렌더링 (최대 3장) */}
         {words.slice(currentIndex, currentIndex + 3).map((word, index) => (
