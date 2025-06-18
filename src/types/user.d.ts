@@ -1,4 +1,4 @@
-type ThemeStatus = 'not_started' | 'quiz' | 'conversation' | 'completed';
+type ThemeStatus = 'learning' | 'quiz' | 'conversation' | 'completed';
 
 export interface UserInfo {
   uid: string;
@@ -9,8 +9,8 @@ export interface UserInfo {
     totalVisited: number;
   };
   themeStatus: {
-    themeName: string;
+    themeId: string;
     status: ThemeStatus;
-    words: number;
+    words: string[];
   }[];
 }

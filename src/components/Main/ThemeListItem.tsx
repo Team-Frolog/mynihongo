@@ -10,16 +10,19 @@ import StudyProgressStatus from '@/components/Main/StudyProgressStatus';
 import { styles } from '@/styles/Main/ThemeList.style';
 import { Theme } from '@/data/theme';
 import { ThemeStatus } from '@/types/user';
+import { NavigationProp, useNavigation } from '@react-navigation/native';
 
 interface Props {
   item: Theme;
   status?: ThemeStatus;
-  words?: number;
+  words?: string[];
 }
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
-function ThemeListItem({ item, status, words }: Props) {
+function ThemeListItem({ item, status = 'learning', words }: Props) {
+  const navigation = useNavigation<NavigationProp<any>>();
+
   const scale = useSharedValue(1);
 
   const animatedStyle = useAnimatedStyle(() => ({
@@ -35,8 +38,8 @@ function ThemeListItem({ item, status, words }: Props) {
   };
 
   const listItemStyle = {
-    borderRightWidth: status ? 0 : 1,
-    paddingRight: status ? 0 : 15,
+    borderRightWidth: status === 'learning' ? 1 : 0,
+    paddingRight: status === 'learning' ? 15 : 0,
   };
 
   return (
@@ -45,7 +48,10 @@ function ThemeListItem({ item, status, words }: Props) {
       onPressIn={handlePressIn}
       onPressOut={handlePressOut}
       onPress={() => {
-        // 네비게이션 로직
+        navigation.navigate('Practice', {
+          themeName: item.name,
+          themeId: item.id,
+        });
       }}
     >
       <View style={styles.titleWrapper}>
@@ -53,9 +59,9 @@ function ThemeListItem({ item, status, words }: Props) {
         <Text style={styles.titleHanza}>{item.japaneseName}</Text>
       </View>
       <View style={styles.stepStatusWrapper}>
-        <Text style={styles.stepStatus}>{words ? words : 0} / 10</Text>
+        <Text style={styles.stepStatus}>{words ? words.length : 0} / 10</Text>
         <ChevronRight width={24} height={24} />
-        {status && (
+        {status !== 'learning' && (
           <StudyProgressStatus status={status} width={59} height={100} />
         )}
       </View>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Svg, Path, Circle } from 'react-native-svg';
 
-function GestureGuide() {
+function GestureGuideIcon() {
   return (
     <Svg width="126" height="91" viewBox="0 0 126 91" fill="none">
       <Circle
@@ -38,4 +38,4 @@ function GestureGuide() {
   );
 }
 
-export default GestureGuide;
+export default GestureGuideIcon;

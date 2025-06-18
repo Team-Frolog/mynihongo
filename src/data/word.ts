@@ -1,6 +1,6 @@
 export interface Word {
   id: string; // 고유 식별자
-  theme: string; // 테마 분류
+  themeId: string; // 테마 ID
   kanji: string; // 한자
   hiragana: string; // 히라가나
   meaning: string; // 한국어 의미
@@ -15,7 +15,7 @@ export interface Word {
 export const wordData: Word[] = [
   {
     id: 'cafe_1',
-    theme: '카페',
+    themeId: 'cafe',
     kanji: '店',
     hiragana: 'みせ',
     meaning: '가게',
@@ -27,7 +27,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'cafe_2',
-    theme: '카페',
+    themeId: 'cafe',
     kanji: 'コーヒー',
     hiragana: 'こーひー',
     meaning: '커피',
@@ -39,7 +39,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'cafe_3',
-    theme: '카페',
+    themeId: 'cafe',
     kanji: 'ケーキ',
     hiragana: 'けーき',
     meaning: '케이크',
@@ -51,7 +51,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'cafe_4',
-    theme: '카페',
+    themeId: 'cafe',
     kanji: '砂糖',
     hiragana: 'さとう',
     meaning: '설탕',
@@ -63,7 +63,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'cafe_5',
-    theme: '카페',
+    themeId: 'cafe',
     kanji: 'ミルク',
     hiragana: 'みるく',
     meaning: '우유',
@@ -75,7 +75,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'cafe_6',
-    theme: '카페',
+    themeId: 'cafe',
     kanji: '注文',
     hiragana: 'ちゅうもん',
     meaning: '주문',
@@ -87,7 +87,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'cafe_7',
-    theme: '카페',
+    themeId: 'cafe',
     kanji: '店員',
     hiragana: 'てんいん',
     meaning: '점원',
@@ -99,7 +99,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'cafe_8',
-    theme: '카페',
+    themeId: 'cafe',
     kanji: '席',
     hiragana: 'せき',
     meaning: '자리',
@@ -111,7 +111,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'cafe_9',
-    theme: '카페',
+    themeId: 'cafe',
     kanji: '店長',
     hiragana: 'てんちょう',
     meaning: '점장',
@@ -123,7 +123,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'cafe_10',
-    theme: '카페',
+    themeId: 'cafe',
     kanji: 'おすすめ',
     hiragana: 'おすすめ',
     meaning: '추천',
@@ -135,7 +135,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel1_1',
-    theme: '여행1',
+    themeId: 'travel1',
     kanji: '旅行',
     hiragana: 'りょこう',
     meaning: '여행',
@@ -147,7 +147,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel1_2',
-    theme: '여행1',
+    themeId: 'travel1',
     kanji: '旅行券',
     hiragana: 'りょこうけん',
     meaning: '여행권',
@@ -159,7 +159,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel1_3',
-    theme: '여행1',
+    themeId: 'travel1',
     kanji: '観光',
     hiragana: 'かんこう',
     meaning: '관광',
@@ -171,7 +171,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel1_4',
-    theme: '여행1',
+    themeId: 'travel1',
     kanji: '地図',
     hiragana: 'ちず',
     meaning: '지도',
@@ -183,7 +183,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel1_5',
-    theme: '여행1',
+    themeId: 'travel1',
     kanji: '空港',
     hiragana: 'くうこう',
     meaning: '공항',
@@ -195,7 +195,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel1_6',
-    theme: '여행1',
+    themeId: 'travel1',
     kanji: '出発',
     hiragana: 'しゅっぱつ',
     meaning: '출발',
@@ -207,7 +207,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel1_7',
-    theme: '여행1',
+    themeId: 'travel1',
     kanji: '到着',
     hiragana: 'とうちゃく',
     meaning: '도착',
@@ -219,7 +219,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel1_8',
-    theme: '여행1',
+    themeId: 'travel1',
     kanji: '宿',
     hiragana: 'やど',
     meaning: '숙소',
@@ -231,7 +231,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel1_9',
-    theme: '여행1',
+    themeId: 'travel1',
     kanji: '目的地',
     hiragana: 'もくてきち',
     meaning: '목적지',
@@ -243,7 +243,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel1_10',
-    theme: '여행1',
+    themeId: 'travel1',
     kanji: '予約',
     hiragana: 'よやく',
     meaning: '예약',
@@ -255,7 +255,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel2_1',
-    theme: '여행2',
+    themeId: 'travel2',
     kanji: '荷物',
     hiragana: 'にもつ',
     meaning: '짐',
@@ -267,7 +267,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel2_2',
-    theme: '여행2',
+    themeId: 'travel2',
     kanji: '航空券',
     hiragana: 'こうくうけん',
     meaning: '항공권',
@@ -279,7 +279,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel2_3',
-    theme: '여행2',
+    themeId: 'travel2',
     kanji: '滞在',
     hiragana: 'たいざい',
     meaning: '체류',
@@ -291,7 +291,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel2_4',
-    theme: '여행2',
+    themeId: 'travel2',
     kanji: '出国',
     hiragana: 'しゅっこく',
     meaning: '출국',
@@ -303,7 +303,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel2_5',
-    theme: '여행2',
+    themeId: 'travel2',
     kanji: '両替',
     hiragana: 'りょうがえ',
     meaning: '환전',
@@ -315,7 +315,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel2_6',
-    theme: '여행2',
+    themeId: 'travel2',
     kanji: '荷造り',
     hiragana: 'にづくり',
     meaning: '짐 싸기',
@@ -327,7 +327,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel2_7',
-    theme: '여행2',
+    themeId: 'travel2',
     kanji: '申請',
     hiragana: 'しんせい',
     meaning: '신청',
@@ -339,7 +339,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel2_8',
-    theme: '여행2',
+    themeId: 'travel2',
     kanji: '保険',
     hiragana: 'ほけん',
     meaning: '보험',
@@ -351,7 +351,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel2_9',
-    theme: '여행2',
+    themeId: 'travel2',
     kanji: '日程',
     hiragana: 'にってい',
     meaning: '일정',
@@ -363,7 +363,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'travel2_10',
-    theme: '여행2',
+    themeId: 'travel2',
     kanji: '確認',
     hiragana: 'かくにん',
     meaning: '확인',
@@ -375,7 +375,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'love_1',
-    theme: '연애',
+    themeId: 'love',
     kanji: '恋愛',
     hiragana: 'れんあい',
     meaning: '연애',
@@ -387,7 +387,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'love_2',
-    theme: '연애',
+    themeId: 'love',
     kanji: '告白',
     hiragana: 'こくはく',
     meaning: '고백',
@@ -399,7 +399,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'love_3',
-    theme: '연애',
+    themeId: 'love',
     kanji: '失恋',
     hiragana: 'しつれん',
     meaning: '실연',
@@ -411,7 +411,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'love_4',
-    theme: '연애',
+    themeId: 'love',
     kanji: '嫉妬',
     hiragana: 'しっと',
     meaning: '질투',
@@ -423,7 +423,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'love_5',
-    theme: '연애',
+    themeId: 'love',
     kanji: '好意',
     hiragana: 'こうい',
     meaning: '호의',
@@ -435,7 +435,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'love_6',
-    theme: '연애',
+    themeId: 'love',
     kanji: '愛情',
     hiragana: 'あいじょう',
     meaning: '애정',
@@ -447,7 +447,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'love_7',
-    theme: '연애',
+    themeId: 'love',
     kanji: '約束',
     hiragana: 'やくそく',
     meaning: '약속',
@@ -459,7 +459,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'love_8',
-    theme: '연애',
+    themeId: 'love',
     kanji: '感動',
     hiragana: 'かんどう',
     meaning: '감동',
@@ -471,7 +471,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'love_9',
-    theme: '연애',
+    themeId: 'love',
     kanji: '緊張',
     hiragana: 'きんちょう',
     meaning: '긴장',
@@ -483,7 +483,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'love_10',
-    theme: '연애',
+    themeId: 'love',
     kanji: '安心',
     hiragana: 'あんしん',
     meaning: '안심',
@@ -495,7 +495,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food1_1',
-    theme: '음식1',
+    themeId: 'food1',
     kanji: '食事',
     hiragana: 'しょくじ',
     meaning: '식사',
@@ -507,7 +507,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food1_2',
-    theme: '음식1',
+    themeId: 'food1',
     kanji: 'ご飯',
     hiragana: 'ごはん',
     meaning: '밥',
@@ -519,7 +519,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food1_3',
-    theme: '음식1',
+    themeId: 'food1',
     kanji: '魚',
     hiragana: 'さかな',
     meaning: '물고기',
@@ -531,7 +531,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food1_4',
-    theme: '음식1',
+    themeId: 'food1',
     kanji: '野菜',
     hiragana: 'やさい',
     meaning: '야채',
@@ -543,7 +543,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food1_5',
-    theme: '음식1',
+    themeId: 'food1',
     kanji: '肉',
     hiragana: 'にく',
     meaning: '고기',
@@ -555,7 +555,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food1_6',
-    theme: '음식1',
+    themeId: 'food1',
     kanji: '甘い',
     hiragana: 'あまい',
     meaning: '달콤한',
@@ -567,7 +567,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food1_7',
-    theme: '음식1',
+    themeId: 'food1',
     kanji: '辛い',
     hiragana: 'からい',
     meaning: '매운',
@@ -579,7 +579,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food1_8',
-    theme: '음식1',
+    themeId: 'food1',
     kanji: '鳥',
     hiragana: 'とり',
     meaning: '닭',
@@ -591,7 +591,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food1_9',
-    theme: '음식1',
+    themeId: 'food1',
     kanji: '焼き',
     hiragana: 'やき',
     meaning: '구이',
@@ -603,7 +603,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food1_10',
-    theme: '음식1',
+    themeId: 'food1',
     kanji: '飲み物',
     hiragana: 'のみもの',
     meaning: '음료',
@@ -615,7 +615,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food2_1',
-    theme: '음식2',
+    themeId: 'food2',
     kanji: '寿司',
     hiragana: 'すし',
     meaning: '초밥',
@@ -627,7 +627,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food2_2',
-    theme: '음식2',
+    themeId: 'food2',
     kanji: 'うどん',
     hiragana: 'うどん',
     meaning: '우동',
@@ -639,7 +639,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food2_3',
-    theme: '음식2',
+    themeId: 'food2',
     kanji: 'ラーメン',
     hiragana: 'らーめん',
     meaning: '라멘',
@@ -651,7 +651,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food2_4',
-    theme: '음식2',
+    themeId: 'food2',
     kanji: '天ぷら',
     hiragana: 'てんぷら',
     meaning: '튀김',
@@ -663,7 +663,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food2_5',
-    theme: '음식2',
+    themeId: 'food2',
     kanji: '焼き鳥',
     hiragana: 'やきとり',
     meaning: '닭꼬치',
@@ -675,7 +675,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food2_6',
-    theme: '음식2',
+    themeId: 'food2',
     kanji: '鰻',
     hiragana: 'うなぎ',
     meaning: '장어',
@@ -687,7 +687,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food2_7',
-    theme: '음식2',
+    themeId: 'food2',
     kanji: 'おにぎり',
     hiragana: 'おにぎり',
     meaning: '주먹밥',
@@ -699,7 +699,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food2_8',
-    theme: '음식2',
+    themeId: 'food2',
     kanji: 'たこ焼き',
     hiragana: 'たこやき',
     meaning: '타코야키',
@@ -711,7 +711,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food2_9',
-    theme: '음식2',
+    themeId: 'food2',
     kanji: 'みそ汁',
     hiragana: 'みそしる',
     meaning: '미소시루',
@@ -723,7 +723,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food2_10',
-    theme: '음식2',
+    themeId: 'food2',
     kanji: 'かつ丼',
     hiragana: 'かつどん',
     meaning: '돈까스 덮밥',
@@ -735,7 +735,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food3_1',
-    theme: '음식3',
+    themeId: 'food3',
     kanji: '甘い',
     hiragana: 'あまい',
     meaning: '달다',
@@ -747,7 +747,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food3_2',
-    theme: '음식3',
+    themeId: 'food3',
     kanji: '苦い',
     hiragana: 'にがい',
     meaning: '쓰다',
@@ -759,7 +759,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food3_3',
-    theme: '음식3',
+    themeId: 'food3',
     kanji: 'しょっぱい',
     hiragana: 'しょっぱい',
     meaning: '짜다',
@@ -771,7 +771,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food3_4',
-    theme: '음식3',
+    themeId: 'food3',
     kanji: '酸っぱい',
     hiragana: 'すっぱい',
     meaning: '시다',
@@ -783,7 +783,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food3_5',
-    theme: '음식3',
+    themeId: 'food3',
     kanji: '辛い',
     hiragana: 'からい',
     meaning: '맵다',
@@ -795,7 +795,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food3_6',
-    theme: '음식3',
+    themeId: 'food3',
     kanji: '美味しい',
     hiragana: 'おいしい',
     meaning: '맛있다',
@@ -807,7 +807,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food3_7',
-    theme: '음식3',
+    themeId: 'food3',
     kanji: '不味い',
     hiragana: 'まずい',
     meaning: '맛없다',
@@ -819,7 +819,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food3_8',
-    theme: '음식3',
+    themeId: 'food3',
     kanji: '濃い',
     hiragana: 'こい',
     meaning: '진하다',
@@ -831,7 +831,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food3_9',
-    theme: '음식3',
+    themeId: 'food3',
     kanji: '薄い',
     hiragana: 'うすい',
     meaning: '연하다',
@@ -843,7 +843,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'food3_10',
-    theme: '음식3',
+    themeId: 'food3',
     kanji: '香ばしい',
     hiragana: 'こうばしい',
     meaning: '고소하다',
@@ -855,7 +855,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'lovebreak_1',
-    theme: '사랑과 이별',
+    themeId: 'lovebreak',
     kanji: '愛',
     hiragana: 'あい',
     meaning: '사랑',
@@ -864,7 +864,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'lovebreak_2',
-    theme: '사랑과 이별',
+    themeId: 'lovebreak',
     kanji: '恋',
     hiragana: 'こい',
     meaning: '연애',
@@ -873,7 +873,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'lovebreak_3',
-    theme: '사랑과 이별',
+    themeId: 'lovebreak',
     kanji: '失恋',
     hiragana: 'しつれん',
     meaning: '실연',
@@ -882,7 +882,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'lovebreak_4',
-    theme: '사랑과 이별',
+    themeId: 'lovebreak',
     kanji: '告白',
     hiragana: 'こくはく',
     meaning: '고백',
@@ -891,7 +891,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'lovebreak_5',
-    theme: '사랑과 이별',
+    themeId: 'lovebreak',
     kanji: '胸',
     hiragana: 'むね',
     meaning: '가슴',
@@ -900,7 +900,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'lovebreak_6',
-    theme: '사랑과 이별',
+    themeId: 'lovebreak',
     kanji: '離れる',
     hiragana: 'はなれる',
     meaning: '떨어지다',
@@ -909,7 +909,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'lovebreak_7',
-    theme: '사랑과 이별',
+    themeId: 'lovebreak',
     kanji: '涙',
     hiragana: 'なみだ',
     meaning: '눈물',
@@ -918,7 +918,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'lovebreak_8',
-    theme: '사랑과 이별',
+    themeId: 'lovebreak',
     kanji: '約束',
     hiragana: 'やくそく',
     meaning: '약속',
@@ -927,7 +927,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'lovebreak_9',
-    theme: '사랑과 이별',
+    themeId: 'lovebreak',
     kanji: '運命',
     hiragana: 'うんめい',
     meaning: '운명',
@@ -936,7 +936,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'lovebreak_10',
-    theme: '사랑과 이별',
+    themeId: 'lovebreak',
     kanji: '抱きしめる',
     hiragana: 'だきしめる',
     meaning: '껴안다',
@@ -945,7 +945,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather1_1',
-    theme: '날씨1',
+    themeId: 'weather1',
     kanji: '春',
     hiragana: 'はる',
     meaning: '봄',
@@ -954,7 +954,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather1_2',
-    theme: '날씨1',
+    themeId: 'weather1',
     kanji: '夏',
     hiragana: 'なつ',
     meaning: '여름',
@@ -963,7 +963,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather1_3',
-    theme: '날씨1',
+    themeId: 'weather1',
     kanji: '秋',
     hiragana: 'あき',
     meaning: '가을',
@@ -972,7 +972,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather1_4',
-    theme: '날씨1',
+    themeId: 'weather1',
     kanji: '冬',
     hiragana: 'ふゆ',
     meaning: '겨울',
@@ -981,7 +981,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather1_5',
-    theme: '날씨1',
+    themeId: 'weather1',
     kanji: '花',
     hiragana: 'はな',
     meaning: '꽃',
@@ -990,7 +990,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather1_6',
-    theme: '날씨1',
+    themeId: 'weather1',
     kanji: '雪',
     hiragana: 'ゆき',
     meaning: '눈',
@@ -999,7 +999,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather1_7',
-    theme: '날씨1',
+    themeId: 'weather1',
     kanji: '気温',
     hiragana: 'きおん',
     meaning: '기온',
@@ -1008,7 +1008,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather1_8',
-    theme: '날씨1',
+    themeId: 'weather1',
     kanji: '風',
     hiragana: 'かぜ',
     meaning: '바람',
@@ -1017,7 +1017,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather1_9',
-    theme: '날씨1',
+    themeId: 'weather1',
     kanji: '暑い',
     hiragana: 'あつい',
     meaning: '덥다',
@@ -1026,7 +1026,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather1_10',
-    theme: '날씨1',
+    themeId: 'weather1',
     kanji: '寒い',
     hiragana: 'さむい',
     meaning: '춥다',
@@ -1035,7 +1035,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather2_1',
-    theme: '날씨2',
+    themeId: 'weather2',
     kanji: '暑い',
     hiragana: 'あつい',
     meaning: '덥다',
@@ -1044,7 +1044,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather2_2',
-    theme: '날씨2',
+    themeId: 'weather2',
     kanji: '寒い',
     hiragana: 'さむい',
     meaning: '춥다',
@@ -1053,7 +1053,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather2_3',
-    theme: '날씨2',
+    themeId: 'weather2',
     kanji: '涼しい',
     hiragana: 'すずしい',
     meaning: '시원하다',
@@ -1062,7 +1062,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather2_4',
-    theme: '날씨2',
+    themeId: 'weather2',
     kanji: '暖かい',
     hiragana: 'あたたかい',
     meaning: '따뜻하다',
@@ -1071,7 +1071,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather2_5',
-    theme: '날씨2',
+    themeId: 'weather2',
     kanji: '冷たい',
     hiragana: 'つめたい',
     meaning: '차갑다',
@@ -1080,7 +1080,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather2_6',
-    theme: '날씨2',
+    themeId: 'weather2',
     kanji: '蒸し暑い',
     hiragana: 'むしあつい',
     meaning: '무덥다',
@@ -1089,7 +1089,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather2_7',
-    theme: '날씨2',
+    themeId: 'weather2',
     kanji: '心地よい',
     hiragana: 'ここちよい',
     meaning: '기분 좋다',
@@ -1098,7 +1098,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather2_8',
-    theme: '날씨2',
+    themeId: 'weather2',
     kanji: '暗い',
     hiragana: 'くらい',
     meaning: '어둡다',
@@ -1107,7 +1107,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather2_9',
-    theme: '날씨2',
+    themeId: 'weather2',
     kanji: '明るい',
     hiragana: 'あかるい',
     meaning: '밝다',
@@ -1116,7 +1116,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'weather2_10',
-    theme: '날씨2',
+    themeId: 'weather2',
     kanji: '曇りだ',
     hiragana: 'くもりだ',
     meaning: '흐리다',
@@ -1125,7 +1125,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'time_1',
-    theme: '시간',
+    themeId: 'time',
     kanji: '時間',
     hiragana: 'じかん',
     meaning: '시간',
@@ -1134,7 +1134,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'time_2',
-    theme: '시간',
+    themeId: 'time',
     kanji: '分',
     hiragana: 'ふん',
     meaning: '분',
@@ -1143,7 +1143,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'time_3',
-    theme: '시간',
+    themeId: 'time',
     kanji: '秒',
     hiragana: 'びょう',
     meaning: '초',
@@ -1152,7 +1152,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'time_4',
-    theme: '시간',
+    themeId: 'time',
     kanji: '曜日',
     hiragana: 'ようび',
     meaning: '요일',
@@ -1161,7 +1161,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'time_5',
-    theme: '시간',
+    themeId: 'time',
     kanji: '今週',
     hiragana: 'こんしゅう',
     meaning: '이번 주',
@@ -1170,7 +1170,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'time_6',
-    theme: '시간',
+    themeId: 'time',
     kanji: '来年',
     hiragana: 'らいねん',
     meaning: '내년',
@@ -1179,7 +1179,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'time_7',
-    theme: '시간',
+    themeId: 'time',
     kanji: '昨日',
     hiragana: 'きのう',
     meaning: '어제',
@@ -1188,7 +1188,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'time_8',
-    theme: '시간',
+    themeId: 'time',
     kanji: '深夜',
     hiragana: 'しんや',
     meaning: '심야',
@@ -1197,7 +1197,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'time_9',
-    theme: '시간',
+    themeId: 'time',
     kanji: '昼間',
     hiragana: 'ひるま',
     meaning: '낮',
@@ -1206,7 +1206,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'time_10',
-    theme: '시간',
+    themeId: 'time',
     kanji: '予定',
     hiragana: 'よてい',
     meaning: '일정',
@@ -1215,7 +1215,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fate_1',
-    theme: '운명과 만남',
+    themeId: 'fate',
     kanji: '出会い',
     hiragana: 'であい',
     meaning: '만남',
@@ -1224,7 +1224,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fate_2',
-    theme: '운명과 만남',
+    themeId: 'fate',
     kanji: '奇跡',
     hiragana: 'きせき',
     meaning: '기적',
@@ -1233,7 +1233,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fate_3',
-    theme: '운명과 만남',
+    themeId: 'fate',
     kanji: '偶然',
     hiragana: 'ぐうぜん',
     meaning: '우연',
@@ -1242,7 +1242,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fate_4',
-    theme: '운명과 만남',
+    themeId: 'fate',
     kanji: '縁',
     hiragana: 'えん',
     meaning: '인연',
@@ -1251,7 +1251,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fate_5',
-    theme: '운명과 만남',
+    themeId: 'fate',
     kanji: '再び',
     hiragana: 'ふたたび',
     meaning: '다시',
@@ -1260,7 +1260,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fate_6',
-    theme: '운명과 만남',
+    themeId: 'fate',
     kanji: '結ばれる',
     hiragana: 'むすばれる',
     meaning: '이어지다',
@@ -1269,7 +1269,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fate_7',
-    theme: '운명과 만남',
+    themeId: 'fate',
     kanji: '運命',
     hiragana: 'うんめい',
     meaning: '운명',
@@ -1278,7 +1278,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fate_8',
-    theme: '운명과 만남',
+    themeId: 'fate',
     kanji: '奇妙',
     hiragana: 'きみょう',
     meaning: '기묘함',
@@ -1287,7 +1287,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fate_9',
-    theme: '운명과 만남',
+    themeId: 'fate',
     kanji: '宿命',
     hiragana: 'しゅくめい',
     meaning: '숙명',
@@ -1296,7 +1296,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fate_10',
-    theme: '운명과 만남',
+    themeId: 'fate',
     kanji: '一瞬',
     hiragana: 'いっしゅん',
     meaning: '한순간',
@@ -1305,7 +1305,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping1_1',
-    theme: '쇼핑1',
+    themeId: 'shopping1',
     kanji: '店',
     hiragana: 'みせ',
     meaning: '가게',
@@ -1314,7 +1314,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping1_2',
-    theme: '쇼핑1',
+    themeId: 'shopping1',
     kanji: '買物',
     hiragana: 'かいもの',
     meaning: '쇼핑',
@@ -1323,7 +1323,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping1_3',
-    theme: '쇼핑1',
+    themeId: 'shopping1',
     kanji: '値段',
     hiragana: 'ねだん',
     meaning: '가격',
@@ -1332,7 +1332,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping1_4',
-    theme: '쇼핑1',
+    themeId: 'shopping1',
     kanji: '支払い',
     hiragana: 'しはらい',
     meaning: '결제',
@@ -1341,7 +1341,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping1_5',
-    theme: '쇼핑1',
+    themeId: 'shopping1',
     kanji: '割引',
     hiragana: 'わりびき',
     meaning: '할인',
@@ -1350,7 +1350,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping1_6',
-    theme: '쇼핑1',
+    themeId: 'shopping1',
     kanji: '服',
     hiragana: 'ふく',
     meaning: '옷',
@@ -1359,7 +1359,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping1_7',
-    theme: '쇼핑1',
+    themeId: 'shopping1',
     kanji: '買う',
     hiragana: 'かう',
     meaning: '사다',
@@ -1368,7 +1368,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping1_8',
-    theme: '쇼핑1',
+    themeId: 'shopping1',
     kanji: '返品',
     hiragana: 'へんぴん',
     meaning: '반품',
@@ -1377,7 +1377,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping1_9',
-    theme: '쇼핑1',
+    themeId: 'shopping1',
     kanji: '送料',
     hiragana: 'そうりょう',
     meaning: '배송료',
@@ -1386,7 +1386,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping1_10',
-    theme: '쇼핑1',
+    themeId: 'shopping1',
     kanji: '受け取る',
     hiragana: 'うけとる',
     meaning: '받다',
@@ -1395,7 +1395,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping2_1',
-    theme: '쇼핑2',
+    themeId: 'shopping2',
     kanji: '買う',
     hiragana: 'かう',
     meaning: '사다',
@@ -1404,7 +1404,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping2_2',
-    theme: '쇼핑2',
+    themeId: 'shopping2',
     kanji: '売る',
     hiragana: 'うる',
     meaning: '팔다',
@@ -1413,7 +1413,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping2_3',
-    theme: '쇼핑2',
+    themeId: 'shopping2',
     kanji: '払う',
     hiragana: 'はらう',
     meaning: '지불하다',
@@ -1422,7 +1422,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping2_4',
-    theme: '쇼핑2',
+    themeId: 'shopping2',
     kanji: '選ぶ',
     hiragana: 'えらぶ',
     meaning: '고르다',
@@ -1431,7 +1431,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping2_5',
-    theme: '쇼핑2',
+    themeId: 'shopping2',
     kanji: '試す',
     hiragana: 'ためす',
     meaning: '시험하다',
@@ -1440,7 +1440,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping2_6',
-    theme: '쇼핑2',
+    themeId: 'shopping2',
     kanji: '包む',
     hiragana: 'つつむ',
     meaning: '포장하다',
@@ -1449,7 +1449,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping2_7',
-    theme: '쇼핑2',
+    themeId: 'shopping2',
     kanji: '値切る',
     hiragana: 'ねぎる',
     meaning: '값을 깎다',
@@ -1458,7 +1458,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping2_8',
-    theme: '쇼핑2',
+    themeId: 'shopping2',
     kanji: '並ぶ',
     hiragana: 'ならぶ',
     meaning: '줄서다',
@@ -1467,7 +1467,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping2_9',
-    theme: '쇼핑2',
+    themeId: 'shopping2',
     kanji: '確認する',
     hiragana: 'かくにんする',
     meaning: '확인하다',
@@ -1476,7 +1476,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'shopping2_10',
-    theme: '쇼핑2',
+    themeId: 'shopping2',
     kanji: '返品する',
     hiragana: 'へんぴんする',
     meaning: '반품하다',
@@ -1485,7 +1485,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fashion_1',
-    theme: '패션',
+    themeId: 'fashion',
     kanji: '洋服',
     hiragana: 'ようふく',
     meaning: '옷',
@@ -1494,7 +1494,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fashion_2',
-    theme: '패션',
+    themeId: 'fashion',
     kanji: '靴',
     hiragana: 'くつ',
     meaning: '신발',
@@ -1503,7 +1503,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fashion_3',
-    theme: '패션',
+    themeId: 'fashion',
     kanji: '帽子',
     hiragana: 'ぼうし',
     meaning: '모자',
@@ -1512,7 +1512,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fashion_4',
-    theme: '패션',
+    themeId: 'fashion',
     kanji: '着物',
     hiragana: 'きもの',
     meaning: '기모노',
@@ -1521,7 +1521,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fashion_5',
-    theme: '패션',
+    themeId: 'fashion',
     kanji: '鞄',
     hiragana: 'かばん',
     meaning: '가방',
@@ -1530,7 +1530,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fashion_6',
-    theme: '패션',
+    themeId: 'fashion',
     kanji: '靴下',
     hiragana: 'くつした',
     meaning: '양말',
@@ -1539,7 +1539,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fashion_7',
-    theme: '패션',
+    themeId: 'fashion',
     kanji: '色',
     hiragana: 'いろ',
     meaning: '색깔',
@@ -1548,7 +1548,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fashion_8',
-    theme: '패션',
+    themeId: 'fashion',
     kanji: 'サイズ',
     hiragana: 'さいず',
     meaning: '사이즈',
@@ -1557,7 +1557,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fashion_9',
-    theme: '패션',
+    themeId: 'fashion',
     kanji: '流行',
     hiragana: 'りゅうこう',
     meaning: '유행',
@@ -1566,7 +1566,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fashion_10',
-    theme: '패션',
+    themeId: 'fashion',
     kanji: '試着',
     hiragana: 'しちゃく',
     meaning: '착용해보기',
@@ -1575,7 +1575,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fantasy_1',
-    theme: '판타지',
+    themeId: 'fantasy',
     kanji: '幽霊',
     hiragana: 'ゆうれい',
     meaning: '유령',
@@ -1584,7 +1584,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fantasy_2',
-    theme: '판타지',
+    themeId: 'fantasy',
     kanji: '魔法',
     hiragana: 'まほう',
     meaning: '마법',
@@ -1593,7 +1593,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fantasy_3',
-    theme: '판타지',
+    themeId: 'fantasy',
     kanji: '妖精',
     hiragana: 'ようせい',
     meaning: '요정',
@@ -1602,7 +1602,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fantasy_4',
-    theme: '판타지',
+    themeId: 'fantasy',
     kanji: '幻想',
     hiragana: 'げんそう',
     meaning: '환상',
@@ -1611,7 +1611,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fantasy_5',
-    theme: '판타지',
+    themeId: 'fantasy',
     kanji: '呪い',
     hiragana: 'のろい',
     meaning: '저주',
@@ -1620,7 +1620,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fantasy_6',
-    theme: '판타지',
+    themeId: 'fantasy',
     kanji: '精霊',
     hiragana: 'せいれい',
     meaning: '정령',
@@ -1629,7 +1629,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fantasy_7',
-    theme: '판타지',
+    themeId: 'fantasy',
     kanji: '異世界',
     hiragana: 'いせかい',
     meaning: '이세계',
@@ -1638,7 +1638,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fantasy_8',
-    theme: '판타지',
+    themeId: 'fantasy',
     kanji: '魂',
     hiragana: 'たましい',
     meaning: '영혼',
@@ -1647,7 +1647,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fantasy_9',
-    theme: '판타지',
+    themeId: 'fantasy',
     kanji: '召喚',
     hiragana: 'しょうかん',
     meaning: '소환',
@@ -1656,7 +1656,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fantasy_10',
-    theme: '판타지',
+    themeId: 'fantasy',
     kanji: '不思議',
     hiragana: 'ふしぎ',
     meaning: '신비함',
@@ -1665,7 +1665,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'sns_1',
-    theme: 'SNS',
+    themeId: 'sns',
     kanji: '写真',
     hiragana: 'しゃしん',
     meaning: '사진',
@@ -1674,7 +1674,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'sns_2',
-    theme: 'SNS',
+    themeId: 'sns',
     kanji: '投稿',
     hiragana: 'とうこう',
     meaning: '게시',
@@ -1683,7 +1683,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'sns_3',
-    theme: 'SNS',
+    themeId: 'sns',
     kanji: '画面',
     hiragana: 'がめん',
     meaning: '화면',
@@ -1692,7 +1692,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'sns_4',
-    theme: 'SNS',
+    themeId: 'sns',
     kanji: '通知',
     hiragana: 'つうち',
     meaning: '알림',
@@ -1701,7 +1701,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'sns_5',
-    theme: 'SNS',
+    themeId: 'sns',
     kanji: '共有',
     hiragana: 'きょうゆう',
     meaning: '공유',
@@ -1710,7 +1710,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'sns_6',
-    theme: 'SNS',
+    themeId: 'sns',
     kanji: '削除',
     hiragana: 'さくじょ',
     meaning: '삭제',
@@ -1719,7 +1719,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'sns_7',
-    theme: 'SNS',
+    themeId: 'sns',
     kanji: '保存',
     hiragana: 'ほぞん',
     meaning: '저장',
@@ -1728,7 +1728,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'sns_8',
-    theme: 'SNS',
+    themeId: 'sns',
     kanji: '自撮り',
     hiragana: 'じどり',
     meaning: '셀카',
@@ -1737,7 +1737,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'sns_9',
-    theme: 'SNS',
+    themeId: 'sns',
     kanji: '友達',
     hiragana: 'ともだち',
     meaning: '친구',
@@ -1746,7 +1746,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'sns_10',
-    theme: 'SNS',
+    themeId: 'sns',
     kanji: '更新',
     hiragana: 'こうしん',
     meaning: '업데이트',
@@ -1755,7 +1755,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'app_1',
-    theme: '앱사용',
+    themeId: 'app',
     kanji: '検索する',
     hiragana: 'けんさくする',
     meaning: '검색하다',
@@ -1764,7 +1764,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'app_2',
-    theme: '앱사용',
+    themeId: 'app',
     kanji: '登録する',
     hiragana: 'とうろくする',
     meaning: '등록하다',
@@ -1773,7 +1773,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'app_3',
-    theme: '앱사용',
+    themeId: 'app',
     kanji: '共有する',
     hiragana: 'きょうゆうする',
     meaning: '공유하다',
@@ -1782,7 +1782,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'app_4',
-    theme: '앱사용',
+    themeId: 'app',
     kanji: '削除する',
     hiragana: 'さくじょする',
     meaning: '삭제하다',
@@ -1791,7 +1791,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'app_5',
-    theme: '앱사용',
+    themeId: 'app',
     kanji: '保存する',
     hiragana: 'ほぞんする',
     meaning: '저장하다',
@@ -1800,7 +1800,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'app_6',
-    theme: '앱사용',
+    themeId: 'app',
     kanji: '変更する',
     hiragana: 'へんこうする',
     meaning: '변경하다',
@@ -1809,7 +1809,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'app_7',
-    theme: '앱사용',
+    themeId: 'app',
     kanji: '閲覧する',
     hiragana: 'えつらんする',
     meaning: '열람하다',
@@ -1818,7 +1818,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'app_8',
-    theme: '앱사용',
+    themeId: 'app',
     kanji: '再生する',
     hiragana: 'さいせいする',
     meaning: '재생하다',
@@ -1827,7 +1827,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'app_9',
-    theme: '앱사용',
+    themeId: 'app',
     kanji: '応募する',
     hiragana: 'おうぼする',
     meaning: '응모하다',
@@ -1836,7 +1836,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'app_10',
-    theme: '앱사용',
+    themeId: 'app',
     kanji: '設定する',
     hiragana: 'せっていする',
     meaning: '설정하다',
@@ -1845,7 +1845,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'movie_1',
-    theme: '영화',
+    themeId: 'movie',
     kanji: '映画',
     hiragana: 'えいが',
     meaning: '영화',
@@ -1854,7 +1854,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'movie_2',
-    theme: '영화',
+    themeId: 'movie',
     kanji: '監督',
     hiragana: 'かんとく',
     meaning: '감독',
@@ -1863,7 +1863,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'movie_3',
-    theme: '영화',
+    themeId: 'movie',
     kanji: '主役',
     hiragana: 'しゅやく',
     meaning: '주인공',
@@ -1872,7 +1872,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'movie_4',
-    theme: '영화',
+    themeId: 'movie',
     kanji: '脚本',
     hiragana: 'きゃくほん',
     meaning: '각본',
@@ -1881,7 +1881,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'movie_5',
-    theme: '영화',
+    themeId: 'movie',
     kanji: '劇場',
     hiragana: 'げきじょう',
     meaning: '극장',
@@ -1890,7 +1890,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'movie_6',
-    theme: '영화',
+    themeId: 'movie',
     kanji: '音楽',
     hiragana: 'おんがく',
     meaning: '음악',
@@ -1899,7 +1899,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'movie_7',
-    theme: '영화',
+    themeId: 'movie',
     kanji: '予告',
     hiragana: 'よこく',
     meaning: '예고편',
@@ -1908,7 +1908,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'movie_8',
-    theme: '영화',
+    themeId: 'movie',
     kanji: '撮影',
     hiragana: 'さつえい',
     meaning: '촬영',
@@ -1917,7 +1917,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'movie_9',
-    theme: '영화',
+    themeId: 'movie',
     kanji: '映像',
     hiragana: 'えいぞう',
     meaning: '영상',
@@ -1926,7 +1926,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'movie_10',
-    theme: '영화',
+    themeId: 'movie',
     kanji: '鑑賞',
     hiragana: 'かんしょう',
     meaning: '감상',
@@ -1935,7 +1935,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fateworld_1',
-    theme: '운명 및 세계관',
+    themeId: 'fateworld',
     kanji: '世界',
     hiragana: 'せかい',
     meaning: '세계',
@@ -1944,7 +1944,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fateworld_2',
-    theme: '운명 및 세계관',
+    themeId: 'fateworld',
     kanji: '運命',
     hiragana: 'うんめい',
     meaning: '운명',
@@ -1953,7 +1953,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fateworld_3',
-    theme: '운명 및 세계관',
+    themeId: 'fateworld',
     kanji: '奇跡',
     hiragana: 'きせき',
     meaning: '기적',
@@ -1962,7 +1962,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fateworld_4',
-    theme: '운명 및 세계관',
+    themeId: 'fateworld',
     kanji: '神',
     hiragana: 'かみ',
     meaning: '신',
@@ -1971,7 +1971,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fateworld_5',
-    theme: '운명 및 세계관',
+    themeId: 'fateworld',
     kanji: '魔法',
     hiragana: 'まほう',
     meaning: '마법',
@@ -1980,7 +1980,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fateworld_6',
-    theme: '운명 및 세계관',
+    themeId: 'fateworld',
     kanji: '魂',
     hiragana: 'たましい',
     meaning: '영혼',
@@ -1989,7 +1989,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fateworld_7',
-    theme: '운명 및 세계관',
+    themeId: 'fateworld',
     kanji: '才能',
     hiragana: 'さいのう',
     meaning: '재능',
@@ -1998,7 +1998,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fateworld_8',
-    theme: '운명 및 세계관',
+    themeId: 'fateworld',
     kanji: '宿命',
     hiragana: 'しゅくめい',
     meaning: '숙명',
@@ -2007,7 +2007,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fateworld_9',
-    theme: '운명 및 세계관',
+    themeId: 'fateworld',
     kanji: '異世界',
     hiragana: 'いせかい',
     meaning: '이세계',
@@ -2016,7 +2016,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'fateworld_10',
-    theme: '운명 및 세계관',
+    themeId: 'fateworld',
     kanji: '続編',
     hiragana: 'ぞくへん',
     meaning: '후속편',
@@ -2025,7 +2025,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'family_1',
-    theme: '가족',
+    themeId: 'family',
     kanji: '父',
     hiragana: 'ちち',
     meaning: '아버지',
@@ -2034,7 +2034,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'family_2',
-    theme: '가족',
+    themeId: 'family',
     kanji: '母',
     hiragana: 'はは',
     meaning: '어머니',
@@ -2043,7 +2043,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'family_3',
-    theme: '가족',
+    themeId: 'family',
     kanji: '兄',
     hiragana: 'あに',
     meaning: '형/오빠',
@@ -2052,7 +2052,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'family_4',
-    theme: '가족',
+    themeId: 'family',
     kanji: '妹',
     hiragana: 'いもうと',
     meaning: '여동생',
@@ -2061,7 +2061,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'family_5',
-    theme: '가족',
+    themeId: 'family',
     kanji: '姉',
     hiragana: 'あね',
     meaning: '언니/누나',
@@ -2070,7 +2070,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'family_6',
-    theme: '가족',
+    themeId: 'family',
     kanji: '祖父',
     hiragana: 'そふ',
     meaning: '할아버지',
@@ -2079,7 +2079,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'family_7',
-    theme: '가족',
+    themeId: 'family',
     kanji: '祖母',
     hiragana: 'そぼ',
     meaning: '할머니',
@@ -2088,7 +2088,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'family_8',
-    theme: '가족',
+    themeId: 'family',
     kanji: '息子',
     hiragana: 'むすこ',
     meaning: '아들',
@@ -2097,7 +2097,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'family_9',
-    theme: '가족',
+    themeId: 'family',
     kanji: '娘',
     hiragana: 'むすめ',
     meaning: '딸',
@@ -2106,7 +2106,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'family_10',
-    theme: '가족',
+    themeId: 'family',
     kanji: '家族',
     hiragana: 'かぞく',
     meaning: '가족',
@@ -2115,7 +2115,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion1_1',
-    theme: '감정1',
+    themeId: 'emotion1',
     kanji: '喜び',
     hiragana: 'よろこび',
     meaning: '기쁨',
@@ -2124,7 +2124,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion1_2',
-    theme: '감정1',
+    themeId: 'emotion1',
     kanji: '怒り',
     hiragana: 'いかり',
     meaning: '분노',
@@ -2133,7 +2133,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion1_3',
-    theme: '감정1',
+    themeId: 'emotion1',
     kanji: '悲しみ',
     hiragana: 'かなしみ',
     meaning: '슬픔',
@@ -2142,7 +2142,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion1_4',
-    theme: '감정1',
+    themeId: 'emotion1',
     kanji: '不安',
     hiragana: 'ふあん',
     meaning: '불안',
@@ -2151,7 +2151,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion1_5',
-    theme: '감정1',
+    themeId: 'emotion1',
     kanji: '緊張',
     hiragana: 'きんちょう',
     meaning: '긴장감',
@@ -2160,7 +2160,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion1_6',
-    theme: '감정1',
+    themeId: 'emotion1',
     kanji: '焦り',
     hiragana: 'あせり',
     meaning: '초조함',
@@ -2169,7 +2169,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion1_7',
-    theme: '감정1',
+    themeId: 'emotion1',
     kanji: '落ち着き',
     hiragana: 'おちつき',
     meaning: '차분함',
@@ -2178,7 +2178,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion1_8',
-    theme: '감정1',
+    themeId: 'emotion1',
     kanji: '驚き',
     hiragana: 'おどろき',
     meaning: '놀람',
@@ -2187,7 +2187,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion1_9',
-    theme: '감정1',
+    themeId: 'emotion1',
     kanji: '満足',
     hiragana: 'まんぞく',
     meaning: '만족',
@@ -2196,7 +2196,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion1_10',
-    theme: '감정1',
+    themeId: 'emotion1',
     kanji: '恐怖',
     hiragana: 'きょうふ',
     meaning: '공포',
@@ -2205,7 +2205,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion2_1',
-    theme: '감정2',
+    themeId: 'emotion2',
     kanji: '喜ぶ',
     hiragana: 'よろこぶ',
     meaning: '기뻐하다',
@@ -2214,7 +2214,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion2_2',
-    theme: '감정2',
+    themeId: 'emotion2',
     kanji: '怒る',
     hiragana: 'おこる',
     meaning: '화내다',
@@ -2223,7 +2223,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion2_3',
-    theme: '감정2',
+    themeId: 'emotion2',
     kanji: '泣く',
     hiragana: 'なく',
     meaning: '울다',
@@ -2232,7 +2232,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion2_4',
-    theme: '감정2',
+    themeId: 'emotion2',
     kanji: '笑う',
     hiragana: 'わらう',
     meaning: '웃다',
@@ -2241,7 +2241,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion2_5',
-    theme: '감정2',
+    themeId: 'emotion2',
     kanji: '驚く',
     hiragana: 'おどろく',
     meaning: '놀라다',
@@ -2250,7 +2250,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion2_6',
-    theme: '감정2',
+    themeId: 'emotion2',
     kanji: '愛する',
     hiragana: 'あいする',
     meaning: '사랑하다',
@@ -2259,7 +2259,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion2_7',
-    theme: '감정2',
+    themeId: 'emotion2',
     kanji: '信じる',
     hiragana: 'しんじる',
     meaning: '믿다',
@@ -2268,7 +2268,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion2_8',
-    theme: '감정2',
+    themeId: 'emotion2',
     kanji: '落ち込む',
     hiragana: 'おちこむ',
     meaning: '낙담하다',
@@ -2277,7 +2277,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion2_9',
-    theme: '감정2',
+    themeId: 'emotion2',
     kanji: '感謝する',
     hiragana: 'かんしゃする',
     meaning: '감사하다',
@@ -2286,7 +2286,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion2_10',
-    theme: '감정2',
+    themeId: 'emotion2',
     kanji: '恐れる',
     hiragana: 'おそれる',
     meaning: '두려워하다',
@@ -2295,7 +2295,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion3_1',
-    theme: '감정3',
+    themeId: 'emotion3',
     kanji: '嬉しい',
     hiragana: 'うれしい',
     meaning: '기쁘다',
@@ -2304,7 +2304,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion3_2',
-    theme: '감정3',
+    themeId: 'emotion3',
     kanji: '悲しい',
     hiragana: 'かなしい',
     meaning: '슬프다',
@@ -2313,7 +2313,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion3_3',
-    theme: '감정3',
+    themeId: 'emotion3',
     kanji: '怖い',
     hiragana: 'こわい',
     meaning: '무섭다',
@@ -2322,7 +2322,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion3_4',
-    theme: '감정3',
+    themeId: 'emotion3',
     kanji: '楽しい',
     hiragana: 'たのしい',
     meaning: '즐겁다',
@@ -2331,7 +2331,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion3_5',
-    theme: '감정3',
+    themeId: 'emotion3',
     kanji: '寂しい',
     hiragana: 'さびしい',
     meaning: '외롭다',
@@ -2340,7 +2340,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion3_6',
-    theme: '감정3',
+    themeId: 'emotion3',
     kanji: '恥ずかしい',
     hiragana: 'はずかしい',
     meaning: '부끄럽다',
@@ -2349,7 +2349,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion3_7',
-    theme: '감정3',
+    themeId: 'emotion3',
     kanji: '面倒くさい',
     hiragana: 'めんどうくさい',
     meaning: '귀찮다',
@@ -2358,7 +2358,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion3_8',
-    theme: '감정3',
+    themeId: 'emotion3',
     kanji: '心配だ',
     hiragana: 'しんぱいだ',
     meaning: '걱정되다',
@@ -2367,7 +2367,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion3_9',
-    theme: '감정3',
+    themeId: 'emotion3',
     kanji: '不安だ',
     hiragana: 'ふあんだ',
     meaning: '불안하다',
@@ -2376,7 +2376,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'emotion3_10',
-    theme: '감정3',
+    themeId: 'emotion3',
     kanji: '幸せだ',
     hiragana: 'しあわせだ',
     meaning: '행복하다',
@@ -2385,7 +2385,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'health_1',
-    theme: '건강관리',
+    themeId: 'health',
     kanji: '健康',
     hiragana: 'けんこう',
     meaning: '건강',
@@ -2394,7 +2394,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'health_2',
-    theme: '건강관리',
+    themeId: 'health',
     kanji: '運動',
     hiragana: 'うんどう',
     meaning: '운동',
@@ -2403,7 +2403,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'health_3',
-    theme: '건강관리',
+    themeId: 'health',
     kanji: '体調',
     hiragana: 'たいちょう',
     meaning: '몸 상태',
@@ -2412,7 +2412,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'health_4',
-    theme: '건강관리',
+    themeId: 'health',
     kanji: '検査',
     hiragana: 'けんさ',
     meaning: '검사',
@@ -2421,7 +2421,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'health_5',
-    theme: '건강관리',
+    themeId: 'health',
     kanji: '睡眠',
     hiragana: 'すいみん',
     meaning: '수면',
@@ -2430,7 +2430,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'health_6',
-    theme: '건강관리',
+    themeId: 'health',
     kanji: '栄養',
     hiragana: 'えいよう',
     meaning: '영양',
@@ -2439,7 +2439,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'health_7',
-    theme: '건강관리',
+    themeId: 'health',
     kanji: '食事',
     hiragana: 'しょくじ',
     meaning: '식사',
@@ -2448,7 +2448,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'health_8',
-    theme: '건강관리',
+    themeId: 'health',
     kanji: '禁煙',
     hiragana: 'きんえん',
     meaning: '금연',
@@ -2457,7 +2457,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'health_9',
-    theme: '건강관리',
+    themeId: 'health',
     kanji: '疲労',
     hiragana: 'ひろう',
     meaning: '피로',
@@ -2466,7 +2466,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'health_10',
-    theme: '건강관리',
+    themeId: 'health',
     kanji: '風邪',
     hiragana: 'かぜ',
     meaning: '감기',
@@ -2475,7 +2475,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'exercise_1',
-    theme: '운동',
+    themeId: 'exercise',
     kanji: '運動',
     hiragana: 'うんどう',
     meaning: '운동',
@@ -2484,7 +2484,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'exercise_2',
-    theme: '운동',
+    themeId: 'exercise',
     kanji: 'ジム',
     hiragana: 'じむ',
     meaning: '체육관',
@@ -2493,7 +2493,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'exercise_3',
-    theme: '운동',
+    themeId: 'exercise',
     kanji: 'ランニング',
     hiragana: 'らんにんぐ',
     meaning: '달리기',
@@ -2502,7 +2502,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'exercise_4',
-    theme: '운동',
+    themeId: 'exercise',
     kanji: 'サッカー',
     hiragana: 'さっかー',
     meaning: '축구',
@@ -2511,7 +2511,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'exercise_5',
-    theme: '운동',
+    themeId: 'exercise',
     kanji: '野球',
     hiragana: 'やきゅう',
     meaning: '야구',
@@ -2520,7 +2520,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'exercise_6',
-    theme: '운동',
+    themeId: 'exercise',
     kanji: '水泳',
     hiragana: 'すいえい',
     meaning: '수영',
@@ -2529,7 +2529,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'exercise_7',
-    theme: '운동',
+    themeId: 'exercise',
     kanji: 'バスケットボール',
     hiragana: 'ばすけっとぼーる',
     meaning: '농구',
@@ -2538,7 +2538,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'exercise_8',
-    theme: '운동',
+    themeId: 'exercise',
     kanji: 'スポーツ',
     hiragana: 'すぽーつ',
     meaning: '스포츠',
@@ -2547,7 +2547,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'exercise_9',
-    theme: '운동',
+    themeId: 'exercise',
     kanji: 'トレーニング',
     hiragana: 'とれーにんぐ',
     meaning: '훈련',
@@ -2556,7 +2556,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'exercise_10',
-    theme: '운동',
+    themeId: 'exercise',
     kanji: '瞑想',
     hiragana: 'めいそう',
     meaning: '명상',
@@ -2565,7 +2565,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'healthbeauty_1',
-    theme: '헬스&뷰티',
+    themeId: 'healthbeauty',
     kanji: '化粧品',
     hiragana: 'けしょうひん',
     meaning: '화장품',
@@ -2574,7 +2574,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'healthbeauty_2',
-    theme: '헬스&뷰티',
+    themeId: 'healthbeauty',
     kanji: '肌',
     hiragana: 'はだ',
     meaning: '피부',
@@ -2583,7 +2583,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'healthbeauty_3',
-    theme: '헬스&뷰티',
+    themeId: 'healthbeauty',
     kanji: '美容',
     hiragana: 'びよう',
     meaning: '미용',
@@ -2592,7 +2592,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'healthbeauty_4',
-    theme: '헬스&뷰티',
+    themeId: 'healthbeauty',
     kanji: '髪型',
     hiragana: 'かみがた',
     meaning: '헤어스타일',
@@ -2601,7 +2601,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'healthbeauty_5',
-    theme: '헬스&뷰티',
+    themeId: 'healthbeauty',
     kanji: '洗顔',
     hiragana: 'せんがん',
     meaning: '세안',
@@ -2610,7 +2610,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'healthbeauty_6',
-    theme: '헬스&뷰티',
+    themeId: 'healthbeauty',
     kanji: '日焼け',
     hiragana: 'ひやけ',
     meaning: '햇볕에 탐',
@@ -2619,7 +2619,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'healthbeauty_7',
-    theme: '헬스&뷰티',
+    themeId: 'healthbeauty',
     kanji: '香水',
     hiragana: 'こうすい',
     meaning: '향수',
@@ -2628,7 +2628,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'healthbeauty_8',
-    theme: '헬스&뷰티',
+    themeId: 'healthbeauty',
     kanji: '化粧水',
     hiragana: 'けしょうすい',
     meaning: '화장수',
@@ -2637,7 +2637,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'healthbeauty_9',
-    theme: '헬스&뷰티',
+    themeId: 'healthbeauty',
     kanji: '美白',
     hiragana: 'びはく',
     meaning: '미백',
@@ -2646,7 +2646,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'healthbeauty_10',
-    theme: '헬스&뷰티',
+    themeId: 'healthbeauty',
     kanji: '脱毛',
     hiragana: 'だつもう',
     meaning: '제모',
@@ -2655,7 +2655,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'growth_1',
-    theme: '성장과 극복',
+    themeId: 'growth',
     kanji: '成長',
     hiragana: 'せいちょう',
     meaning: '성장',
@@ -2664,7 +2664,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'growth_2',
-    theme: '성장과 극복',
+    themeId: 'growth',
     kanji: '学ぶ',
     hiragana: 'まなぶ',
     meaning: '배우다',
@@ -2673,7 +2673,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'growth_3',
-    theme: '성장과 극복',
+    themeId: 'growth',
     kanji: '超える',
     hiragana: 'こえる',
     meaning: '넘다',
@@ -2682,7 +2682,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'growth_4',
-    theme: '성장과 극복',
+    themeId: 'growth',
     kanji: '我慢',
     hiragana: 'がまん',
     meaning: '참다',
@@ -2691,7 +2691,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'growth_5',
-    theme: '성장과 극복',
+    themeId: 'growth',
     kanji: '頑張る',
     hiragana: 'がんばる',
     meaning: '열심히 하다',
@@ -2700,7 +2700,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'growth_6',
-    theme: '성장과 극복',
+    themeId: 'growth',
     kanji: '克服',
     hiragana: 'こくふく',
     meaning: '극복',
@@ -2709,7 +2709,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'growth_7',
-    theme: '성장과 극복',
+    themeId: 'growth',
     kanji: '続ける',
     hiragana: 'つづける',
     meaning: '계속하다',
@@ -2718,7 +2718,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'growth_8',
-    theme: '성장과 극복',
+    themeId: 'growth',
     kanji: '限界',
     hiragana: 'げんかい',
     meaning: '한계',
@@ -2727,7 +2727,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'growth_9',
-    theme: '성장과 극복',
+    themeId: 'growth',
     kanji: '強くなる',
     hiragana: 'つよくなる',
     meaning: '강해지다',
@@ -2736,7 +2736,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'growth_10',
-    theme: '성장과 극복',
+    themeId: 'growth',
     kanji: '立ち上がる',
     hiragana: 'たちあがる',
     meaning: '일어나다',
@@ -2745,7 +2745,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'study_1',
-    theme: '공부 및 암기',
+    themeId: 'study',
     kanji: '覚える',
     hiragana: 'おぼえる',
     meaning: '외우다',
@@ -2754,7 +2754,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'study_2',
-    theme: '공부 및 암기',
+    themeId: 'study',
     kanji: '忘れる',
     hiragana: 'わすれる',
     meaning: '잊다',
@@ -2763,7 +2763,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'study_3',
-    theme: '공부 및 암기',
+    themeId: 'study',
     kanji: '書く',
     hiragana: 'かく',
     meaning: '쓰다',
@@ -2772,7 +2772,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'study_4',
-    theme: '공부 및 암기',
+    themeId: 'study',
     kanji: '読む',
     hiragana: 'よむ',
     meaning: '읽다',
@@ -2781,7 +2781,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'study_5',
-    theme: '공부 및 암기',
+    themeId: 'study',
     kanji: '学ぶ',
     hiragana: 'まなぶ',
     meaning: '배우다',
@@ -2790,7 +2790,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'study_6',
-    theme: '공부 및 암기',
+    themeId: 'study',
     kanji: '試す',
     hiragana: 'ためす',
     meaning: '시험하다',
@@ -2799,7 +2799,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'study_7',
-    theme: '공부 및 암기',
+    themeId: 'study',
     kanji: '練習する',
     hiragana: 'れんしゅうする',
     meaning: '연습하다',
@@ -2808,7 +2808,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'study_8',
-    theme: '공부 및 암기',
+    themeId: 'study',
     kanji: '復習する',
     hiragana: 'ふくしゅうする',
     meaning: '복습하다',
@@ -2817,7 +2817,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'study_9',
-    theme: '공부 및 암기',
+    themeId: 'study',
     kanji: '習う',
     hiragana: 'ならう',
     meaning: '배우다',
@@ -2826,7 +2826,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'study_10',
-    theme: '공부 및 암기',
+    themeId: 'study',
     kanji: '記録する',
     hiragana: 'きろくする',
     meaning: '기록하다',
@@ -2835,7 +2835,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'school_1',
-    theme: '학교',
+    themeId: 'school',
     kanji: '学校',
     hiragana: 'がっこう',
     meaning: '학교',
@@ -2844,7 +2844,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'school_2',
-    theme: '학교',
+    themeId: 'school',
     kanji: '教室',
     hiragana: 'きょうしつ',
     meaning: '교실',
@@ -2853,7 +2853,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'school_3',
-    theme: '학교',
+    themeId: 'school',
     kanji: '先生',
     hiragana: 'せんせい',
     meaning: '선생님',
@@ -2862,7 +2862,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'school_4',
-    theme: '학교',
+    themeId: 'school',
     kanji: '生徒',
     hiragana: 'せいと',
     meaning: '학생',
@@ -2871,7 +2871,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'school_5',
-    theme: '학교',
+    themeId: 'school',
     kanji: '宿題',
     hiragana: 'しゅくだい',
     meaning: '숙제',
@@ -2880,7 +2880,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'school_6',
-    theme: '학교',
+    themeId: 'school',
     kanji: '試験',
     hiragana: 'しけん',
     meaning: '시험',
@@ -2889,7 +2889,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'school_7',
-    theme: '학교',
+    themeId: 'school',
     kanji: '教科書',
     hiragana: 'きょうかしょ',
     meaning: '교과서',
@@ -2898,7 +2898,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'school_8',
-    theme: '학교',
+    themeId: 'school',
     kanji: '授業',
     hiragana: 'じゅぎょう',
     meaning: '수업',
@@ -2907,7 +2907,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'school_9',
-    theme: '학교',
+    themeId: 'school',
     kanji: '遅刻',
     hiragana: 'ちこく',
     meaning: '지각',
@@ -2916,7 +2916,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'school_10',
-    theme: '학교',
+    themeId: 'school',
     kanji: '入学',
     hiragana: 'にゅうがく',
     meaning: '입학',
@@ -2925,7 +2925,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'selfdev_1',
-    theme: '자기계발',
+    themeId: 'selfdev',
     kanji: '勉強',
     hiragana: 'べんきょう',
     meaning: '공부',
@@ -2934,7 +2934,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'selfdev_2',
-    theme: '자기계발',
+    themeId: 'selfdev',
     kanji: '習慣',
     hiragana: 'しゅうかん',
     meaning: '습관',
@@ -2943,7 +2943,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'selfdev_3',
-    theme: '자기계발',
+    themeId: 'selfdev',
     kanji: '目標',
     hiragana: 'もくひょう',
     meaning: '목표',
@@ -2952,7 +2952,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'selfdev_4',
-    theme: '자기계발',
+    themeId: 'selfdev',
     kanji: '計画',
     hiragana: 'けいかく',
     meaning: '계획',
@@ -2961,7 +2961,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'selfdev_5',
-    theme: '자기계발',
+    themeId: 'selfdev',
     kanji: '練習',
     hiragana: 'れんしゅう',
     meaning: '연습',
@@ -2970,7 +2970,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'selfdev_6',
-    theme: '자기계발',
+    themeId: 'selfdev',
     kanji: '成長',
     hiragana: 'せいちょう',
     meaning: '성장',
@@ -2979,7 +2979,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'selfdev_7',
-    theme: '자기계발',
+    themeId: 'selfdev',
     kanji: '努力',
     hiragana: 'どりょく',
     meaning: '노력',
@@ -2988,7 +2988,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'selfdev_8',
-    theme: '자기계발',
+    themeId: 'selfdev',
     kanji: '集中',
     hiragana: 'しゅうちゅう',
     meaning: '집중',
@@ -2997,7 +2997,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'selfdev_9',
-    theme: '자기계발',
+    themeId: 'selfdev',
     kanji: '習得',
     hiragana: 'しゅうとく',
     meaning: '습득',
@@ -3006,7 +3006,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'selfdev_10',
-    theme: '자기계발',
+    themeId: 'selfdev',
     kanji: '理解',
     hiragana: 'りかい',
     meaning: '이해',
@@ -3015,7 +3015,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'friend_1',
-    theme: '우정',
+    themeId: 'friend',
     kanji: '友達',
     hiragana: 'ともだち',
     meaning: '친구',
@@ -3024,7 +3024,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'friend_2',
-    theme: '우정',
+    themeId: 'friend',
     kanji: '信じる',
     hiragana: 'しんじる',
     meaning: '믿다',
@@ -3033,7 +3033,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'friend_3',
-    theme: '우정',
+    themeId: 'friend',
     kanji: '仲間',
     hiragana: 'なかま',
     meaning: '동료',
@@ -3042,7 +3042,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'friend_4',
-    theme: '우정',
+    themeId: 'friend',
     kanji: '支える',
     hiragana: 'ささえる',
     meaning: '지지하다',
@@ -3051,7 +3051,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'friend_5',
-    theme: '우정',
+    themeId: 'friend',
     kanji: '一緒',
     hiragana: 'いっしょ',
     meaning: '함께',
@@ -3060,7 +3060,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'friend_6',
-    theme: '우정',
+    themeId: 'friend',
     kanji: '手をつなぐ',
     hiragana: 'てをつなぐ',
     meaning: '손을 잡다',
@@ -3069,7 +3069,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'friend_7',
-    theme: '우정',
+    themeId: 'friend',
     kanji: '絆',
     hiragana: 'きずな',
     meaning: '유대',
@@ -3078,7 +3078,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'friend_8',
-    theme: '우정',
+    themeId: 'friend',
     kanji: '思い出',
     hiragana: 'おもいで',
     meaning: '추억',
@@ -3087,7 +3087,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'friend_9',
-    theme: '우정',
+    themeId: 'friend',
     kanji: '忘れない',
     hiragana: 'わすれない',
     meaning: '잊지 않다',
@@ -3096,7 +3096,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'friend_10',
-    theme: '우정',
+    themeId: 'friend',
     kanji: '笑顔',
     hiragana: 'えがお',
     meaning: '웃는 얼굴',
@@ -3105,7 +3105,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company1_1',
-    theme: '회사1',
+    themeId: 'company1',
     kanji: '会社',
     hiragana: 'かいしゃ',
     meaning: '회사',
@@ -3114,7 +3114,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company1_2',
-    theme: '회사1',
+    themeId: 'company1',
     kanji: '上司',
     hiragana: 'じょうし',
     meaning: '상사',
@@ -3123,7 +3123,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company1_3',
-    theme: '회사1',
+    themeId: 'company1',
     kanji: '部長',
     hiragana: 'ぶちょう',
     meaning: '부장',
@@ -3132,7 +3132,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company1_4',
-    theme: '회사1',
+    themeId: 'company1',
     kanji: '会議',
     hiragana: 'かいぎ',
     meaning: '회의',
@@ -3141,7 +3141,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company1_5',
-    theme: '회사1',
+    themeId: 'company1',
     kanji: '仕事',
     hiragana: 'しごと',
     meaning: '일',
@@ -3150,7 +3150,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company1_6',
-    theme: '회사1',
+    themeId: 'company1',
     kanji: '同僚',
     hiragana: 'どうりょう',
     meaning: '동료',
@@ -3159,7 +3159,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company1_7',
-    theme: '회사1',
+    themeId: 'company1',
     kanji: '給料',
     hiragana: 'きゅうりょう',
     meaning: '급여',
@@ -3168,7 +3168,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company1_8',
-    theme: '회사1',
+    themeId: 'company1',
     kanji: '残業',
     hiragana: 'ざんぎょう',
     meaning: '잔업',
@@ -3177,7 +3177,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company1_9',
-    theme: '회사1',
+    themeId: 'company1',
     kanji: '出張',
     hiragana: 'しゅっちょう',
     meaning: '출장',
@@ -3186,7 +3186,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company1_10',
-    theme: '회사1',
+    themeId: 'company1',
     kanji: '退社',
     hiragana: 'たいしゃ',
     meaning: '퇴사',
@@ -3195,7 +3195,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company2_1',
-    theme: '회사2',
+    themeId: 'company2',
     kanji: '出勤',
     hiragana: 'しゅっきん',
     meaning: '출근',
@@ -3204,7 +3204,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company2_2',
-    theme: '회사2',
+    themeId: 'company2',
     kanji: '会議',
     hiragana: 'かいぎ',
     meaning: '회의',
@@ -3213,7 +3213,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company2_3',
-    theme: '회사2',
+    themeId: 'company2',
     kanji: '部長',
     hiragana: 'ぶちょう',
     meaning: '부장',
@@ -3222,7 +3222,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company2_4',
-    theme: '회사2',
+    themeId: 'company2',
     kanji: '報告',
     hiragana: 'ほうこく',
     meaning: '보고',
@@ -3231,7 +3231,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company2_5',
-    theme: '회사2',
+    themeId: 'company2',
     kanji: '残業',
     hiragana: 'ざんぎょう',
     meaning: '야근',
@@ -3240,7 +3240,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company2_6',
-    theme: '회사2',
+    themeId: 'company2',
     kanji: '退社',
     hiragana: 'たいしゃ',
     meaning: '퇴사',
@@ -3249,7 +3249,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company2_7',
-    theme: '회사2',
+    themeId: 'company2',
     kanji: '勤務',
     hiragana: 'きんむ',
     meaning: '근무',
@@ -3258,7 +3258,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company2_8',
-    theme: '회사2',
+    themeId: 'company2',
     kanji: '給与',
     hiragana: 'きゅうよ',
     meaning: '급여',
@@ -3267,7 +3267,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company2_9',
-    theme: '회사2',
+    themeId: 'company2',
     kanji: '資料',
     hiragana: 'しりょう',
     meaning: '자료',
@@ -3276,7 +3276,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'company2_10',
-    theme: '회사2',
+    themeId: 'company2',
     kanji: '同僚',
     hiragana: 'どうりょう',
     meaning: '동료',
@@ -3285,7 +3285,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily1_1',
-    theme: '일상1',
+    themeId: 'daily1',
     kanji: '家',
     hiragana: 'いえ',
     meaning: '집',
@@ -3294,7 +3294,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily1_2',
-    theme: '일상1',
+    themeId: 'daily1',
     kanji: '仕事',
     hiragana: 'しごと',
     meaning: '일',
@@ -3303,7 +3303,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily1_3',
-    theme: '일상1',
+    themeId: 'daily1',
     kanji: '食事',
     hiragana: 'しょくじ',
     meaning: '식사',
@@ -3312,7 +3312,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily1_4',
-    theme: '일상1',
+    themeId: 'daily1',
     kanji: '起きる',
     hiragana: 'おきる',
     meaning: '일어나다',
@@ -3321,7 +3321,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily1_5',
-    theme: '일상1',
+    themeId: 'daily1',
     kanji: '寝る',
     hiragana: 'ねる',
     meaning: '자다',
@@ -3330,7 +3330,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily1_6',
-    theme: '일상1',
+    themeId: 'daily1',
     kanji: '洗濯',
     hiragana: 'せんたく',
     meaning: '세탁',
@@ -3339,7 +3339,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily1_7',
-    theme: '일상1',
+    themeId: 'daily1',
     kanji: '料理',
     hiragana: 'りょうり',
     meaning: '요리',
@@ -3348,7 +3348,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily1_8',
-    theme: '일상1',
+    themeId: 'daily1',
     kanji: '買う',
     hiragana: 'かう',
     meaning: '사다',
@@ -3357,7 +3357,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily1_9',
-    theme: '일상1',
+    themeId: 'daily1',
     kanji: '散歩',
     hiragana: 'さんぽ',
     meaning: '산책',
@@ -3366,7 +3366,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily1_10',
-    theme: '일상1',
+    themeId: 'daily1',
     kanji: '映画',
     hiragana: 'えいが',
     meaning: '영화',
@@ -3375,7 +3375,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily2_1',
-    theme: '일상2',
+    themeId: 'daily2',
     kanji: '起きる',
     hiragana: 'おきる',
     meaning: '일어나다',
@@ -3384,7 +3384,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily2_2',
-    theme: '일상2',
+    themeId: 'daily2',
     kanji: '寝る',
     hiragana: 'ねる',
     meaning: '자다',
@@ -3393,7 +3393,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily2_3',
-    theme: '일상2',
+    themeId: 'daily2',
     kanji: '歩く',
     hiragana: 'あるく',
     meaning: '걷다',
@@ -3402,7 +3402,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily2_4',
-    theme: '일상2',
+    themeId: 'daily2',
     kanji: '座る',
     hiragana: 'すわる',
     meaning: '앉다',
@@ -3411,7 +3411,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily2_5',
-    theme: '일상2',
+    themeId: 'daily2',
     kanji: '洗う',
     hiragana: 'あらう',
     meaning: '씻다',
@@ -3420,7 +3420,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily2_6',
-    theme: '일상2',
+    themeId: 'daily2',
     kanji: '着る',
     hiragana: 'きる',
     meaning: '입다',
@@ -3429,7 +3429,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily2_7',
-    theme: '일상2',
+    themeId: 'daily2',
     kanji: '出かける',
     hiragana: 'でかける',
     meaning: '외출하다',
@@ -3438,7 +3438,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily2_8',
-    theme: '일상2',
+    themeId: 'daily2',
     kanji: '帰る',
     hiragana: 'かえる',
     meaning: '돌아가다',
@@ -3447,7 +3447,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily2_9',
-    theme: '일상2',
+    themeId: 'daily2',
     kanji: '降りる',
     hiragana: 'おりる',
     meaning: '내리다',
@@ -3456,7 +3456,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'daily2_10',
-    theme: '일상2',
+    themeId: 'daily2',
     kanji: '乗る',
     hiragana: 'のる',
     meaning: '타다',
@@ -3465,7 +3465,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'eval_1',
-    theme: '평가',
+    themeId: 'eval',
     kanji: '簡単だ',
     hiragana: 'かんたんだ',
     meaning: '간단하다',
@@ -3474,7 +3474,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'eval_2',
-    theme: '평가',
+    themeId: 'eval',
     kanji: '難しい',
     hiragana: 'むずかしい',
     meaning: '어렵다',
@@ -3483,7 +3483,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'eval_3',
-    theme: '평가',
+    themeId: 'eval',
     kanji: '易しい',
     hiragana: 'やさしい',
     meaning: '쉽다',
@@ -3492,7 +3492,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'eval_4',
-    theme: '평가',
+    themeId: 'eval',
     kanji: '便利だ',
     hiragana: 'べんりだ',
     meaning: '편리하다',
@@ -3501,7 +3501,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'eval_5',
-    theme: '평가',
+    themeId: 'eval',
     kanji: '不便だ',
     hiragana: 'ふべんだ',
     meaning: '불편하다',
@@ -3510,7 +3510,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'eval_6',
-    theme: '평가',
+    themeId: 'eval',
     kanji: '素晴らしい',
     hiragana: 'すばらしい',
     meaning: '훌륭하다',
@@ -3519,7 +3519,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'eval_7',
-    theme: '평가',
+    themeId: 'eval',
     kanji: '退屈だ',
     hiragana: 'たいくつだ',
     meaning: '지루하다',
@@ -3528,7 +3528,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'eval_8',
-    theme: '평가',
+    themeId: 'eval',
     kanji: '面白い',
     hiragana: 'おもしろい',
     meaning: '재미있다',
@@ -3537,7 +3537,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'eval_9',
-    theme: '평가',
+    themeId: 'eval',
     kanji: '複雑だ',
     hiragana: 'ふくざつだ',
     meaning: '복잡하다',
@@ -3546,7 +3546,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'eval_10',
-    theme: '평가',
+    themeId: 'eval',
     kanji: '危険だ',
     hiragana: 'きけんだ',
     meaning: '위험하다',
@@ -3555,7 +3555,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'personality_1',
-    theme: '상태 및 성격',
+    themeId: 'personality',
     kanji: '優しい',
     hiragana: 'やさしい',
     meaning: '상냥하다',
@@ -3564,7 +3564,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'personality_2',
-    theme: '상태 및 성격',
+    themeId: 'personality',
     kanji: '厳しい',
     hiragana: 'きびしい',
     meaning: '엄격하다',
@@ -3573,7 +3573,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'personality_3',
-    theme: '상태 및 성격',
+    themeId: 'personality',
     kanji: '賢い',
     hiragana: 'かしこい',
     meaning: '똑똑하다',
@@ -3582,7 +3582,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'personality_4',
-    theme: '상태 및 성격',
+    themeId: 'personality',
     kanji: '頑固だ',
     hiragana: 'がんこだ',
     meaning: '고집세다',
@@ -3591,7 +3591,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'personality_5',
-    theme: '상태 및 성격',
+    themeId: 'personality',
     kanji: '素直だ',
     hiragana: 'すなおだ',
     meaning: '솔직하다',
@@ -3600,7 +3600,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'personality_6',
-    theme: '상태 및 성격',
+    themeId: 'personality',
     kanji: '意地悪だ',
     hiragana: 'いじわるだ',
     meaning: '심술궂다',
@@ -3609,7 +3609,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'personality_7',
-    theme: '상태 및 성격',
+    themeId: 'personality',
     kanji: '真面目だ',
     hiragana: 'まじめだ',
     meaning: '성실하다',
@@ -3618,7 +3618,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'personality_8',
-    theme: '상태 및 성격',
+    themeId: 'personality',
     kanji: '怠け者だ',
     hiragana: 'なまけものだ',
     meaning: '게으르다',
@@ -3627,7 +3627,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'personality_9',
-    theme: '상태 및 성격',
+    themeId: 'personality',
     kanji: '嫌だ',
     hiragana: 'いやだ',
     meaning: '싫다',
@@ -3636,7 +3636,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'personality_10',
-    theme: '상태 및 성격',
+    themeId: 'personality',
     kanji: '大人しい',
     hiragana: 'おとなしい',
     meaning: '얌전하다',
@@ -3645,7 +3645,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'color_1',
-    theme: '색상',
+    themeId: 'color',
     kanji: '赤い',
     hiragana: 'あかい',
     meaning: '빨갛다',
@@ -3654,7 +3654,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'color_2',
-    theme: '색상',
+    themeId: 'color',
     kanji: '青い',
     hiragana: 'あおい',
     meaning: '파랗다',
@@ -3663,7 +3663,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'color_3',
-    theme: '색상',
+    themeId: 'color',
     kanji: '黄色い',
     hiragana: 'きいろい',
     meaning: '노랗다',
@@ -3672,7 +3672,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'color_4',
-    theme: '색상',
+    themeId: 'color',
     kanji: '白い',
     hiragana: 'しろい',
     meaning: '하얗다',
@@ -3681,7 +3681,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'color_5',
-    theme: '색상',
+    themeId: 'color',
     kanji: '黒い',
     hiragana: 'くろい',
     meaning: '검다',
@@ -3690,7 +3690,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'color_6',
-    theme: '색상',
+    themeId: 'color',
     kanji: '茶色い',
     hiragana: 'ちゃいろい',
     meaning: '갈색이다',
@@ -3699,7 +3699,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'color_7',
-    theme: '색상',
+    themeId: 'color',
     kanji: '緑色だ',
     hiragana: 'みどりいろだ',
     meaning: '초록색이다',
@@ -3708,7 +3708,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'color_8',
-    theme: '색상',
+    themeId: 'color',
     kanji: '紫色だ',
     hiragana: 'むらさきいろだ',
     meaning: '보라색이다',
@@ -3717,7 +3717,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'color_9',
-    theme: '색상',
+    themeId: 'color',
     kanji: '灰色だ',
     hiragana: 'はいいろだ',
     meaning: '회색이다',
@@ -3726,7 +3726,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'color_10',
-    theme: '색상',
+    themeId: 'color',
     kanji: '金色だ',
     hiragana: 'きんいろだ',
     meaning: '금색이다',
@@ -3735,7 +3735,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'comm_1',
-    theme: '커뮤니케이션',
+    themeId: 'comm',
     kanji: '話す',
     hiragana: 'はなす',
     meaning: '말하다',
@@ -3744,7 +3744,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'comm_2',
-    theme: '커뮤니케이션',
+    themeId: 'comm',
     kanji: '聞く',
     hiragana: 'きく',
     meaning: '듣다',
@@ -3753,7 +3753,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'comm_3',
-    theme: '커뮤니케이션',
+    themeId: 'comm',
     kanji: '答える',
     hiragana: 'こたえる',
     meaning: '대답하다',
@@ -3762,7 +3762,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'comm_4',
-    theme: '커뮤니케이션',
+    themeId: 'comm',
     kanji: '伝える',
     hiragana: 'つたえる',
     meaning: '전달하다',
@@ -3771,7 +3771,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'comm_5',
-    theme: '커뮤니케이션',
+    themeId: 'comm',
     kanji: '説明する',
     hiragana: 'せつめいする',
     meaning: '설명하다',
@@ -3780,7 +3780,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'comm_6',
-    theme: '커뮤니케이션',
+    themeId: 'comm',
     kanji: '相談する',
     hiragana: 'そうだんする',
     meaning: '상담하다',
@@ -3789,7 +3789,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'comm_7',
-    theme: '커뮤니케이션',
+    themeId: 'comm',
     kanji: '招待する',
     hiragana: 'しょうたいする',
     meaning: '초대하다',
@@ -3798,7 +3798,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'comm_8',
-    theme: '커뮤니케이션',
+    themeId: 'comm',
     kanji: '謝る',
     hiragana: 'あやまる',
     meaning: '사과하다',
@@ -3807,7 +3807,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'comm_9',
-    theme: '커뮤니케이션',
+    themeId: 'comm',
     kanji: '文句を言う',
     hiragana: 'もんくをいう',
     meaning: '불평하다',
@@ -3816,7 +3816,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'comm_10',
-    theme: '커뮤니케이션',
+    themeId: 'comm',
     kanji: '約束する',
     hiragana: 'やくそくする',
     meaning: '약속하다',
@@ -3825,7 +3825,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'traffic_1',
-    theme: '교통',
+    themeId: 'traffic',
     kanji: '車',
     hiragana: 'くるま',
     meaning: '자동차',
@@ -3834,7 +3834,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'traffic_2',
-    theme: '교통',
+    themeId: 'traffic',
     kanji: '電車',
     hiragana: 'でんしゃ',
     meaning: '전철',
@@ -3843,7 +3843,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'traffic_3',
-    theme: '교통',
+    themeId: 'traffic',
     kanji: 'バス',
     hiragana: 'ばす',
     meaning: '버스',
@@ -3852,7 +3852,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'traffic_4',
-    theme: '교통',
+    themeId: 'traffic',
     kanji: '自転車',
     hiragana: 'じてんしゃ',
     meaning: '자전거',
@@ -3861,7 +3861,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'traffic_5',
-    theme: '교통',
+    themeId: 'traffic',
     kanji: '飛行機',
     hiragana: 'ひこうき',
     meaning: '비행기',
@@ -3870,7 +3870,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'traffic_6',
-    theme: '교통',
+    themeId: 'traffic',
     kanji: '船',
     hiragana: 'ふね',
     meaning: '배',
@@ -3879,7 +3879,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'traffic_7',
-    theme: '교통',
+    themeId: 'traffic',
     kanji: 'タクシー',
     hiragana: 'たくしー',
     meaning: '택시',
@@ -3888,7 +3888,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'traffic_8',
-    theme: '교통',
+    themeId: 'traffic',
     kanji: '駅',
     hiragana: 'えき',
     meaning: '역',
@@ -3897,7 +3897,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'traffic_9',
-    theme: '교통',
+    themeId: 'traffic',
     kanji: '道路',
     hiragana: 'どうろ',
     meaning: '도로',
@@ -3906,7 +3906,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'traffic_10',
-    theme: '교통',
+    themeId: 'traffic',
     kanji: '空港',
     hiragana: 'くうこう',
     meaning: '공항',
@@ -3915,7 +3915,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'music_1',
-    theme: '음악',
+    themeId: 'music',
     kanji: '音楽',
     hiragana: 'おんがく',
     meaning: '음악',
@@ -3924,7 +3924,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'music_2',
-    theme: '음악',
+    themeId: 'music',
     kanji: '歌',
     hiragana: 'うた',
     meaning: '노래',
@@ -3933,7 +3933,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'music_3',
-    theme: '음악',
+    themeId: 'music',
     kanji: '楽器',
     hiragana: 'がっき',
     meaning: '악기',
@@ -3942,7 +3942,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'music_4',
-    theme: '음악',
+    themeId: 'music',
     kanji: 'ピアノ',
     hiragana: 'ぴあの',
     meaning: '피아노',
@@ -3951,7 +3951,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'music_5',
-    theme: '음악',
+    themeId: 'music',
     kanji: 'ギター',
     hiragana: 'ぎたー',
     meaning: '기타',
@@ -3960,7 +3960,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'music_6',
-    theme: '음악',
+    themeId: 'music',
     kanji: 'ドラム',
     hiragana: 'どらむ',
     meaning: '드럼',
@@ -3969,7 +3969,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'music_7',
-    theme: '음악',
+    themeId: 'music',
     kanji: 'コンサート',
     hiragana: 'こんさーと',
     meaning: '콘서트',
@@ -3978,7 +3978,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'music_8',
-    theme: '음악',
+    themeId: 'music',
     kanji: 'メロディ',
     hiragana: 'めろでぃ',
     meaning: '멜로디',
@@ -3987,7 +3987,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'music_9',
-    theme: '음악',
+    themeId: 'music',
     kanji: '歌手',
     hiragana: 'かしゅ',
     meaning: '가수',
@@ -3996,7 +3996,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'music_10',
-    theme: '음악',
+    themeId: 'music',
     kanji: '曲',
     hiragana: 'きょく',
     meaning: '곡',
@@ -4005,7 +4005,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'jpculture_1',
-    theme: '일본문화',
+    themeId: 'jpculture',
     kanji: '和食',
     hiragana: 'わしょく',
     meaning: '일본식 음식',
@@ -4014,7 +4014,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'jpculture_2',
-    theme: '일본문화',
+    themeId: 'jpculture',
     kanji: '祭り',
     hiragana: 'まつり',
     meaning: '축제',
@@ -4023,7 +4023,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'jpculture_3',
-    theme: '일본문화',
+    themeId: 'jpculture',
     kanji: '浴衣',
     hiragana: 'ゆかた',
     meaning: '유카타',
@@ -4032,7 +4032,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'jpculture_4',
-    theme: '일본문화',
+    themeId: 'jpculture',
     kanji: '神社',
     hiragana: 'じんじゃ',
     meaning: '신사',
@@ -4041,7 +4041,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'jpculture_5',
-    theme: '일본문화',
+    themeId: 'jpculture',
     kanji: '花見',
     hiragana: 'はなみ',
     meaning: '벚꽃놀이',
@@ -4050,7 +4050,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'jpculture_6',
-    theme: '일본문화',
+    themeId: 'jpculture',
     kanji: '折り紙',
     hiragana: 'おりがみ',
     meaning: '종이접기',
@@ -4059,7 +4059,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'jpculture_7',
-    theme: '일본문화',
+    themeId: 'jpculture',
     kanji: '畳',
     hiragana: 'たたみ',
     meaning: '다다미',
@@ -4068,7 +4068,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'jpculture_8',
-    theme: '일본문화',
+    themeId: 'jpculture',
     kanji: '茶道',
     hiragana: 'さどう',
     meaning: '다도',
@@ -4077,7 +4077,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'jpculture_9',
-    theme: '일본문화',
+    themeId: 'jpculture',
     kanji: '漫才',
     hiragana: 'まんざい',
     meaning: '만담',
@@ -4086,7 +4086,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'jpculture_10',
-    theme: '일본문화',
+    themeId: 'jpculture',
     kanji: '武士道',
     hiragana: 'ぶしどう',
     meaning: '무사도',
@@ -4095,7 +4095,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'nature_1',
-    theme: '자연환경',
+    themeId: 'nature',
     kanji: '森林',
     hiragana: 'しんりん',
     meaning: '숲',
@@ -4104,7 +4104,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'nature_2',
-    theme: '자연환경',
+    themeId: 'nature',
     kanji: '川',
     hiragana: 'かわ',
     meaning: '강',
@@ -4113,7 +4113,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'nature_3',
-    theme: '자연환경',
+    themeId: 'nature',
     kanji: '空気',
     hiragana: 'くうき',
     meaning: '공기',
@@ -4122,7 +4122,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'nature_4',
-    theme: '자연환경',
+    themeId: 'nature',
     kanji: '地球',
     hiragana: 'ちきゅう',
     meaning: '지구',
@@ -4131,7 +4131,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'nature_5',
-    theme: '자연환경',
+    themeId: 'nature',
     kanji: '自然',
     hiragana: 'しぜん',
     meaning: '자연',
@@ -4140,7 +4140,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'nature_6',
-    theme: '자연환경',
+    themeId: 'nature',
     kanji: '温暖化',
     hiragana: 'おんだんか',
     meaning: '온난화',
@@ -4149,7 +4149,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'nature_7',
-    theme: '자연환경',
+    themeId: 'nature',
     kanji: '汚染',
     hiragana: 'おせん',
     meaning: '오염',
@@ -4158,7 +4158,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'nature_8',
-    theme: '자연환경',
+    themeId: 'nature',
     kanji: '資源',
     hiragana: 'しげん',
     meaning: '자원',
@@ -4167,7 +4167,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'nature_9',
-    theme: '자연환경',
+    themeId: 'nature',
     kanji: '再生',
     hiragana: 'さいせい',
     meaning: '재생',
@@ -4176,7 +4176,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'nature_10',
-    theme: '자연환경',
+    themeId: 'nature',
     kanji: '節電',
     hiragana: 'せつでん',
     meaning: '절전',
@@ -4185,7 +4185,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'memory_1',
-    theme: '기억과 회상',
+    themeId: 'memory',
     kanji: '記憶',
     hiragana: 'きおく',
     meaning: '기억',
@@ -4194,7 +4194,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'memory_2',
-    theme: '기억과 회상',
+    themeId: 'memory',
     kanji: '思い出',
     hiragana: 'おもいで',
     meaning: '추억',
@@ -4203,7 +4203,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'memory_3',
-    theme: '기억과 회상',
+    themeId: 'memory',
     kanji: '忘れる',
     hiragana: 'わすれる',
     meaning: '잊다',
@@ -4212,7 +4212,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'memory_4',
-    theme: '기억과 회상',
+    themeId: 'memory',
     kanji: '昔',
     hiragana: 'むかし',
     meaning: '옛날',
@@ -4221,7 +4221,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'memory_5',
-    theme: '기억과 회상',
+    themeId: 'memory',
     kanji: '過去',
     hiragana: 'かこ',
     meaning: '과거',
@@ -4230,7 +4230,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'memory_6',
-    theme: '기억과 회상',
+    themeId: 'memory',
     kanji: '再会',
     hiragana: 'さいかい',
     meaning: '재회',
@@ -4239,7 +4239,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'memory_7',
-    theme: '기억과 회상',
+    themeId: 'memory',
     kanji: '幻',
     hiragana: 'まぼろし',
     meaning: '환상/환영',
@@ -4248,7 +4248,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'memory_8',
-    theme: '기억과 회상',
+    themeId: 'memory',
     kanji: '面影',
     hiragana: 'おもかげ',
     meaning: '옛모습',
@@ -4257,7 +4257,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'memory_9',
-    theme: '기억과 회상',
+    themeId: 'memory',
     kanji: '残る',
     hiragana: 'のこる',
     meaning: '남다',
@@ -4266,7 +4266,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'memory_10',
-    theme: '기억과 회상',
+    themeId: 'memory',
     kanji: '蘇る',
     hiragana: 'よみがえる',
     meaning: '되살아나다',
@@ -4275,7 +4275,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'solitude_1',
-    theme: '고독과 내면',
+    themeId: 'solitude',
     kanji: '孤独',
     hiragana: 'こどく',
     meaning: '고독',
@@ -4284,7 +4284,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'solitude_2',
-    theme: '고독과 내면',
+    themeId: 'solitude',
     kanji: '静か',
     hiragana: 'しずか',
     meaning: '조용한',
@@ -4293,7 +4293,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'solitude_3',
-    theme: '고독과 내면',
+    themeId: 'solitude',
     kanji: '影',
     hiragana: 'かげ',
     meaning: '그림자',
@@ -4302,7 +4302,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'solitude_4',
-    theme: '고독과 내면',
+    themeId: 'solitude',
     kanji: '鏡',
     hiragana: 'かがみ',
     meaning: '거울',
@@ -4311,7 +4311,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'solitude_5',
-    theme: '고독과 내면',
+    themeId: 'solitude',
     kanji: '無言',
     hiragana: 'むごん',
     meaning: '무언',
@@ -4320,7 +4320,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'solitude_6',
-    theme: '고독과 내면',
+    themeId: 'solitude',
     kanji: '闇',
     hiragana: 'やみ',
     meaning: '어둠',
@@ -4329,7 +4329,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'solitude_7',
-    theme: '고독과 내면',
+    themeId: 'solitude',
     kanji: '閉ざす',
     hiragana: 'とざす',
     meaning: '닫다',
@@ -4338,7 +4338,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'solitude_8',
-    theme: '고독과 내면',
+    themeId: 'solitude',
     kanji: '叫ぶ',
     hiragana: 'さけぶ',
     meaning: '외치다',
@@ -4347,7 +4347,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'solitude_9',
-    theme: '고독과 내면',
+    themeId: 'solitude',
     kanji: '独り',
     hiragana: 'ひとり',
     meaning: '혼자',
@@ -4356,7 +4356,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'solitude_10',
-    theme: '고독과 내면',
+    themeId: 'solitude',
     kanji: '心',
     hiragana: 'こころ',
     meaning: '마음',
@@ -4365,7 +4365,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'despair_1',
-    theme: '절망',
+    themeId: 'despair',
     kanji: '絶望',
     hiragana: 'ぜつぼう',
     meaning: '절망',
@@ -4374,7 +4374,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'despair_2',
-    theme: '절망',
+    themeId: 'despair',
     kanji: '闇',
     hiragana: 'やみ',
     meaning: '어둠',
@@ -4383,7 +4383,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'despair_3',
-    theme: '절망',
+    themeId: 'despair',
     kanji: '泣く',
     hiragana: 'なく',
     meaning: '울다',
@@ -4392,7 +4392,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'despair_4',
-    theme: '절망',
+    themeId: 'despair',
     kanji: '苦しむ',
     hiragana: 'くるしむ',
     meaning: '괴로워하다',
@@ -4401,7 +4401,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'despair_5',
-    theme: '절망',
+    themeId: 'despair',
     kanji: '崩れる',
     hiragana: 'くずれる',
     meaning: '무너지다',
@@ -4410,7 +4410,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'despair_6',
-    theme: '절망',
+    themeId: 'despair',
     kanji: '消える',
     hiragana: 'きえる',
     meaning: '사라지다',
@@ -4419,7 +4419,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'despair_7',
-    theme: '절망',
+    themeId: 'despair',
     kanji: '裏切る',
     hiragana: 'うらぎる',
     meaning: '배신하다',
@@ -4428,7 +4428,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'despair_8',
-    theme: '절망',
+    themeId: 'despair',
     kanji: '孤独',
     hiragana: 'こどく',
     meaning: '고독',
@@ -4437,7 +4437,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'despair_9',
-    theme: '절망',
+    themeId: 'despair',
     kanji: '壊れる',
     hiragana: 'こわれる',
     meaning: '부서지다',
@@ -4446,7 +4446,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'despair_10',
-    theme: '절망',
+    themeId: 'despair',
     kanji: '涙',
     hiragana: 'なみだ',
     meaning: '눈물',
@@ -4455,7 +4455,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'passion_1',
-    theme: '열정',
+    themeId: 'passion',
     kanji: '炎',
     hiragana: 'ほのお',
     meaning: '불꽃',
@@ -4464,7 +4464,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'passion_2',
-    theme: '열정',
+    themeId: 'passion',
     kanji: '熱',
     hiragana: 'ねつ',
     meaning: '열정/열기',
@@ -4473,7 +4473,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'passion_3',
-    theme: '열정',
+    themeId: 'passion',
     kanji: '燃える',
     hiragana: 'もえる',
     meaning: '불타오르다',
@@ -4482,7 +4482,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'passion_4',
-    theme: '열정',
+    themeId: 'passion',
     kanji: '闘志',
     hiragana: 'とうし',
     meaning: '투지',
@@ -4491,7 +4491,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'passion_5',
-    theme: '열정',
+    themeId: 'passion',
     kanji: '勇気',
     hiragana: 'ゆうき',
     meaning: '용기',
@@ -4500,7 +4500,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'passion_6',
-    theme: '열정',
+    themeId: 'passion',
     kanji: '汗',
     hiragana: 'あせ',
     meaning: '땀',
@@ -4509,7 +4509,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'passion_7',
-    theme: '열정',
+    themeId: 'passion',
     kanji: '闘う',
     hiragana: 'たたかう',
     meaning: '싸우다',
@@ -4518,7 +4518,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'passion_8',
-    theme: '열정',
+    themeId: 'passion',
     kanji: '情熱',
     hiragana: 'じょうねつ',
     meaning: '정열',
@@ -4527,7 +4527,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'passion_9',
-    theme: '열정',
+    themeId: 'passion',
     kanji: '炎上',
     hiragana: 'えんじょう',
     meaning: '불붙음',
@@ -4536,7 +4536,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'passion_10',
-    theme: '열정',
+    themeId: 'passion',
     kanji: '燃焼',
     hiragana: 'ねんしょう',
     meaning: '연소',
@@ -4545,7 +4545,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'freedom_1',
-    theme: '자유와 해방',
+    themeId: 'freedom',
     kanji: '自由',
     hiragana: 'じゆう',
     meaning: '자유',
@@ -4554,7 +4554,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'freedom_2',
-    theme: '자유와 해방',
+    themeId: 'freedom',
     kanji: '解放',
     hiragana: 'かいほう',
     meaning: '해방',
@@ -4563,7 +4563,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'freedom_3',
-    theme: '자유와 해방',
+    themeId: 'freedom',
     kanji: '羽',
     hiragana: 'はね',
     meaning: '날개',
@@ -4572,7 +4572,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'freedom_4',
-    theme: '자유와 해방',
+    themeId: 'freedom',
     kanji: '飛ぶ',
     hiragana: 'とぶ',
     meaning: '날다',
@@ -4581,7 +4581,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'freedom_5',
-    theme: '자유와 해방',
+    themeId: 'freedom',
     kanji: '脱出',
     hiragana: 'だっしゅつ',
     meaning: '탈출',
@@ -4590,7 +4590,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'freedom_6',
-    theme: '자유와 해방',
+    themeId: 'freedom',
     kanji: '風',
     hiragana: 'かぜ',
     meaning: '바람',
@@ -4599,7 +4599,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'freedom_7',
-    theme: '자유와 해방',
+    themeId: 'freedom',
     kanji: '軽やか',
     hiragana: 'かろやか',
     meaning: '가볍다',
@@ -4608,7 +4608,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'freedom_8',
-    theme: '자유와 해방',
+    themeId: 'freedom',
     kanji: '解き放つ',
     hiragana: 'ときはなつ',
     meaning: '풀어놓다',
@@ -4617,7 +4617,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'freedom_9',
-    theme: '자유와 해방',
+    themeId: 'freedom',
     kanji: '空',
     hiragana: 'そら',
     meaning: '하늘',
@@ -4626,7 +4626,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'freedom_10',
-    theme: '자유와 해방',
+    themeId: 'freedom',
     kanji: '放つ',
     hiragana: 'はなつ',
     meaning: '놓다, 발산하다',
@@ -4635,7 +4635,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'dream_1',
-    theme: '꿈과 희망',
+    themeId: 'dream',
     kanji: '夢',
     hiragana: 'ゆめ',
     meaning: '꿈',
@@ -4644,7 +4644,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'dream_2',
-    theme: '꿈과 희망',
+    themeId: 'dream',
     kanji: '希望',
     hiragana: 'きぼう',
     meaning: '희망',
@@ -4653,7 +4653,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'dream_3',
-    theme: '꿈과 희망',
+    themeId: 'dream',
     kanji: '輝く',
     hiragana: 'かがやく',
     meaning: '빛나다',
@@ -4662,7 +4662,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'dream_4',
-    theme: '꿈과 희망',
+    themeId: 'dream',
     kanji: '信じ続ける',
     hiragana: 'しんじつづける',
     meaning: '계속 믿다',
@@ -4671,7 +4671,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'dream_5',
-    theme: '꿈과 희망',
+    themeId: 'dream',
     kanji: '挑戦',
     hiragana: 'ちょうせん',
     meaning: '도전',
@@ -4680,7 +4680,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'dream_6',
-    theme: '꿈과 희망',
+    themeId: 'dream',
     kanji: '飛ぶ',
     hiragana: 'とぶ',
     meaning: '날다',
@@ -4689,7 +4689,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'dream_7',
-    theme: '꿈과 희망',
+    themeId: 'dream',
     kanji: '自由',
     hiragana: 'じゆう',
     meaning: '자유',
@@ -4698,7 +4698,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'dream_8',
-    theme: '꿈과 희망',
+    themeId: 'dream',
     kanji: '奇跡',
     hiragana: 'きせき',
     meaning: '기적',
@@ -4707,7 +4707,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'dream_9',
-    theme: '꿈과 희망',
+    themeId: 'dream',
     kanji: '扉',
     hiragana: 'とびら',
     meaning: '문',
@@ -4716,7 +4716,7 @@ export const wordData: Word[] = [
   },
   {
     id: 'dream_10',
-    theme: '꿈과 희망',
+    themeId: 'dream',
     kanji: '未来',
     hiragana: 'みらい',
     meaning: '미래',
@@ -4724,5 +4724,3 @@ export const wordData: Word[] = [
     choices: { correct: '미래', wrong: '과거' },
   },
 ];
-
-
