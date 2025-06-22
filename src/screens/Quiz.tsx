@@ -4,15 +4,20 @@ import BackHeader from '../components/commons/BackHeader';
 import ProgressBar from '@/components/commons/ProgressBar';
 import { styles } from '@/styles/Quiz/Quiz.style';
 import { RouteProp, useRoute } from '@react-navigation/native';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { styles as overlayStyles } from '@/styles/Quiz/Overlay.style';
 import CorrectAnswerImage from '../../assets/images/CorrectAnswerImage';
 import WrongAnswerImage from '../../assets/images/WrongAnswerImage';
 import QuizContent from '@/components/Quiz/QuizContent';
+import { wordData } from '@/data/word';
 
 function Quiz() {
   const route = useRoute<RouteProp<any>>();
   const themeId = route.params?.themeId;
+  const words = useMemo(
+    () => wordData.filter((word) => word.themeId === themeId),
+    [themeId],
+  );
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [overlayState, setOverLayState] = useState<'correct' | 'wrong' | null>(
@@ -49,13 +54,13 @@ function Quiz() {
         <BackHeader title="퀴즈" />
         <View style={styles.status}>
           <ProgressBar
-            text={`${correctCount} / 10`}
-            status={(correctCount / 10) * 100}
+            text={`${correctCount} / ${words.length}`}
+            status={(correctCount / words.length) * 100}
           />
           <Text style={styles.statusText}>{streak}회 연속 정답</Text>
         </View>
         <QuizContent
-          themeId={themeId}
+          words={words}
           currentIndex={currentIndex}
           handleAnswer={handleAnswer}
         />

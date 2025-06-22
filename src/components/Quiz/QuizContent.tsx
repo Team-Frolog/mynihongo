@@ -1,22 +1,17 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { View, Text } from 'react-native';
 import { styles } from '@/styles/Quiz/Quiz.style';
 import Tts from 'assets/icons/Tts';
 import PressButton from '@/components/commons/PressButton';
-import { wordData } from '@/data/word';
+import { Word } from '@/data/word';
 
 interface Props {
-  themeId: string;
+  words: Word[];
   currentIndex: number;
   handleAnswer: (answer: string) => void;
 }
 
-function QuizContent({ themeId, currentIndex, handleAnswer }: Props) {
-  const words = useMemo(
-    () => wordData.filter((word) => word.themeId === themeId),
-    [themeId],
-  );
-
+function QuizContent({ words, currentIndex, handleAnswer }: Props) {
   const handleGenerateRandomAnswer = (answers: [string, string][]) => {
     return Math.random() < 0.5 ? answers : answers.reverse();
   };
