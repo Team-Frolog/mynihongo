@@ -1,20 +1,19 @@
 import { ReactNode } from 'react';
-import { Pressable, StyleProp, ViewStyle } from 'react-native';
+import { Pressable, StyleProp, ViewStyle, PressableProps } from 'react-native';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withSpring,
 } from 'react-native-reanimated';
 
-interface Props {
+interface Props extends Omit<PressableProps, 'style'> {
   children: ReactNode;
   extraStyles: StyleProp<ViewStyle>;
-  onPress: () => void;
 }
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
-function PressButton({ children, extraStyles, onPress }: Props) {
+function PressButton({ children, extraStyles, onPress, ...props }: Props) {
   const scale = useSharedValue(1);
 
   const animatedStyle = useAnimatedStyle(() => ({
@@ -28,12 +27,14 @@ function PressButton({ children, extraStyles, onPress }: Props) {
   const handlePressOut = () => {
     scale.value = withSpring(1);
   };
+
   return (
     <AnimatedPressable
       style={[animatedStyle, extraStyles]}
       onPressIn={handlePressIn}
       onPressOut={handlePressOut}
       onPress={onPress}
+      {...props}
     >
       {children}
     </AnimatedPressable>
