@@ -30,7 +30,7 @@ function Quiz() {
     if (overlayState) {
       const timer = setTimeout(() => {
         setOverLayState(null);
-      }, 2000);
+      }, 1000);
 
       return () => clearTimeout(timer);
     }
