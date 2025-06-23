@@ -67,7 +67,7 @@ function AppNavigator() {
           />
           <Stack.Screen name="Practice" component={Practice} />
           <Stack.Screen name="Quiz" component={Quiz} />
-          <Stack.Screen name="Real" component={Real} />
+          <Stack.Screen name="Conversation" component={Real} />
           <Stack.Screen name="Complete" component={Complete} />
         </>
       ) : (

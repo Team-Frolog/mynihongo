@@ -10,6 +10,7 @@ import CorrectAnswerImage from '../../assets/images/CorrectAnswerImage';
 import WrongAnswerImage from '../../assets/images/WrongAnswerImage';
 import QuizContent from '@/components/Quiz/QuizContent';
 import { wordData } from '@/data/word';
+import { useWord } from '@/hooks/useWord';
 
 function Quiz() {
   const route = useRoute<RouteProp<any>>();
@@ -26,6 +27,8 @@ function Quiz() {
   const [correctCount, setCorrectCount] = useState(0);
   const [streak, setStreak] = useState(0);
 
+  const { updateThemeStatus } = useWord();
+
   useEffect(() => {
     if (overlayState) {
       const timer = setTimeout(() => {
@@ -35,6 +38,12 @@ function Quiz() {
       return () => clearTimeout(timer);
     }
   }, [overlayState]);
+
+  useEffect(() => {
+    if (currentIndex === words.length - 1) {
+      return updateThemeStatus({ themeId });
+    }
+  }, [currentIndex]);
 
   const handleAnswer = (answer: string) => {
     if (answer === 'correct') {
