@@ -49,3 +49,38 @@ export const updateWordLearningStatus = async (
     themeStatus: updatedThemeStatus,
   });
 };
+
+export const updateThemeLearnedStatus = async (
+  userId: string,
+  themeId: string,
+) => {
+  const userRef = doc(db, 'users', userId);
+  const userDoc = await getDoc(userRef);
+  const userData = userDoc.data() as UserInfo;
+
+  if (!userDoc.exists()) return;
+
+  const themeStatus = userData?.themeStatus || [];
+  const existingThemeIndex = themeStatus.findIndex(
+    (theme) => theme.themeId === themeId,
+  );
+
+  if (existingThemeIndex !== -1) {
+    const updatedThemeStatus = themeStatus.map((theme, index) => {
+      if (index === existingThemeIndex) {
+        return {
+          ...theme,
+          status: 'conversation',
+        };
+      }
+      return theme;
+    });
+
+    await updateDoc(userRef, {
+      themeStatus: updatedThemeStatus,
+    });
+  }
+};
+
+// 1. themeId 이용 유저 정보의 themeStatus에서 해당 theme 찾기
+// 2. 해당 theme의 status를 'conversation'으로 변경
