@@ -3,7 +3,12 @@ import GestureGuide from '@/components/Practice/GestureGuide';
 import { useEffect, useState } from 'react';
 import BackHeader from '../components/commons/BackHeader';
 import { styles } from '@/styles/Practice/Practice.style';
-import { RouteProp, useRoute } from '@react-navigation/native';
+import {
+  NavigationProp,
+  RouteProp,
+  useNavigation,
+  useRoute,
+} from '@react-navigation/native';
 import { wordData } from '@/data/word';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import SwipeCard from '@/components/Practice/SwipeCard';
@@ -15,7 +20,10 @@ function Practice() {
   const themeId = route.params?.themeId;
   const themeName = route.params?.themeName;
 
+  const navigation = useNavigation<NavigationProp<any>>();
+
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [learnedCount, setLearnedCount] = useState(0);
   const [isShowGestureGuide, setIsShowGestureGuide] = useState(true);
 
   const { updateWordToLearned } = useWord();
@@ -39,6 +47,12 @@ function Practice() {
     }, 3000);
   }, []);
 
+  useEffect(() => {
+    if (learnedCount === words.length) {
+      navigation.navigate('Quiz', { themeId });
+    }
+  }, [learnedCount]);
+
   // 모름
   const handleSwipeLeft = () => {
     setCurrentIndex((prev) => prev + 1);
@@ -48,6 +62,7 @@ function Practice() {
   const handleSwipeRight = () => {
     updateWordToLearned({ wordId: words[currentIndex].id, themeId });
     setCurrentIndex((prev) => prev + 1);
+    setLearnedCount((prev) => prev + 1);
   };
 
   return (
