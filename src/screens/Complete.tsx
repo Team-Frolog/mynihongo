@@ -1,79 +1,60 @@
 import BackHeader from '@/components/commons/BackHeader';
-import ChevronDownArrow from '../../assets/icons/ChevronDownArrow';
 import { FlatList, Pressable, Text, View } from 'react-native';
 import { styles } from '@/styles/Complete/Complete.style';
-import Tts from 'assets/icons/Tts';
-
-const list = [
-  {
-    id: 1,
-    word: '空港',
-    mean: '공항',
-    mean2: 'ひこう',
-  },
-  {
-    id: 2,
-    word: '空港',
-    mean: '공항',
-    mean2: 'ひこう',
-  },
-  {
-    id: 3,
-    word: '空港',
-    mean: '공항',
-    mean2: 'ひこう',
-  },
-  {
-    id: 4,
-    word: '空港',
-    mean: '공항',
-    mean2: 'ひこう',
-  },
-  {
-    id: 5,
-    word: '空港',
-    mean: '공항',
-    mean2: 'ひこう',
-  },
-  {
-    id: 6,
-    word: '空港',
-    mean: '공항',
-    mean2: 'ひこう',
-  },
-];
+import { useMemo } from 'react';
+import { RouteProp, useRoute } from '@react-navigation/native';
+import { themeData } from '@/data/theme';
+import { wordData } from '@/data/word';
+import ListItem from '@/components/Complete/ListItem';
+import PressButton from '@/components/commons/PressButton';
+import { useNavigation, NavigationProp } from '@react-navigation/native';
 
 function Complete() {
+  const route = useRoute<RouteProp<any, 'Complete'>>();
+  const themeId = route.params?.themeId;
+  const navigation = useNavigation<NavigationProp<any>>();
+
+  const theme = useMemo(() => {
+    return themeData.find((theme) => theme.id === themeId)!;
+  }, [themeId]);
+
+  const words = useMemo(() => {
+    return wordData.filter((word) => word.themeId === themeId);
+  }, [themeId]);
+
+  const themeName = theme.name;
+
+  const handlePressButton = (type: 'quiz' | 'conversation') => {
+    if (type === 'quiz') {
+      navigation.navigate('Quiz', { themeId });
+    } else {
+      navigation.navigate('Conversation', { themeId });
+    }
+  };
+
   return (
     <View style={styles.container}>
-      <BackHeader title="공항" />
+      <BackHeader title={themeName} />
       <FlatList
         contentContainerStyle={styles.list}
-        data={list}
+        data={words}
         keyExtractor={(item) => item.id.toString()}
         showsVerticalScrollIndicator={false}
-        renderItem={({ item }) => (
-          <View style={styles.contentWrapper}>
-            <View style={styles.wordWrapper}>
-              <ChevronDownArrow />
-              <Text style={styles.wordText}>{item.word}</Text>
-              <Tts />
-            </View>
-            <View style={styles.meanWrapper}>
-              <Text style={styles.meanText}>{item.mean}</Text>
-              <View style={styles.seperator}></View>
-              <Text style={styles.meanText}>{item.mean2}</Text>
-            </View>
-          </View>
-        )}
+        renderItem={({ item }) => <ListItem item={item} />}
       />
       <View style={styles.buttonWrapper}>
-        <Pressable style={styles.button}>
+        <PressButton
+          extraStyles={styles.button}
+          onPress={() => handlePressButton('quiz')}
+        >
           <Text style={styles.buttonText}>퀴즈</Text>
-        </Pressable>
-        <Pressable style={styles.button}>
+        </PressButton>
+        <PressButton
+          extraStyles={styles.button}
+          onPress={() => handlePressButton('conversation')}
+        >
           <Text style={styles.buttonText}>실전</Text>
-        </Pressable>
+        </PressButton>
       </View>
     </View>
   );
