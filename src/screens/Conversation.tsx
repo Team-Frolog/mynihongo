@@ -2,6 +2,7 @@ import { View, Image, Text, Pressable } from 'react-native';
 import BackHeader from '@/components/commons/BackHeader';
 import Tts from 'assets/icons/Tts';
 import { styles } from '@/styles/Real/Real.style';
+import PressButton from '@/components/commons/PressButton';
 
 function Conversation() {
   return (
@@ -14,14 +15,7 @@ function Conversation() {
             <View style={styles.npcTriangle} />
             <View style={styles.npcAnswer}>
               <Tts color="#FF9A9A" />
-              <View style={styles.npcAnswerTextWrapper}>
-                <Text style={styles.npcAnswerKanjiHiragana}>
-                  あんぎょうしご
-                </Text>
-                <Text style={styles.npcAnswerText}>
-                  飛行時間はいつからなの？
-                </Text>
-              </View>
+              <Text style={styles.npcAnswerText}>飛行時間はいつからなの？</Text>
             </View>
           </View>
         </View>
@@ -29,20 +23,14 @@ function Conversation() {
           <Text style={styles.answerGuide}>
             질문에 원하는 대답을 선택해주세요
           </Text>
-          <Pressable style={styles.answerButton}>
+          <PressButton extraStyles={[styles.answerButton]} onPress={() => {}}>
             <Tts />
-            <View style={styles.answerTextWrapper}>
-              <Text style={styles.npcAnswerKanjiHiragana}>あんぎょうしご</Text>
-              <Text style={styles.answerText}>延着になった...</Text>
-            </View>
-          </Pressable>
-          <Pressable style={styles.answerButton}>
+            <Text style={styles.answerText}>延着になった...</Text>
+          </PressButton>
+          <PressButton extraStyles={[styles.answerButton]} onPress={() => {}}>
             <Tts />
-            <View style={styles.answerTextWrapper}>
-              <Text style={styles.npcAnswerKanjiHiragana}>あんぎょうしご</Text>
-              <Text style={styles.answerText}>1時間後だよ</Text>
-            </View>
-          </Pressable>
+            <Text style={styles.answerText}>1時間後だよ</Text>
+          </PressButton>
         </View>
       </View>
     </View>
