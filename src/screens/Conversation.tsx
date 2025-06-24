@@ -3,8 +3,21 @@ import BackHeader from '@/components/commons/BackHeader';
 import Tts from 'assets/icons/Tts';
 import { styles } from '@/styles/Conversation/Conversation.style';
 import PressButton from '@/components/commons/PressButton';
+import { RouteProp, useRoute } from '@react-navigation/native';
+import { useMemo } from 'react';
+import { conversationData } from '@/data/conversation';
 
 function Conversation() {
+  const route = useRoute<RouteProp<any>>();
+  const themeId = route.params?.themeId;
+  console.log(themeId);
+
+  const conversations = useMemo(() => {
+    return conversationData.find((data) => data.id.split('_')[0] === themeId);
+  }, [themeId]);
+
+  console.log(conversations);
+
   return (
     <View style={styles.container}>
       <BackHeader title="실전" />
@@ -15,7 +28,12 @@ function Conversation() {
             <View style={styles.npcTriangle} />
             <View style={styles.npcAnswer}>
               <Tts color="#FF9A9A" />
-              <Text style={styles.npcAnswerText}>飛行時間はいつからなの？</Text>
+              <View style={styles.textWrapper}>
+                <Text style={styles.npcAnswerText}>
+                  飛行時間はいつからなの？
+                </Text>
+                <Text style={styles.koreanText}>커피와 케이크 주세요.</Text>
+              </View>
             </View>
           </View>
         </View>
@@ -25,11 +43,17 @@ function Conversation() {
           </Text>
           <PressButton extraStyles={[styles.answerButton]} onPress={() => {}}>
             <Tts />
-            <Text style={styles.answerText}>延着になった...</Text>
+            <View style={styles.textWrapper}>
+              <Text style={styles.answerText}>延着になった...</Text>
+              <Text style={styles.koreanText}>커피와 케이크 주세요.</Text>
+            </View>
           </PressButton>
           <PressButton extraStyles={[styles.answerButton]} onPress={() => {}}>
             <Tts />
-            <Text style={styles.answerText}>1時間後だよ</Text>
+            <View style={styles.textWrapper}>
+              <Text style={styles.answerText}>1時間後だよ</Text>
+              <Text style={styles.koreanText}>커피와 케이크 주세요.</Text>
+            </View>
           </PressButton>
         </View>
       </View>

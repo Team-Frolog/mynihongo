@@ -32,13 +32,23 @@ export const styles = StyleSheet.create({
     borderLeftColor: 'transparent',
     borderRightColor: 'transparent',
   },
+  textWrapper: {
+    flexDirection: 'column',
+    gap: 5,
+  },
+  koreanText: {
+    color: '#4F505C',
+    fontSize: 12,
+    fontWeight: 500,
+    lineHeight: 18,
+  },
   npcAnswer: {
     width: '113%',
     paddingVertical: 24,
     paddingLeft: 24,
 
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     gap: 15,
 
     backgroundColor: '#FFDADA',
@@ -79,7 +89,7 @@ export const styles = StyleSheet.create({
     marginLeft: -24,
 
     flexDirection: 'row',
-    alignItems: 'center',
+    justifyContent: 'flex-start',
     gap: 15,
 
     backgroundColor: '#d2d2d2',
