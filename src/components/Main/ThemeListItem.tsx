@@ -26,6 +26,7 @@ function ThemeListItem({ item, status = 'learning', words }: Props) {
     let destination = 'Practice';
     if (status === 'learning') destination = 'Practice';
     if (status === 'quiz') destination = 'Quiz';
+    if (status === 'conversation') destination = 'Conversation';
 
     navigation.navigate(destination, {
       themeName: item.name,
