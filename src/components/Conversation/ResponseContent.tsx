@@ -31,8 +31,8 @@ function ResponseContent({
           </View>
         </View>
       </View>
-      <View style={styles.answerWrapper}>
-        <View style={styles.answerButton}>
+      <View style={[styles.answerWrapper, { bottom: '20%' }]}>
+        <View style={[styles.answerButton]}>
           <Tts />
           <View style={styles.textWrapper}>
             <Text style={styles.answerText}>{userDialogue}</Text>
