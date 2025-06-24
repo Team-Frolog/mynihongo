@@ -39,7 +39,10 @@ export const useWord = () => {
         return navigation.navigate('Conversation', {
           themeId: variables.themeId,
         });
-      if (data === 'completed') return navigation.navigate('Complete');
+      if (data === 'completed')
+        return navigation.navigate('Complete', {
+          themeId: variables.themeId,
+        });
     },
     onError: (error) => {
       console.log(error);
