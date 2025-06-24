@@ -1,61 +1,60 @@
-import { View, Image, Text } from 'react-native';
+import React from 'react';
+import { View } from 'react-native';
 import BackHeader from '@/components/commons/BackHeader';
-import Tts from 'assets/icons/Tts';
 import { styles } from '@/styles/Conversation/Conversation.style';
-import PressButton from '@/components/commons/PressButton';
 import { RouteProp, useRoute } from '@react-navigation/native';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { conversationData } from '@/data/conversation';
+import ResponseContent from '@/components/Conversation/ResponseContent';
+import ChoiceContent from '@/components/Conversation/ChoiceContent';
 
 function Conversation() {
   const route = useRoute<RouteProp<any>>();
   const themeId = route.params?.themeId;
-  console.log(themeId);
 
-  const conversations = useMemo(() => {
-    return conversationData.find((data) => data.id.split('_')[0] === themeId);
+  const conversation = useMemo(() => {
+    return conversationData.find((data) => data.id.split('_')[0] === themeId)!;
   }, [themeId]);
 
-  console.log(conversations);
+  const [isSelected, setIsSelected] = useState(false);
+  const [selectedAnswer, setSelectedAnswer] = useState(0);
+
+  const handleClickAnswer = (index: number) => {
+    setIsSelected(true);
+    setSelectedAnswer(index);
+  };
+
+  // const convertJapanese = (japanese: string) => {
+  //   if (!japanese.includes('。')) return japanese;
+
+  //   return japanese
+  //     .split('。')
+  //     .filter((text) => text.trim())
+  //     .map((text, index) => {
+  //       return index === 0 ? `${text}。` : `${text}。`;
+  //     });
+  // };
 
   return (
     <View style={styles.container}>
       <BackHeader title="실전" />
       <View style={styles.realContainer}>
-        <View>
-          <Image source={require('assets/images/real-mock.png')} />
-          <View>
-            <View style={styles.npcTriangle} />
-            <View style={styles.npcAnswer}>
-              <Tts color="#FF9A9A" />
-              <View style={styles.textWrapper}>
-                <Text style={styles.npcAnswerText}>
-                  飛行時間はいつからなの？
-                </Text>
-                <Text style={styles.koreanText}>커피와 케이크 주세요.</Text>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View style={styles.answerWrapper}>
-          <Text style={styles.answerGuide}>
-            질문에 원하는 대답을 선택해주세요
-          </Text>
-          <PressButton extraStyles={[styles.answerButton]} onPress={() => {}}>
-            <Tts />
-            <View style={styles.textWrapper}>
-              <Text style={styles.answerText}>延着になった...</Text>
-              <Text style={styles.koreanText}>커피와 케이크 주세요.</Text>
-            </View>
-          </PressButton>
-          <PressButton extraStyles={[styles.answerButton]} onPress={() => {}}>
-            <Tts />
-            <View style={styles.textWrapper}>
-              <Text style={styles.answerText}>1時間後だよ</Text>
-              <Text style={styles.koreanText}>커피와 케이크 주세요.</Text>
-            </View>
-          </PressButton>
-        </View>
+        {isSelected ? (
+          <ResponseContent
+            npcDialogue={conversation?.response[selectedAnswer].japanese}
+            npcKorean={conversation?.response[selectedAnswer].korean}
+            userDialogue={conversation?.userChoice[selectedAnswer].japanese}
+            userKorean={conversation?.userChoice[selectedAnswer].korean}
+          />
+        ) : (
+          <ChoiceContent
+            npcDialogue={conversation?.question.japanese}
+            userChoice={conversation?.userChoice.map(
+              (choice) => choice.japanese,
+            )}
+            onPress={handleClickAnswer}
+          />
+        )}
       </View>
     </View>
   );
