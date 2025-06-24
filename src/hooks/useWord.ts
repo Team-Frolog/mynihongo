@@ -8,6 +8,7 @@ import { useQueryClient } from '@tanstack/react-query';
 import { useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { ThemeStatus } from '@/types/user';
 
 export const useWord = () => {
   const queryClient = useQueryClient();
@@ -30,11 +31,14 @@ export const useWord = () => {
   });
 
   const { mutate: updateThemeStatus } = useMutation({
-    mutationFn: async (data: { themeId: string }) => {
-      return await updateThemeLearnedStatus(userId, data.themeId);
+    mutationFn: async (data: { themeId: string; status: ThemeStatus }) => {
+      return await updateThemeLearnedStatus(userId, data.themeId, data.status);
     },
-    onSuccess: () => {
-      navigation.navigate('Conversation');
+    onSuccess: (data, variables) => {
+      if (data === 'conversation')
+        return navigation.navigate('Conversation', {
+          themeId: variables.themeId,
+        });
     },
     onError: (error) => {
       console.log(error);

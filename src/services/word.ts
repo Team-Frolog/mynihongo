@@ -1,6 +1,6 @@
 import { db } from 'firebaseConfig';
 import { doc, getDoc, updateDoc } from 'firebase/firestore';
-import { UserInfo } from '@/types/user';
+import { ThemeStatus, UserInfo } from '@/types/user';
 
 export const updateWordLearningStatus = async (
   userId: string,
@@ -53,6 +53,7 @@ export const updateWordLearningStatus = async (
 export const updateThemeLearnedStatus = async (
   userId: string,
   themeId: string,
+  status: ThemeStatus,
 ) => {
   const userRef = doc(db, 'users', userId);
   const userDoc = await getDoc(userRef);
@@ -70,7 +71,7 @@ export const updateThemeLearnedStatus = async (
       if (index === existingThemeIndex) {
         return {
           ...theme,
-          status: 'conversation',
+          status,
         };
       }
       return theme;
@@ -80,6 +81,8 @@ export const updateThemeLearnedStatus = async (
       themeStatus: updatedThemeStatus,
     });
   }
+
+  return status;
 };
 
 // 1. themeId 이용 유저 정보의 themeStatus에서 해당 theme 찾기
