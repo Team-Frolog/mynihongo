@@ -41,7 +41,7 @@ function Quiz() {
 
   useEffect(() => {
     if (currentIndex === words.length - 1) {
-      return updateThemeStatus({ themeId });
+      return updateThemeStatus({ themeId, status: 'conversation' });
     }
   }, [currentIndex]);
 
