@@ -3,7 +3,7 @@ import BackHeader from '@/components/commons/BackHeader';
 import Tts from 'assets/icons/Tts';
 import { styles } from '@/styles/Real/Real.style';
 
-function Real() {
+function Conversation() {
   return (
     <View style={styles.container}>
       <BackHeader title="실전" />
@@ -49,4 +49,4 @@ function Real() {
   );
 }
 
-export default Real;
+export default Conversation;

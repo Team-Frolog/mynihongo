@@ -8,7 +8,7 @@ import Login from '@/screens/Login';
 import Main from '@/screens/Main';
 import Practice from '@/screens/Practice';
 import Quiz from '@/screens/Quiz';
-import Real from '@/screens/Real';
+import Conversation from '@/screens/Conversation';
 import Complete from '@/screens/Complete';
 import * as SplashScreen from 'expo-splash-screen';
 import { useVisitedDate } from '@/hooks/useVisitedDate';
@@ -67,7 +67,7 @@ function AppNavigator() {
           />
           <Stack.Screen name="Practice" component={Practice} />
           <Stack.Screen name="Quiz" component={Quiz} />
-          <Stack.Screen name="Conversation" component={Real} />
+          <Stack.Screen name="Conversation" component={Conversation} />
           <Stack.Screen name="Complete" component={Complete} />
         </>
       ) : (
