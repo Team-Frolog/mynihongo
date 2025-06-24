@@ -2,12 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import BackHeader from '@/components/commons/BackHeader';
 import { styles } from '@/styles/Conversation/Conversation.style';
-import {
-  NavigationProp,
-  RouteProp,
-  useNavigation,
-  useRoute,
-} from '@react-navigation/native';
+import { RouteProp, useRoute } from '@react-navigation/native';
 import { useMemo, useState } from 'react';
 import { conversationData } from '@/data/conversation';
 import ResponseContent from '@/components/Conversation/ResponseContent';
@@ -15,11 +10,17 @@ import ChoiceContent from '@/components/Conversation/ChoiceContent';
 import ButtonHeader from '@/components/commons/ButtonHeader';
 import { styles as headerButtonStyles } from '@/styles/commons/HeaderButton.style';
 import { useWord } from '@/hooks/useWord';
+import Animated, {
+  useSharedValue,
+  useAnimatedStyle,
+  withTiming,
+  withSequence,
+  Easing,
+} from 'react-native-reanimated';
 
 function Conversation() {
   const route = useRoute<RouteProp<any>>();
   const themeId = route.params?.themeId;
-  const navigation = useNavigation<NavigationProp<any>>();
 
   const conversation = useMemo(() => {
     return conversationData.find((data) => data.id.split('_')[0] === themeId)!;
@@ -30,9 +31,40 @@ function Conversation() {
 
   const { updateThemeStatus } = useWord();
 
+  const opacity = useSharedValue(1);
+  const translateY = useSharedValue(0);
+
+  const animatedStyle = useAnimatedStyle(() => ({
+    opacity: opacity.value,
+    transform: [{ translateY: translateY.value }],
+  }));
+
   const handleClickAnswer = (index: number) => {
-    setIsSelected(true);
-    setSelectedAnswer(index);
+    opacity.value = withTiming(0, {
+      duration: 250,
+      easing: Easing.out(Easing.quad),
+    });
+    translateY.value = withTiming(-15, {
+      duration: 250,
+      easing: Easing.out(Easing.quad),
+    });
+
+    setTimeout(() => {
+      setIsSelected(true);
+      setSelectedAnswer(index);
+
+      translateY.value = withSequence(
+        withTiming(25, { duration: 0 }),
+        withTiming(0, {
+          duration: 400,
+          easing: Easing.out(Easing.back(1.1)),
+        }),
+      );
+      opacity.value = withTiming(1, {
+        duration: 400,
+        easing: Easing.out(Easing.quad),
+      });
+    }, 250);
   };
 
   // const convertJapanese = (japanese: string) => {
@@ -63,7 +95,7 @@ function Conversation() {
       ) : (
         <BackHeader title="실전" />
       )}
-      <View style={styles.realContainer}>
+      <Animated.View style={[styles.realContainer, animatedStyle]}>
         {isSelected ? (
           <ResponseContent
             npcDialogue={conversation?.response[selectedAnswer].japanese}
@@ -80,7 +112,7 @@ function Conversation() {
             onPress={handleClickAnswer}
           />
         )}
-      </View>
+      </Animated.View>
     </View>
   );
 }
