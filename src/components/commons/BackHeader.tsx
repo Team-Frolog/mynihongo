@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity } from 'react-native';
 import ChevronLeftArrow from 'assets/icons/ChevronLeftArrow';
-import { styles } from '@/styles/commons/BackHeader.style';
+import { styles } from '@/styles/commons/Header.style';
 import { NavigationProp, useNavigation } from '@react-navigation/native';
 
 interface Props {
@@ -16,7 +16,7 @@ function BackHeader({ title }: Props) {
 
   return (
     <View style={styles.header}>
-      <TouchableOpacity style={styles.backButton} onPress={handleGoBack}>
+      <TouchableOpacity style={styles.button} onPress={handleGoBack}>
         <ChevronLeftArrow />
       </TouchableOpacity>
       <Text style={styles.headerTitle}>{title}</Text>

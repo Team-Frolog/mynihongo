@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
     fontWeight: '700',
     lineHeight: 40,
   },
-  backButton: {
+  button: {
     alignItems: 'center',
     justifyContent: 'center',
   },
