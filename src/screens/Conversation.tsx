@@ -1,16 +1,25 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import BackHeader from '@/components/commons/BackHeader';
 import { styles } from '@/styles/Conversation/Conversation.style';
-import { RouteProp, useRoute } from '@react-navigation/native';
+import {
+  NavigationProp,
+  RouteProp,
+  useNavigation,
+  useRoute,
+} from '@react-navigation/native';
 import { useMemo, useState } from 'react';
 import { conversationData } from '@/data/conversation';
 import ResponseContent from '@/components/Conversation/ResponseContent';
 import ChoiceContent from '@/components/Conversation/ChoiceContent';
+import ButtonHeader from '@/components/commons/ButtonHeader';
+import { styles as headerButtonStyles } from '@/styles/commons/HeaderButton.style';
+import { useWord } from '@/hooks/useWord';
 
 function Conversation() {
   const route = useRoute<RouteProp<any>>();
   const themeId = route.params?.themeId;
+  const navigation = useNavigation<NavigationProp<any>>();
 
   const conversation = useMemo(() => {
     return conversationData.find((data) => data.id.split('_')[0] === themeId)!;
@@ -18,6 +27,8 @@ function Conversation() {
 
   const [isSelected, setIsSelected] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(0);
+
+  const { updateThemeStatus } = useWord();
 
   const handleClickAnswer = (index: number) => {
     setIsSelected(true);
@@ -37,7 +48,21 @@ function Conversation() {
 
   return (
     <View style={styles.container}>
-      <BackHeader title="실전" />
+      {isSelected ? (
+        <ButtonHeader
+          title="실전"
+          onPress={() => {
+            updateThemeStatus({
+              themeId: themeId,
+              status: 'completed',
+            });
+          }}
+        >
+          <Text style={headerButtonStyles.textButton}>종료</Text>
+        </ButtonHeader>
+      ) : (
+        <BackHeader title="실전" />
+      )}
       <View style={styles.realContainer}>
         {isSelected ? (
           <ResponseContent
