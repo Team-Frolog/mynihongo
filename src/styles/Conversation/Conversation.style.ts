@@ -35,17 +35,21 @@ export const styles = StyleSheet.create({
   textWrapper: {
     flexDirection: 'column',
     gap: 5,
+    flex: 1,
+    flexShrink: 1,
   },
   koreanText: {
     color: '#4F505C',
     fontSize: 12,
     fontWeight: 500,
     lineHeight: 18,
+    flexWrap: 'wrap',
   },
   npcAnswer: {
     width: '113%',
     paddingVertical: 24,
     paddingLeft: 24,
+    paddingRight: 24,
 
     flexDirection: 'row',
     alignItems: 'flex-start',
@@ -59,12 +63,8 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 500,
     lineHeight: 18,
-  },
-  npcAnswerKanjiHiragana: {
-    color: '#898989',
-    fontSize: 8,
-    fontWeight: 500,
-    lineHeight: 18,
+    flexWrap: 'wrap',
+    flexShrink: 1,
   },
   answerWrapper: {
     position: 'absolute',
@@ -86,10 +86,10 @@ export const styles = StyleSheet.create({
     width: '111%',
     paddingVertical: 18,
     paddingLeft: 24,
+    paddingRight: 24,
     marginLeft: -24,
 
     flexDirection: 'row',
-    justifyContent: 'flex-start',
     gap: 15,
 
     backgroundColor: '#d2d2d2',
