@@ -1,7 +1,7 @@
-import { View, Image, Text, Pressable } from 'react-native';
+import { View, Image, Text } from 'react-native';
 import BackHeader from '@/components/commons/BackHeader';
 import Tts from 'assets/icons/Tts';
-import { styles } from '@/styles/Real/Real.style';
+import { styles } from '@/styles/Conversation/Conversation.style';
 import PressButton from '@/components/commons/PressButton';
 
 function Conversation() {
