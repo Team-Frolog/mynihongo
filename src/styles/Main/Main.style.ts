@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
     gap: 33,
     flexDirection: 'column',
     alignItems: 'center',
+    backgroundColor: '#fff',
   },
   title: {
     color: '#313239',
