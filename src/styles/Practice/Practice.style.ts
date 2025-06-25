@@ -67,7 +67,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'flex-end',
-    gap: 20,
+    gap: 10,
   },
   gestureGuide: {
     color: '#898989',
