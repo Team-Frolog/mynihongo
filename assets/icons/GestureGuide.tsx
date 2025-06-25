@@ -1,14 +1,24 @@
 import React from 'react';
 import { Svg, Path, Circle } from 'react-native-svg';
+import { QuizDirection } from '@/types/quiz';
 
-function GestureGuideIcon() {
+interface Props {
+  direction: QuizDirection;
+}
+
+function GestureGuideIcon({ direction }: Props) {
+  let circleColor = '#C5C5C5';
+
+  if (direction === 'right') circleColor = '#76A452';
+  else if (direction === 'left') circleColor = '#E26C3E';
+
   return (
     <Svg width="126" height="91" viewBox="0 0 126 91" fill="none">
       <Circle
         cx="63.4317"
         cy="28.1111"
         r="25.6111"
-        stroke="#C5C5C5"
+        stroke={circleColor}
         strokeWidth="5"
       />
       <Path
@@ -24,13 +34,13 @@ function GestureGuideIcon() {
       />
       <Path
         d="M91.5425 28.1112H122.866M122.866 28.1112L108.825 9.63818M122.866 28.1112L108.825 46.5842"
-        stroke="#C5C5C5"
+        stroke={direction === 'right' ? '#76A452' : '#C5C5C5'}
         strokeWidth="5"
         strokeLinecap="round"
       />
       <Path
         d="M35.3206 28.111L3.99675 28.111M3.99675 28.111L18.0385 46.584M3.99675 28.111L18.0385 9.63795"
-        stroke="#C5C5C5"
+        stroke={direction === 'left' ? '#E26C3E' : '#C5C5C5'}
         strokeWidth="5"
         strokeLinecap="round"
       />

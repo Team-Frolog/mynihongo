@@ -8,31 +8,36 @@ import Animated, {
   runOnJS,
   interpolate,
   Extrapolation,
+  useAnimatedReaction,
 } from 'react-native-reanimated';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Tts from '../../../assets/icons/Tts';
 import { styles } from '@/styles/Practice/Practice.style';
+import { QuizDirection } from '@/types/quiz';
 
 const { width: screenWidth } = Dimensions.get('window');
 const SWIPE_THRESHOLD = screenWidth * 0.3;
 
 interface Props {
   item: any;
-  onSwipeLeft: () => void;
-  onSwipeRight: () => void;
   index: number;
   totalCards: number;
+  onSwipeLeft: () => void;
+  onSwipeRight: () => void;
+  onSetDirection: (direction: QuizDirection) => void;
 }
 
 function SwipeCard({
   item,
-  onSwipeLeft,
-  onSwipeRight,
   index,
   totalCards,
+  onSwipeLeft,
+  onSwipeRight,
+  onSetDirection,
 }: Props) {
   const translateX = useSharedValue(0);
   const scale = useSharedValue(1);
+  const currentDirection = useSharedValue<QuizDirection>('center');
 
   // 새로운 Gesture API 사용
   const panGesture = Gesture.Pan()
@@ -49,11 +54,14 @@ function SwipeCard({
       if (shouldSwipeLeft) {
         translateX.value = withTiming(-screenWidth * 1.5);
         runOnJS(onSwipeLeft)();
+        runOnJS(onSetDirection)('center');
       } else if (shouldSwipeRight) {
         translateX.value = withTiming(screenWidth * 1.5);
         runOnJS(onSwipeRight)();
+        runOnJS(onSetDirection)('center');
       } else {
         translateX.value = withSpring(0);
+        runOnJS(onSetDirection)('center');
       }
       scale.value = withSpring(1);
     });
@@ -84,41 +92,27 @@ function SwipeCard({
     };
   });
 
-  const leftLabelStyle = useAnimatedStyle(() => {
-    const opacity = interpolate(
-      translateX.value,
-      [-SWIPE_THRESHOLD, -SWIPE_THRESHOLD / 2, 0],
-      [1, 1, 0],
-      Extrapolation.CLAMP,
-    );
-    return { opacity };
-  });
-
-  const rightLabelStyle = useAnimatedStyle(() => {
-    const opacity = interpolate(
-      translateX.value,
-      [0, SWIPE_THRESHOLD / 2, SWIPE_THRESHOLD],
-      [0, 1, 1],
-      Extrapolation.CLAMP,
-    );
-    return { opacity };
-  });
+  useAnimatedReaction(
+    () => {
+      if (translateX.value < -SWIPE_THRESHOLD) {
+        return 'left';
+      } else if (translateX.value > SWIPE_THRESHOLD) {
+        return 'right';
+      } else {
+        return 'center';
+      }
+    },
+    (newDirection) => {
+      if (currentDirection.value !== newDirection) {
+        currentDirection.value = newDirection;
+        runOnJS(onSetDirection)(newDirection);
+      }
+    },
+  );
 
   return (
     <GestureDetector gesture={panGesture}>
       <Animated.View style={[styles.wordContainer, cardStyle]}>
-        <Animated.View
-          style={[styles.swipeLabel, styles.leftLabel, leftLabelStyle]}
-        >
-          <Text style={styles.swipeLabelText}>모름</Text>
-        </Animated.View>
-
-        <Animated.View
-          style={[styles.swipeLabel, styles.rightLabel, rightLabelStyle]}
-        >
-          <Text style={styles.swipeLabelText}>앎</Text>
-        </Animated.View>
-
         {/* 카드 내용 */}
         <Image
           source={require('../../../assets/images/word-mock.png')}
