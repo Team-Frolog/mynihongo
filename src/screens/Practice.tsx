@@ -14,6 +14,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import SwipeCard from '@/components/Practice/SwipeCard';
 import { useWord } from '@/hooks/useWord';
 import { useUser } from '@/hooks/useUser';
+import SafeAreaScreen from '@/components/commons/SafeAreaScreen';
 
 function Practice() {
   const route = useRoute<RouteProp<any>>();
@@ -66,24 +67,26 @@ function Practice() {
   };
 
   return (
-    <GestureHandlerRootView>
-      <View style={styles.container}>
-        <BackHeader title={themeName} />
+    <SafeAreaScreen>
+      <GestureHandlerRootView>
+        <View style={styles.container}>
+          <BackHeader title={themeName} />
 
-        {/* 다음 카드들을 미리 렌더링 (최대 3장) */}
-        {words.slice(currentIndex, currentIndex + 3).map((word, index) => (
-          <SwipeCard
-            key={word.id}
-            item={word}
-            onSwipeLeft={handleSwipeLeft}
-            onSwipeRight={handleSwipeRight}
-            index={index}
-            totalCards={3}
-          />
-        ))}
-        {isShowGestureGuide && <GestureGuide />}
-      </View>
-    </GestureHandlerRootView>
+          {/* 다음 카드들을 미리 렌더링 (최대 3장) */}
+          {words.slice(currentIndex, currentIndex + 3).map((word, index) => (
+            <SwipeCard
+              key={word.id}
+              item={word}
+              onSwipeLeft={handleSwipeLeft}
+              onSwipeRight={handleSwipeRight}
+              index={index}
+              totalCards={3}
+            />
+          ))}
+          {isShowGestureGuide && <GestureGuide />}
+        </View>
+      </GestureHandlerRootView>
+    </SafeAreaScreen>
   );
 }
 

@@ -8,7 +8,7 @@ import Animated, {
 
 interface Props extends Omit<PressableProps, 'style'> {
   children: ReactNode;
-  extraStyles: StyleProp<ViewStyle>;
+  extraStyles?: StyleProp<ViewStyle>;
 }
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
