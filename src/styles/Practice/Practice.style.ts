@@ -76,6 +76,11 @@ export const styles = StyleSheet.create({
     fontWeight: '500',
     textAlign: 'center',
   },
+  userChoiceText: {
+    color: '#898989',
+    fontSize: 40,
+    fontWeight: '500',
+  },
   cardContainer: {
     flex: 1,
     justifyContent: 'center',
