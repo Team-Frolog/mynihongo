@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   list: {
-    paddingBottom: 120,
+    paddingBottom: 150,
     gap: 16,
   },
   contentWrapper: {
@@ -68,6 +68,7 @@ export const styles = StyleSheet.create({
     right: 0,
 
     padding: 24,
+    paddingBottom: 35,
 
     flexDirection: 'row',
     justifyContent: 'space-between',

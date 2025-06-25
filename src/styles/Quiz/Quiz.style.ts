@@ -59,7 +59,7 @@ export const styles = StyleSheet.create({
   },
   buttonWrapper: {
     position: 'absolute',
-    bottom: '5%',
+    bottom: '10%',
     left: 0,
     right: 0,
 
