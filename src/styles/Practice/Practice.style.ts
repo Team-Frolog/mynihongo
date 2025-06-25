@@ -60,7 +60,7 @@ export const styles = StyleSheet.create({
   },
   gestureGuideWrapper: {
     position: 'absolute',
-    bottom: 10,
+    bottom: 15,
     left: 0,
     right: 0,
     zIndex: 100,
