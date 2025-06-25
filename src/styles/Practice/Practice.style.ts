@@ -60,14 +60,14 @@ export const styles = StyleSheet.create({
   },
   gestureGuideWrapper: {
     position: 'absolute',
-    bottom: 10,
+    bottom: 15,
     left: 0,
     right: 0,
     zIndex: 100,
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'flex-end',
-    gap: 20,
+    gap: 10,
   },
   gestureGuide: {
     color: '#898989',
@@ -75,6 +75,11 @@ export const styles = StyleSheet.create({
     fontStyle: 'normal',
     fontWeight: '500',
     textAlign: 'center',
+  },
+  userChoiceText: {
+    color: '#898989',
+    fontSize: 40,
+    fontWeight: '500',
   },
   cardContainer: {
     flex: 1,

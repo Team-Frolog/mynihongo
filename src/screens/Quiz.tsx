@@ -11,6 +11,7 @@ import WrongAnswerImage from '../../assets/images/WrongAnswerImage';
 import QuizContent from '@/components/Quiz/QuizContent';
 import { wordData } from '@/data/word';
 import { useWord } from '@/hooks/useWord';
+import SafeAreaScreen from '@/components/commons/SafeAreaScreen';
 
 function Quiz() {
   const route = useRoute<RouteProp<any>>();
@@ -58,7 +59,7 @@ function Quiz() {
   };
 
   return (
-    <>
+    <SafeAreaScreen>
       <View style={styles.container}>
         <BackHeader title="퀴즈" />
         <View style={styles.status}>
@@ -80,7 +81,7 @@ function Quiz() {
           {overlayState === 'wrong' && <WrongAnswerImage />}
         </View>
       </Modal>
-    </>
+    </SafeAreaScreen>
   );
 }
 

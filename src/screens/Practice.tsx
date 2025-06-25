@@ -15,6 +15,7 @@ import SwipeCard from '@/components/Practice/SwipeCard';
 import { useWord } from '@/hooks/useWord';
 import { useUser } from '@/hooks/useUser';
 import SafeAreaScreen from '@/components/commons/SafeAreaScreen';
+import { QuizDirection } from '@/types/quiz';
 
 function Practice() {
   const route = useRoute<RouteProp<any>>();
@@ -25,7 +26,7 @@ function Practice() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [learnedCount, setLearnedCount] = useState(0);
-  const [isShowGestureGuide, setIsShowGestureGuide] = useState(true);
+  const [direction, setDirection] = useState<QuizDirection>('center');
 
   const { updateWordToLearned } = useWord();
   const { userInfo } = useUser();
@@ -41,12 +42,6 @@ function Practice() {
         .filter((word) => word.themeId === themeId)
         .filter((word) => !currentThemeWords.includes(word.id))
     : wordData.filter((word) => word.themeId === themeId);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsShowGestureGuide(false);
-    }, 3000);
-  }, []);
 
   useEffect(() => {
     if (learnedCount === words.length) {
@@ -66,24 +61,27 @@ function Practice() {
     setLearnedCount((prev) => prev + 1);
   };
 
+  const handleSetDirection = (direction: QuizDirection) => {
+    setDirection(direction);
+  };
+
   return (
     <SafeAreaScreen>
       <GestureHandlerRootView>
         <View style={styles.container}>
           <BackHeader title={themeName} />
-
-          {/* 다음 카드들을 미리 렌더링 (최대 3장) */}
           {words.slice(currentIndex, currentIndex + 3).map((word, index) => (
             <SwipeCard
               key={word.id}
               item={word}
               onSwipeLeft={handleSwipeLeft}
               onSwipeRight={handleSwipeRight}
+              onSetDirection={handleSetDirection}
               index={index}
               totalCards={3}
             />
           ))}
-          {isShowGestureGuide && <GestureGuide />}
+          <GestureGuide direction={direction} />
         </View>
       </GestureHandlerRootView>
     </SafeAreaScreen>
