@@ -17,6 +17,7 @@ import Animated, {
   withSequence,
   Easing,
 } from 'react-native-reanimated';
+import SafeAreaScreen from '@/components/commons/SafeAreaScreen';
 
 function Conversation() {
   const route = useRoute<RouteProp<any>>();
@@ -79,41 +80,43 @@ function Conversation() {
   // };
 
   return (
-    <View style={styles.container}>
-      {isSelected ? (
-        <ButtonHeader
-          title="실전"
-          onPress={() => {
-            updateThemeStatus({
-              themeId: themeId,
-              status: 'completed',
-            });
-          }}
-        >
-          <Text style={headerButtonStyles.textButton}>종료</Text>
-        </ButtonHeader>
-      ) : (
-        <BackHeader title="실전" />
-      )}
-      <Animated.View style={[styles.realContainer, animatedStyle]}>
+    <SafeAreaScreen>
+      <View style={styles.container}>
         {isSelected ? (
-          <ResponseContent
-            npcDialogue={conversation?.response[selectedAnswer].japanese}
-            npcKorean={conversation?.response[selectedAnswer].korean}
-            userDialogue={conversation?.userChoice[selectedAnswer].japanese}
-            userKorean={conversation?.userChoice[selectedAnswer].korean}
-          />
+          <ButtonHeader
+            title="실전"
+            onPress={() => {
+              updateThemeStatus({
+                themeId: themeId,
+                status: 'completed',
+              });
+            }}
+          >
+            <Text style={headerButtonStyles.textButton}>종료</Text>
+          </ButtonHeader>
         ) : (
-          <ChoiceContent
-            npcDialogue={conversation?.question.japanese}
-            userChoice={conversation?.userChoice.map(
-              (choice) => choice.japanese,
-            )}
-            onPress={handleClickAnswer}
-          />
+          <BackHeader title="실전" />
         )}
-      </Animated.View>
-    </View>
+        <Animated.View style={[styles.realContainer, animatedStyle]}>
+          {isSelected ? (
+            <ResponseContent
+              npcDialogue={conversation?.response[selectedAnswer].japanese}
+              npcKorean={conversation?.response[selectedAnswer].korean}
+              userDialogue={conversation?.userChoice[selectedAnswer].japanese}
+              userKorean={conversation?.userChoice[selectedAnswer].korean}
+            />
+          ) : (
+            <ChoiceContent
+              npcDialogue={conversation?.question.japanese}
+              userChoice={conversation?.userChoice.map(
+                (choice) => choice.japanese,
+              )}
+              onPress={handleClickAnswer}
+            />
+          )}
+        </Animated.View>
+      </View>
+    </SafeAreaScreen>
   );
 }
 
