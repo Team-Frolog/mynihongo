@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View, ImageBackground } from 'react-native';
+import { Text, View } from 'react-native';
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
 import { signIn } from '@/services/auth';
 import { styles } from '@/styles/Login/Login.style';
 import PressButton from '@/components/commons/PressButton';
 import GoogleLoginIcon from '../../assets/icons/GoogleLoginIcon';
+import SlideBackground from '@/components/Login/SlideBackground';
 
 GoogleSignin.configure({
   webClientId: process.env.EXPO_PUBLIC_WEB_CLIENT_ID,
@@ -13,11 +14,7 @@ GoogleSignin.configure({
 
 function Login() {
   return (
-    <ImageBackground
-      source={require('../../assets/images/login-background.png')}
-      style={styles.backgroundImage}
-      resizeMode="cover"
-    >
+    <SlideBackground>
       <StatusBar style="light" translucent />
 
       <View style={styles.overlay}>
@@ -39,7 +36,7 @@ function Login() {
           </View>
         </View>
       </View>
-    </ImageBackground>
+    </SlideBackground>
   );
 }
 
