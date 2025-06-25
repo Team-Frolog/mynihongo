@@ -94,9 +94,9 @@ function SwipeCard({
 
   useAnimatedReaction(
     () => {
-      if (translateX.value < -SWIPE_THRESHOLD) {
+      if (translateX.value < -SWIPE_THRESHOLD / 2) {
         return 'left';
-      } else if (translateX.value > SWIPE_THRESHOLD) {
+      } else if (translateX.value > SWIPE_THRESHOLD / 2) {
         return 'right';
       } else {
         return 'center';
