@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { styles } from '@/styles/Quiz/Quiz.style';
-import Tts from 'assets/icons/Tts';
+import Tts from '@/components/commons/Tts';
 import PressButton from '@/components/commons/PressButton';
 import { Word } from '@/data/word';
 
@@ -23,7 +23,7 @@ function QuizContent({ words, currentIndex, handleAnswer }: Props) {
         <View style={styles.wordWrapper}>
           <Text style={styles.jWord}>{words[currentIndex].hiragana}</Text>
           <Text style={styles.kanji}>{words[currentIndex].kanji}</Text>
-          <Tts />
+          <Tts text={words[currentIndex].hiragana} />
         </View>
       </View>
       <View style={styles.buttonWrapper}>

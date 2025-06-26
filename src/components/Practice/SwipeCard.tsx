@@ -11,9 +11,9 @@ import Animated, {
   useAnimatedReaction,
 } from 'react-native-reanimated';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
-import Tts from '../../../assets/icons/Tts';
 import { styles } from '@/styles/Practice/Practice.style';
 import { QuizDirection } from '@/types/quiz';
+import Tts from '@/components/commons/Tts';
 
 const { width: screenWidth } = Dimensions.get('window');
 const SWIPE_THRESHOLD = screenWidth * 0.3;
@@ -122,7 +122,7 @@ function SwipeCard({
           <Text style={styles.jWord}>{item.hiragana}</Text>
           <Text style={styles.kanji}>{item.kanji}</Text>
           <Text style={styles.kWord}>{item.meaning}</Text>
-          <Tts />
+          <Tts text={item.hiragana} />
         </View>
       </Animated.View>
     </GestureDetector>

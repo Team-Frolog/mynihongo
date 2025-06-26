@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Image, Text } from 'react-native';
-import Tts from 'assets/icons/Tts';
+import Tts from '@/components/commons/Tts';
 import { styles } from '@/styles/Conversation/Conversation.style';
 import AnswerButton from '@/components/Conversation/AnswerButton';
 
@@ -18,7 +18,7 @@ function ChoiceContent({ npcDialogue, userChoice, onPress }: Props) {
         <View>
           <View style={styles.npcTriangle} />
           <View style={styles.npcAnswer}>
-            <Tts color="#FF9A9A" />
+            <Tts color="#FF9A9A" text={npcDialogue} />
             <View style={styles.textWrapper}>
               <Text style={styles.npcAnswerText}>{npcDialogue}</Text>
             </View>

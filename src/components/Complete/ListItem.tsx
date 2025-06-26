@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import { styles } from '@/styles/Complete/Complete.style';
 import ChevronUpArrow from 'assets/icons/ChevronUpArrow';
 import ChevronDownArrow from 'assets/icons/ChevronDownArrow';
-import Tts from 'assets/icons/Tts';
+import Tts from '@/components/commons/Tts';
 import { useState } from 'react';
 import { Word } from '@/data/word';
 
@@ -26,7 +26,7 @@ function ListItem({ item }: Props) {
           </TouchableOpacity>
         )}
         <Text style={styles.wordText}>{item.kanji}</Text>
-        <Tts />
+        <Tts text={item.hiragana} />
       </View>
       {isShow && (
         <View style={styles.meanWrapper}>
