@@ -68,7 +68,7 @@ export const styles = StyleSheet.create({
   },
   answerWrapper: {
     position: 'absolute',
-    bottom: '10%',
+    bottom: '13%',
     left: 0,
     right: 0,
 
