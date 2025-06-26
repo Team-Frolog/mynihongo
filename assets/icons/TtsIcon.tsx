@@ -5,7 +5,7 @@ interface Props {
   color?: string;
 }
 
-function Tts({ color = '#B4B4B4' }: Props) {
+function TtsIcon({ color = '#B4B4B4' }: Props) {
   return (
     <Svg width="20" height="20" viewBox="0 0 20 20" fill="none">
       <Path
@@ -24,4 +24,4 @@ function Tts({ color = '#B4B4B4' }: Props) {
   );
 }
 
-export default Tts;
+export default TtsIcon;
