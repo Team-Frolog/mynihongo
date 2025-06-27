@@ -1726,8 +1726,8 @@ export const conversationData: Conversation[] = [
       },
       {
         responseId: 'despair_situation_response_2',
-        japanese: '少し休むのも大切だよ。',
-        korean: '조금 쉬는 것도 중요해.',
+        japanese: '何も考えたくない。',
+        korean: '아무 생각도 하고 싶지 않다.',
       },
     ],
     response: [
@@ -1740,8 +1740,8 @@ export const conversationData: Conversation[] = [
       {
         responseId: 'despair_situation_response_2',
         responseImage: '/images/conversations/passion/stronger_self.jpg',
-        japanese: '何だよ？苦しんでる俺にかける言葉がそれか？ㄴ',
-        korean: '뭐라고? 괴로워하는 내게 할 말이야?',
+        japanese: '少し休むのも大切だよ。',
+        korean: '조금 쉬는 것도 중요해.',
       },
     ],
   },
