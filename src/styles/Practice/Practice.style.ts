@@ -67,11 +67,11 @@ export const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'flex-end',
-    gap: 10,
+    gap: 8,
   },
   gestureGuide: {
     color: '#898989',
-    fontSize: 15,
+    fontSize: 14,
     fontStyle: 'normal',
     fontWeight: '500',
     textAlign: 'center',

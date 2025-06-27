@@ -14,11 +14,11 @@ function TtsIcon({ color = '#B4B4B4' }: Props) {
       />
       <Path
         d="M18.8567 3.92824H19.9996V16.0708H18.8567V3.92824Z"
-        fill="#B4B4B4"
+        fill={color}
       />
       <Path
         d="M17.1458 6.78545H16.0029V13.2139H17.1458V6.78545Z"
-        fill="#B4B4B4"
+        fill={color}
       />
     </Svg>
   );
