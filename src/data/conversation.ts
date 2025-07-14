@@ -23,7 +23,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'cafe_situation',
     theme: '카페',
-    situationImage: 'assets/images/word-mock.png',
+    situationImage: 'assets/images/public/cafe/cafe_situation.webp',
     question: {
       japanese: 'いらっしゃいませ。ご注文はお決まりですか？',
       korean: '어서 오세요. 주문은 정하셨나요?',
@@ -43,13 +43,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'cafe_situation_response_1',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/cafe/cafe_situation_response_1.webp',
         japanese: 'かしこまりました。お席でお待ちください。',
         korean: '알겠습니다. 자리에서 기다려 주세요.',
       },
       {
         responseId: 'cafe_situation_response_2',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/cafe/cafe_situation_response_2.webp',
         japanese: 'おすすめはチョコレートケーキです。',
         korean: '추천은 초콜릿 케이크입니다.',
       },
@@ -58,7 +60,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'travel1_situation',
     theme: '여행1',
-    situationImage: 'assets/images/word-mock.png',
+    situationImage: 'assets/images/public/travel/travel1_situation.webp',
     question: {
       japanese: '予約はされていますか？',
       korean: '예약하셨나요?',
@@ -78,13 +80,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'travel1_situation_response_1',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/travel/travel1_situation_response_1.webp',
         japanese: '確認できました。観光を楽しんでください。',
         korean: '확인되었습니다. 관광을 즐기세요.',
       },
       {
         responseId: 'travel1_situation_response_2',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/travel/travel1_situation_response_2.webp',
         japanese: 'それでは地図をどうぞ。目的地まで気をつけて。',
         korean: '그럼 지도를 드릴게요. 목적지까지 조심히 가세요.',
       },
@@ -94,7 +98,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'travel2_situation',
     theme: '여행2',
-    situationImage: 'assets/images/word-mock.png',
+    situationImage: 'assets/images/public/travel/travel2_situation.webp',
     question: {
       japanese: '来週出国します。荷造りは終わりましたか？',
       korean: '다음 주 출국입니다. 짐 싸기는 끝났나요?',
@@ -114,13 +118,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'travel2_situation_response_1',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/travel/travel2_situation_response_1.webp',
         japanese: 'すばらしいです。では航空券を忘れずに。',
         korean: '훌륭합니다. 그럼 항공권은 잊지 마세요.',
       },
       {
         responseId: 'travel2_situation_response_2',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/travel/travel2_situation_response_2.webp',
         japanese: 'それなら、出発前に空港で両替しましょう。',
         korean: '그렇다면 출발 전에 공항에서 환전하세요.',
       },
@@ -130,7 +136,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'love_situation',
     theme: '연애',
-    situationImage: 'assets/images/word-mock.png',
+    situationImage: 'assets/images/public/love/love_situation.webp',
     question: {
       japanese: '明日、告白するつもりです。緊張しています。',
       korean: '내일 고백할 예정이에요. 긴장돼요.',
@@ -150,13 +156,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'love_situation_response_1',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/love/love_situation_response_1.webp',
         japanese: 'ありがとうございます！自信が出ました。',
         korean: '감사합니다! 자신감이 생겼어요.',
       },
       {
         responseId: 'love_situation_response_2',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/love/love_situation_response_2.webp',
         japanese: 'そうですね。後悔しないように伝えます。',
         korean: '그러네요. 후회하지 않게 전할게요.',
       },
@@ -166,7 +174,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'food1_situation',
     theme: '음식1',
-    situationImage: 'assets/images/word-mock.png',
+    situationImage: 'assets/images/public/food/food1_situation.webp',
     question: {
       japanese: '今日は焼き魚と鳥の唐揚げ、どちらを食べたいですか？',
       korean: '오늘은 생선구이랑 닭튀김 중 어떤 걸 먹고 싶어요?',
@@ -186,13 +194,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'food1_situation_response_1',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/food/food1_situation_response_1.webp',
         japanese: 'じゃあ、魚にしましょう！飲み物はお茶でいいですか？',
         korean: '그럼 생선으로 할게요! 음료는 차로 괜찮아요?',
       },
       {
         responseId: 'food1_situation_response_2',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/food/food1_situation_response_2.webp',
         japanese: '了解です！ご飯も多めにしましょうか？',
         korean: '알겠습니다! 밥도 많이 드릴까요?',
       },
@@ -202,7 +212,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'food2_situation',
     theme: '음식2',
-    situationImage: 'assets/images/word-mock.png',
+    situationImage: 'assets/images/public/food/food2_situation.webp',
     question: {
       japanese: '今日のお昼は、寿司とラーメン、どっちにする？',
       korean: '오늘 점심은 스시랑 라멘 중 뭐 먹을래?',
@@ -222,13 +232,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'food2_situation_response_1',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/food/food2_situation_response_1.webp',
         japanese: 'いいね！じゃあ、鰻の握りも頼もうか？',
         korean: '좋다! 그럼 장어초밥도 같이 시킬까?',
       },
       {
         responseId: 'food2_situation_response_2',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/food/food2_situation_response_2.webp',
         japanese: 'じゃあ、チャーシュー入りのラーメンにしよう！',
         korean: '그럼 차슈 들어간 라멘으로 하자!',
       },
@@ -238,7 +250,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'food3_situation',
     theme: '음식3',
-    situationImage: 'assets/images/word-mock.png',
+    situationImage: 'assets/images/public/food/food3_situation.webp',
     question: {
       japanese: 'このケーキ、どう？',
       korean: '이 케이크 어때?',
@@ -258,13 +270,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'food3_situation_response_1',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/food/food3_situation_response_1.webp',
         japanese: 'だよね！香ばしいコーヒーとも合うし。',
         korean: '그치! 고소한 커피랑도 잘 어울려.',
       },
       {
         responseId: 'food3_situation_response_2',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/food/food3_situation_response_2.webp',
         japanese: 'えっ？そんなに？私は美味しいと思ったよ！',
         korean: '엥? 진짜? 난 맛있다고 생각했는데!',
       },
@@ -274,7 +288,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'lovebreak_situation',
     theme: '사랑과 이별',
-    situationImage: 'assets/images/word-mock.png',
+    situationImage: 'assets/images/public/lovebreak/lovebreak_situation.webp',
     question: {
       japanese: '昨日の告白、どう思った？',
       korean: '어제 고백, 어떻게 생각했어?',
@@ -294,13 +308,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'lovebreak_situation_response_1',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/lovebreak/lovebreak_situation_response_1.webp',
         japanese: '私も同じ気持ちだったよ。抱きしめてもいい？',
         korean: '나도 같은 마음이었어. 안아도 될까?',
       },
       {
         responseId: 'lovebreak_situation_response_2',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/lovebreak/lovebreak_situation_response_2.webp',
         japanese: '…そうなんだ。涙が止まらないよ。',
         korean: '...그렇구나. 눈물이 멈추질 않아.',
       },
@@ -310,7 +326,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'weather1_situation',
     theme: '날씨1',
-    situationImage: 'assets/images/word-mock.png',
+    situationImage: 'assets/images/public/weather/weather1_situation.webp',
     question: {
       japanese: '今日は暖かいですね。春のような天気です。',
       korean: '오늘은 따뜻하네요. 봄 같은 날씨예요.',
@@ -330,13 +346,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'weather1_situation_response_1',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/weather/weather1_situation_response_1.webp',
         japanese: '外に出て散歩したくなりますね。',
         korean: '밖에 나가서 산책하고 싶어져요.',
       },
       {
         responseId: 'weather1_situation_response_2',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/weather/weather1_situation_response_2.webp',
         japanese: 'そうですね、風が少し冷たいです。',
         korean: '맞아요, 바람이 조금 차가워요.',
       },
@@ -346,7 +364,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'weather2_situation',
     theme: '날씨2',
-    situationImage: 'assets/images/word-mock.png',
+    situationImage: 'assets/images/public/weather/weather2_situation.webp',
     question: {
       japanese: '今日は暑いですね。外に出る予定はありますか？',
       korean: '오늘은 덥네요. 밖에 나갈 예정이 있나요?',
@@ -366,13 +384,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'weather2_situation_response_1',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/weather/weather2_situation_response_1.webp',
         japanese: '暑い日に外出するのは大変ですね。でも、楽しんでください！',
         korean: '더운 날에 외출하는 건 힘들죠. 그래도 즐기세요!',
       },
       {
         responseId: 'weather2_situation_response_2',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/weather/weather2_situation_response_2.webp',
         japanese: '家でリラックスするのもいいですね。ゆっくり休んでください。',
         korean: '집에서 릴랙스하는 것도 좋죠. 푹 쉬세요!',
       },
@@ -382,7 +402,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'time_situation',
     theme: '시간',
-    situationImage: 'assets/images/word-mock.png',
+    situationImage: 'assets/images/public/time/time_situation.webp',
     question: {
       japanese: '今日はどの時間帯が一番集中できると思いますか？',
       korean: '오늘 하루 중 언제가 가장 집중할 수 있을 것 같나요?',
@@ -402,7 +422,8 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'time_situation_response_1',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/time/time_situation_response_1.webp',
         japanese:
           '私も朝が一番集中できます。さっぱりした気分で始めるからですね。',
         korean:
@@ -410,7 +431,8 @@ export const conversationData: Conversation[] = [
       },
       {
         responseId: 'time_situation_response_2',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/time/time_situation_response_2.webp',
         japanese: '私も夜の方が集中できます。静かな環境がいいですね。',
         korean: '저도 밤이 더 집중이 잘 돼요. 조용한 환경이 좋죠.',
       },
@@ -420,7 +442,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'fate_situation',
     theme: '운명과 만남',
-    situationImage: 'assets/images/word-mock.png',
+    situationImage: 'assets/images/public/fate/fate_situation.webp',
     question: {
       japanese: '私たちの出会いは、まさに運命だと思いますか？',
       korean: '우리의 만남은, 정말 운명이라고 생각하나요?',
@@ -440,13 +462,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'fate_situation_response_1',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/fate/fate_situation_response_1.webp',
         japanese: '私もそう感じています。まるで奇跡みたいですね。',
         korean: '저도 그렇게 느껴요. 마치 기적 같은 느낌이에요.',
       },
       {
         responseId: 'fate_situation_response_2',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/fate/fate_situation_response_2.webp',
         japanese: '確かに。偶然でも運命のようなものだと思います。',
         korean: '확실히요. 우연일지라도 운명 같은 것이라고 생각해요.',
       },
@@ -456,7 +480,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'shopping1_situation',
     theme: '쇼핑1',
-    situationImage: 'assets/images/word-mock.png',
+    situationImage: 'assets/images/public/shopping/shopping1_situation.webp',
     question: {
       japanese: 'この服を買いたいのですが、値段はいくらですか？',
       korean: '이 옷을 사고 싶은데, 가격이 얼마인가요?',
@@ -476,13 +500,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'shopping1_situation_response_1',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/shopping/shopping1_situation_response_1.webp',
         japanese: 'ありがとうございます。買います。',
         korean: '감사합니다. 살게요.',
       },
       {
         responseId: 'shopping1_situation_response_2',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/shopping/shopping1_situation_response_2.webp',
         japanese: 'いいですね！それを買います。',
         korean: '좋네요! 그것을 살게요.',
       },
@@ -492,7 +518,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'shopping2_situation',
     theme: '쇼핑2',
-    situationImage: 'assets/images/word-mock.png',
+    situationImage: 'assets/images/public/shopping/shopping2_situation.webp',
     question: {
       japanese:
         'この靴を買いたいんですが、サイズはどのように確認すればいいですか？',
@@ -515,13 +541,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'shopping2_situation_response_1',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/shopping/shopping2_situation_response_1.webp',
         japanese: 'ありがとうございます！試してみます。',
         korean: '감사합니다! 한번 시도해보겠습니다.',
       },
       {
         responseId: 'shopping2_situation_response_2',
-        responseImage: 'assets/images/word-mock.png',
+        responseImage:
+          'assets/images/public/shopping/shopping2_situation_response_2.webp',
         japanese: 'はい、店員さんに聞いてみます。',
         korean: '네, 점원에게 물어볼게요.',
       },
@@ -531,7 +559,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'fashion_situation',
     theme: '패션',
-    situationImage: '/images/conversations/fashion/trying_jacket.jpg',
+    situationImage: 'assets/images/public/fashion/fashion_situation.webp',
     question: {
       japanese: 'このジャケット、どう思いますか？試着してみました。',
       korean: '이 자켓, 어떻게 생각하세요? 입어봤어요.',
@@ -551,13 +579,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'fashion_situation_response_1',
-        responseImage: '/images/conversations/fashion/good_fit.jpg',
+        responseImage:
+          'assets/images/public/fashion/fashion_situation_response_1.webp',
         japanese: 'ありがとう！流行のデザインで気に入っています。',
         korean: '고마워요! 유행하는 디자인이라 마음에 들어요.',
       },
       {
         responseId: 'fashion_situation_response_2',
-        responseImage: '/images/conversations/fashion/try_smaller.jpg',
+        responseImage:
+          'assets/images/public/fashion/fashion_situation_response_2.webp',
         japanese: 'そうですね。もっと小さいサイズを試してみます。',
         korean: '맞아요. 더 작은 사이즈를 입어볼게요.',
       },
@@ -568,7 +598,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'fantasy_situation',
     theme: '판타지',
-    situationImage: '/images/conversations/fantasy/fairy_forest.jpg',
+    situationImage: 'assets/images/public/fantasy/fantasy_situation.webp',
     question: {
       japanese: 'この森には妖精が住んでいると言われています。',
       korean: '이 숲에는 요정이 살고 있다고 말해요.',
@@ -588,13 +618,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'fantasy_situation_response_1',
-        responseImage: '/images/conversations/fantasy/meet_fairy.jpg',
+        responseImage:
+          'assets/images/public/fantasy/fantasy_situation_response_1.webp',
         japanese: 'はい、妖精に出会えるといいですね。',
         korean: '네, 요정을 만날 수 있으면 좋겠어요.',
       },
       {
         responseId: 'fantasy_situation_response_2',
-        responseImage: '/images/conversations/fantasy/spirit_help.jpg',
+        responseImage:
+          'assets/images/public/fantasy/fantasy_situation_response_2.webp',
         japanese: 'それなら、精霊に助けを求める必要があるかもしれませんね。',
         korean: '그렇다면, 정령에게 도움을 요청해야 할지도 모르겠어요.',
       },
@@ -605,7 +637,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'sns_situation',
     theme: 'SNS',
-    situationImage: '/images/conversations/sns/selfie_post.jpg',
+    situationImage: 'assets/images/public/sns/sns_situation.webp',
     question: {
       japanese: 'この写真、SNSに投稿しましたか？',
       korean: '이 사진, SNS에 올렸어요?',
@@ -625,13 +657,13 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'sns_situation_response_1',
-        responseImage: '/images/conversations/sns/notifications.jpg',
+        responseImage: 'assets/images/public/sns/sns_situation_response_1.webp',
         japanese: '面白いですね！どんな通知が来ましたか？',
         korean: '재밌네요! 어떤 알림이 왔나요?',
       },
       {
         responseId: 'sns_situation_response_2',
-        responseImage: '/images/conversations/sns/save_for_later.jpg',
+        responseImage: 'assets/images/public/sns/sns_situation_response_2.webp',
         japanese: 'それもいいですね。後で更新しましょう。',
         korean: '그것도 좋네요. 나중에 업데이트해요.',
       },
@@ -642,7 +674,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'app_usage_situation',
     theme: '앱사용',
-    situationImage: '/images/conversations/app_usage/favorite_items.jpg',
+    situationImage: 'assets/images/public/app-usage/app_usage_situation.webp',
     question: {
       japanese: 'このアプリでお気に入りの項目を保存しましたか？',
       korean: '이 앱에서 좋아하는 항목을 저장했어요?',
@@ -662,14 +694,16 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'app_usage_situation_response_1',
-        responseImage: '/images/conversations/app_usage/more_info.jpg',
+        responseImage:
+          'assets/images/public/app-usage/app_usage_situation_response_1.webp',
         japanese:
           'それは便利ですね！登録して、さらに多くの情報を得ることができます。',
         korean: '그거 편리하네요! 등록해서 더 많은 정보를 얻을 수 있어요.',
       },
       {
         responseId: 'app_usage_situation_response_2',
-        responseImage: '/images/conversations/app_usage/play_later.jpg',
+        responseImage:
+          'assets/images/public/app-usage/app_usage_situation_response_2.webp',
         japanese: 'いいですね！再生後に変更することもできます。',
         korean: '좋아요! 재생 후에 변경할 수도 있어요.',
       },
@@ -680,7 +714,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'movie_situation',
     theme: '영화',
-    situationImage: '/images/conversations/movie/cinema.jpg',
+    situationImage: 'assets/images/public/movie/movie_situation.webp',
     question: {
       japanese: '最近、映画を鑑賞しましたか？',
       korean: '최근에 영화를 봤어요?',
@@ -700,13 +734,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'movie_situation_response_1',
-        responseImage: '/images/conversations/movie/movie_review.jpg',
+        responseImage:
+          'assets/images/public/movie/movie_situation_response_1.webp',
         japanese: 'どんな映画ですか？脚本はどうでしたか？',
         korean: '어떤 영화였나요? 각본은 어땠어요?',
       },
       {
         responseId: 'movie_situation_response_2',
-        responseImage: '/images/conversations/movie/cinematography.jpg',
+        responseImage:
+          'assets/images/public/movie/movie_situation_response_2.webp',
         japanese: 'その映画、撮影も素晴らしいと言われていますね。',
         korean: '그 영화, 촬영도 멋지다고 하네요.',
       },
@@ -717,7 +753,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'destiny_situation',
     theme: '운명 및 세계관',
-    situationImage: '/images/conversations/destiny/fate.jpg',
+    situationImage: 'assets/images/public/destiny/destiny_situation.webp',
     question: {
       japanese: 'あなたは運命を信じますか？',
       korean: '운명을 믿으시나요?',
@@ -737,13 +773,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'destiny_situation_response_1',
-        responseImage: '/images/conversations/destiny/miracle.jpg',
+        responseImage:
+          'assets/images/public/destiny/destiny_situation_response_1.webp',
         japanese: 'それは素晴らしいですね。奇跡が起こると信じていますか？',
         korean: '그거 정말 멋지네요. 기적이 일어난다고 믿나요?',
       },
       {
         responseId: 'destiny_situation_response_2',
-        responseImage: '/images/conversations/destiny/fantasy_world.jpg',
+        responseImage:
+          'assets/images/public/destiny/destiny_situation_response_2.webp',
         japanese: 'なるほど。魔法や異世界の話は好きですか？',
         korean: '그렇군요. 마법이나 이세계 이야기는 좋아하시나요?',
       },
@@ -754,7 +792,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'family_situation',
     theme: '가족',
-    situationImage: '/images/conversations/family/family_photo.jpg',
+    situationImage: 'assets/images/public/family/family_situation.webp',
     question: {
       japanese: 'あなたの家族はどんな人たちですか？',
       korean: '당신의 가족은 어떤 사람들이에요?',
@@ -774,13 +812,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'family_situation_response_1',
-        responseImage: '/images/conversations/family/siblings.jpg',
+        responseImage:
+          'assets/images/public/family/family_situation_response_1.webp',
         japanese: '素敵ですね。妹さんはいますか？',
         korean: '멋지네요. 여동생은 있나요?',
       },
       {
         responseId: 'family_situation_response_2',
-        responseImage: '/images/conversations/family/children.jpg',
+        responseImage:
+          'assets/images/public/family/family_situation_response_2.webp',
         japanese: 'それは素晴らしいですね。息子さんや娘さんはいますか？',
         korean: '정말 멋지네요. 아들 또는 딸이 있나요?',
       },
@@ -791,7 +831,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'emotion1_situation',
     theme: '감정1',
-    situationImage: '/images/conversations/emotion/happy_moment.jpg',
+    situationImage: 'assets/images/public/emotion/emotion1_situation.webp',
     question: {
       japanese: '最近、何か嬉しいことがありましたか？',
       korean: '최근에 기쁜 일이 있었나요?',
@@ -811,13 +851,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'emotion1_situation_response_1',
-        responseImage: '/images/conversations/emotion/friends_activity.jpg',
+        responseImage:
+          'assets/images/public/emotion/emotion1_situation_response_1.webp',
         japanese: 'それは素敵ですね！何をして楽しんだんですか？',
         korean: '정말 멋지네요! 무엇을 하며 즐겼나요?',
       },
       {
         responseId: 'emotion1_situation_response_2',
-        responseImage: '/images/conversations/emotion/celebration.jpg',
+        responseImage:
+          'assets/images/public/emotion/emotion1_situation_response_2.webp',
         japanese: 'おめでとうございます！それは素晴らしいですね。',
         korean: '축하드려요! 정말 멋지네요.',
       },
@@ -828,7 +870,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'emotion2_situation',
     theme: '감정2',
-    situationImage: '/images/conversations/emotion/surprise_moment.jpg',
+    situationImage: 'assets/images/public/emotion/emotion2_situation.webp',
     question: {
       japanese: '最近、何か驚いたことがありましたか？',
       korean: '최근에 놀랐던 일이 있었나요?',
@@ -848,13 +890,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'emotion2_situation_response_1',
-        responseImage: '/images/conversations/emotion/surprise_party.jpg',
+        responseImage:
+          'assets/images/public/emotion/emotion2_situation_response_1.webp',
         japanese: 'それは楽しい驚きですね！どうでしたか？',
         korean: '정말 즐거운 놀라움이었네요! 어땠어요?',
       },
       {
         responseId: 'emotion2_situation_response_2',
-        responseImage: '/images/conversations/emotion/weather_change.jpg',
+        responseImage:
+          'assets/images/public/emotion/emotion2_situation_response_2.webp',
         japanese: '予想外の天気だったんですね！準備はできましたか？',
         korean: '예상치 못한 날씨였나 보네요! 준비는 되었나요?',
       },
@@ -865,7 +909,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'emotion3_situation',
     theme: '감정3',
-    situationImage: '/images/conversations/emotion/feeling_moment.jpg',
+    situationImage: 'assets/images/public/emotion/emotion3_situation.webp',
     question: {
       japanese: '最近、どんな気持ちになることがありましたか？',
       korean: '최근에 어떤 감정을 느낀 일이 있었어요?',
@@ -885,13 +929,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'emotion3_situation_response_1',
-        responseImage: '/images/conversations/emotion/friend_meeting.jpg',
+        responseImage:
+          'assets/images/public/emotion/emotion3_situation_response_1.webp',
         japanese: 'それはよかったですね！どこに行ったんですか？',
         korean: '정말 좋았겠어요! 어디에 다녀오셨나요?',
       },
       {
         responseId: 'emotion3_situation_response_2',
-        responseImage: '/images/conversations/emotion/interview_result.jpg',
+        responseImage:
+          'assets/images/public/emotion/emotion3_situation_response_2.webp',
         japanese: 'わかります。その気持ち…。結果はどうでしたか？',
         korean: '그 마음 이해돼요… 결과는 어땠나요?',
       },
@@ -901,7 +947,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'health_situation',
     theme: '건강관리',
-    situationImage: '/images/conversations/health/health_care.jpg',
+    situationImage: 'assets/images/public/health/health_situation.webp',
     question: {
       japanese: '最近、健康のために何か始めた？',
       korean: '요즘 건강을 위해 시작한 게 있어?',
@@ -921,13 +967,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'health_situation_response_1',
-        responseImage: '/images/conversations/health/good_sleep.jpg',
+        responseImage:
+          'assets/images/public/health/health_situation_response_1.webp',
         japanese: 'いいね！睡眠は体調を整える基本だよね。',
         korean: '좋다! 수면은 건강을 챙기는 기본이지.',
       },
       {
         responseId: 'health_situation_response_2',
-        responseImage: '/images/conversations/health/morning_exercise.jpg',
+        responseImage:
+          'assets/images/public/health/health_situation_response_2.webp',
         japanese: 'えらい！運動って疲労にもストレスにも効くからね。',
         korean: '대단해! 운동은 피로에도 스트레스에도 좋으니까.',
       },
@@ -938,7 +986,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'exercise_situation',
     theme: '운동',
-    situationImage: '/images/conversations/exercise/workout.jpg',
+    situationImage: 'assets/images/public/exercise/exercise_situation.webp',
     question: {
       japanese: '最近、どんな運動してるの？',
       korean: '요즘 어떤 운동하고 있어?',
@@ -958,13 +1006,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'exercise_situation_response_1',
-        responseImage: '/images/conversations/exercise/gym.jpg',
+        responseImage:
+          'assets/images/public/exercise/exercise_situation_response_1.webp',
         japanese: 'すごい！続けるのってけっこう大変だよね。',
         korean: '대단하다! 꾸준히 하는 게 꽤 힘든 일이잖아.',
       },
       {
         responseId: 'exercise_situation_response_2',
-        responseImage: '/images/conversations/exercise/running.jpg',
+        responseImage:
+          'assets/images/public/exercise/exercise_situation_response_2.webp',
         japanese: 'えらい！ランニングは心も体もスッキリするよね。',
         korean: '멋지다! 달리기는 몸도 마음도 상쾌해지잖아.',
       },
@@ -975,7 +1025,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'beauty_situation',
     theme: '헬스&뷰티',
-    situationImage: '/images/conversations/beauty/skincare.jpg',
+    situationImage: 'assets/images/public/beauty/beauty_situation.webp',
     question: {
       japanese: '最近、美容で気をつけていることってある？',
       korean: '요즘 뷰티 관련해서 신경 쓰는 거 있어?',
@@ -995,13 +1045,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'beauty_situation_response_1',
-        responseImage: '/images/conversations/beauty/sunscreen.jpg',
+        responseImage:
+          'assets/images/public/beauty/beauty_situation_response_1.webp',
         japanese: 'えらい！肌がきれいな人ってやっぱり努力してるんだね。',
         korean: '대단하다! 피부가 예쁜 사람은 역시 노력하고 있구나.',
       },
       {
         responseId: 'beauty_situation_response_2',
-        responseImage: '/images/conversations/beauty/moisturizer.jpg',
+        responseImage:
+          'assets/images/public/beauty/beauty_situation_response_2.webp',
         japanese: 'さすが！スキンケアをサボらないのって本当に大事だよね。',
         korean: '역시! 스킨케어를 게을리하지 않는 게 진짜 중요하지.',
       },
@@ -1012,7 +1064,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'growth_situation',
     theme: '성장과 극복',
-    situationImage: '/images/conversations/growth/challenge.jpg',
+    situationImage: 'assets/images/public/growth/growth_situation.webp',
     question: {
       japanese: '壁にぶつかったとき、どうする？',
       korean: '시련에 부딪혔을 때, 어떻게 해?',
@@ -1032,13 +1084,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'growth_situation_response_1',
-        responseImage: '/images/conversations/growth/perseverance.jpg',
+        responseImage:
+          'assets/images/public/growth/growth_situation_response_1.webp',
         japanese: 'えらい！その我慢がきっと、強くなる力になるね。',
         korean: '대단해! 그 인내가 분명 더 강해지는 힘이 될 거야.',
       },
       {
         responseId: 'growth_situation_response_2',
-        responseImage: '/images/conversations/growth/learning.jpg',
+        responseImage:
+          'assets/images/public/growth/growth_situation_response_2.webp',
         japanese: 'いいね。学び直すって、前に進む大きな一歩だよ。',
         korean: '좋아. 다시 배우는 건 앞으로 나아가는 큰 발걸음이야.',
       },
@@ -1049,7 +1103,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'study_situation',
     theme: '공부 및 암기',
-    situationImage: '/images/conversations/study/memorization.jpg',
+    situationImage: 'assets/images/public/study/study_situation.webp',
     question: {
       japanese: '新しい言葉を覚えるとき、どうしてる？',
       korean: '새로운 단어를 외울 때, 어떻게 해?',
@@ -1069,13 +1123,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'study_situation_response_1',
-        responseImage: '/images/conversations/study/note_taking.jpg',
+        responseImage:
+          'assets/images/public/study/study_situation_response_1.webp',
         japanese: 'いいね！書いて練習すると、忘れにくくなるよね。',
         korean: '좋아! 쓰고 연습하면 쉽게 잊어버리지 않게 되지.',
       },
       {
         responseId: 'study_situation_response_2',
-        responseImage: '/images/conversations/study/app_recording.jpg',
+        responseImage:
+          'assets/images/public/study/study_situation_response_2.webp',
         japanese: 'さすが！読むだけじゃなくて記録もすると、復習に便利だね。',
         korean: '멋져! 읽는 것뿐만 아니라 기록해두면 복습할 때도 편하지.',
       },
@@ -1086,7 +1142,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'school_situation',
     theme: '학교',
-    situationImage: '/images/conversations/school/classroom.jpg',
+    situationImage: 'assets/images/public/school/school_situation.webp',
     question: {
       japanese: '学生時代、教室で一番の思い出は何？',
       korean: '학생 시절, 교실에서 가장 기억에 남는 건 뭐야?',
@@ -1106,13 +1162,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'school_situation_response_1',
-        responseImage: '/images/conversations/school/teacher.jpg',
+        responseImage:
+          'assets/images/public/school/school_situation_response_1.webp',
         japanese: 'わかる！いい先生との授業は、一生の思い出になるよね。',
         korean: '공감돼! 좋은 선생님과의 수업은 평생 기억에 남지.',
       },
       {
         responseId: 'school_situation_response_2',
-        responseImage: '/images/conversations/school/exam.jpg',
+        responseImage:
+          'assets/images/public/school/school_situation_response_2.webp',
         japanese: 'それは大変だったね！でも、そういう日ほど記憶に残るよね。',
         korean: '진짜 고생했겠다! 그래도 그런 날이 더 기억에 남는 법이야.',
       },
@@ -1123,7 +1181,8 @@ export const conversationData: Conversation[] = [
   {
     id: 'self_improvement_situation',
     theme: '자기계발',
-    situationImage: '/images/conversations/self_improvement/goal.jpg',
+    situationImage:
+      'assets/images/public/self-improvement/self_improvement_situation.webp',
     question: {
       japanese: '自己成長のために、毎日続けていることってある？',
       korean: '자기 성장을 위해 매일 계속하고 있는 게 있어?',
@@ -1143,13 +1202,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'self_improvement_situation_response_1',
-        responseImage: '/images/conversations/self_improvement/study_plan.jpg',
+        responseImage:
+          'assets/images/public/self-improvement/self_improvement_situation_response_1.webp',
         japanese: 'すごい！習慣にできてるのが一番の強みだよね。',
         korean: '대단해! 습관으로 만든 게 가장 큰 무기지.',
       },
       {
         responseId: 'self_improvement_situation_response_2',
-        responseImage: '/images/conversations/self_improvement/practice.jpg',
+        responseImage:
+          'assets/images/public/self-improvement/self_improvement_situation_response_2.webp',
         japanese: 'それが努力だよね。少しずつでも確実に成長できると思う！',
         korean: '그게 바로 노력이지. 조금씩이라도 확실히 성장할 수 있을 거야!',
       },
@@ -1160,7 +1221,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'friendship_situation',
     theme: '우정',
-    situationImage: '/images/conversations/friendship/memories.jpg',
+    situationImage: 'assets/images/public/friendship/friendship_situation.webp',
     question: {
       japanese: '友達との思い出で、忘れられない瞬間はある？',
       korean: '친구와의 추억 중, 잊을 수 없는 순간이 있어?',
@@ -1180,13 +1241,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'friendship_situation_response_1',
-        responseImage: '/images/conversations/friendship/travel.jpg',
+        responseImage:
+          'assets/images/public/friendship/friendship_situation_response_1.webp',
         japanese: '素晴らしい思い出だね！一生忘れないだろうね。',
         korean: '멋진 추억이네! 평생 잊지 못할 거야.',
       },
       {
         responseId: 'friendship_situation_response_2',
-        responseImage: '/images/conversations/friendship/support.jpg',
+        responseImage:
+          'assets/images/public/friendship/friendship_situation_response_2.webp',
         japanese: '仲間との絆が深まった瞬間だね。',
         korean: '친구들과의 유대가 깊어진 순간이었네.',
       },
@@ -1196,7 +1259,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'company1_situation',
     theme: '회사1',
-    situationImage: '/images/conversations/company/memorable_moment.jpg',
+    situationImage: 'assets/images/public/company/company1_situation.webp',
     question: {
       japanese: '会社で一番印象に残っている出来事は何？',
       korean: '회사에서 가장 기억에 남는 일이 뭐야?',
@@ -1216,13 +1279,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'company1_situation_response_1',
-        responseImage: '/images/conversations/company/business_trip.jpg',
+        responseImage:
+          'assets/images/public/company/company1_situation_response_1.webp',
         japanese: '出張は仕事の中でも特別な経験だよね！',
         korean: '출장은 업무 중에서도 특별한 경험이지!',
       },
       {
         responseId: 'company1_situation_response_2',
-        responseImage: '/images/conversations/company/praise.jpg',
+        responseImage:
+          'assets/images/public/company/company1_situation_response_2.webp',
         japanese: '自分の努力が認められる瞬間は最高だよね！',
         korean: '자기의 노력이 인정받는 순간은 최고야!',
       },
@@ -1233,7 +1298,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'company2_situation',
     theme: '회사2',
-    situationImage: '/images/conversations/company/leaving_work.jpg',
+    situationImage: 'assets/images/public/company/company2_situation.webp',
     question: {
       japanese: '今日は何時に退社する予定？',
       korean: '오늘은 몇 시에 퇴근할 예정이야?',
@@ -1253,13 +1318,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'company2_situation_response_1',
-        responseImage: '/images/conversations/company/overtime.jpg',
+        responseImage:
+          'assets/images/public/company/company2_situation_response_1.webp',
         japanese: '残業が多いと疲れるけど、頑張ってね！',
         korean: '잔업이 많으면 힘들겠지만, 힘내!',
       },
       {
         responseId: 'company2_situation_response_2',
-        responseImage: '/images/conversations/company/after_work.jpg',
+        responseImage:
+          'assets/images/public/company/company2_situation_response_2.webp',
         japanese: '同僚との飲み会はリフレッシュになるよね！',
         korean: '동료들과의 회식은 정말 기분 전환이 되지!',
       },
@@ -1270,7 +1337,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'daily1_situation',
     theme: '일상1',
-    situationImage: '/images/conversations/daily/after_work.jpg',
+    situationImage: 'assets/images/public/daily/daily1_situation.webp',
     question: {
       japanese: '今日は仕事終わった後に何する予定？',
       korean: '오늘은 일 끝나고 뭐 할 예정이야?',
@@ -1290,13 +1357,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'daily1_situation_response_1',
-        responseImage: '/images/conversations/daily/walk.jpg',
+        responseImage:
+          'assets/images/public/daily/daily1_situation_response_1.webp',
         japanese: '散歩はいいリフレッシュになるよね！',
         korean: '산책은 정말 기분 전환이 돼!',
       },
       {
         responseId: 'daily1_situation_response_2',
-        responseImage: '/images/conversations/daily/movie_cooking.jpg',
+        responseImage:
+          'assets/images/public/daily/daily1_situation_response_2.webp',
         japanese: '映画と料理の組み合わせ、最高だね！',
         korean: '영화랑 요리 조합, 완전 좋다!',
       },
@@ -1307,7 +1376,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'daily2_situation',
     theme: '일상2',
-    situationImage: '/images/conversations/daily/morning.jpg',
+    situationImage: 'assets/images/public/daily/daily2_situation.webp',
     question: {
       japanese: '今日はどんな一日になりそう？',
       korean: '오늘은 어떤 하루가 될 것 같아?',
@@ -1327,13 +1396,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'daily2_situation_response_1',
-        responseImage: '/images/conversations/daily/morning_walk.jpg',
+        responseImage:
+          'assets/images/public/daily/daily2_situation_response_1.webp',
         japanese: '朝の散歩は気持ちいいよね！リフレッシュできそう。',
         korean: '아침 산책은 정말 기분 좋지! 리프레시가 될 거야.',
       },
       {
         responseId: 'daily2_situation_response_2',
-        responseImage: '/images/conversations/daily/relaxing.jpg',
+        responseImage:
+          'assets/images/public/daily/daily2_situation_response_2.webp',
         japanese: 'リラックスするのも大切だよね。映画楽しんで！',
         korean: '편하게 쉬는 것도 중요하지! 영화 잘 보고!',
       },
@@ -1344,7 +1415,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'evaluation_situation',
     theme: '평가',
-    situationImage: '/images/conversations/evaluation/app_review.jpg',
+    situationImage: 'assets/images/public/evaluation/evaluation_situation.webp',
     question: {
       japanese: 'このアプリの使い心地はどう？',
       korean: '이 앱의 사용 느낌은 어때?',
@@ -1364,13 +1435,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'evaluation_situation_response_1',
-        responseImage: '/images/conversations/evaluation/easy_use.jpg',
+        responseImage:
+          'assets/images/public/evaluation/evaluation_situation_response_1.webp',
         japanese: 'それは良かった！使いやすさが大事だもんね。',
         korean: '그게 좋았구나! 사용하기 쉬운 게 중요하니까.',
       },
       {
         responseId: 'evaluation_situation_response_2',
-        responseImage: '/images/conversations/evaluation/learning.jpg',
+        responseImage:
+          'assets/images/public/evaluation/evaluation_situation_response_2.webp',
         japanese: '最初は難しいかもしれないけど、慣れれば便利だよね！',
         korean: '처음엔 어려울 수 있지만, 익숙해지면 정말 유용하겠네!',
       },
@@ -1381,7 +1454,8 @@ export const conversationData: Conversation[] = [
   {
     id: 'personality_situation',
     theme: '상태 및 성격',
-    situationImage: '/images/conversations/personality/friend.jpg',
+    situationImage:
+      'assets/images/public/personality/personality_situation.webp',
     question: {
       japanese: 'あなたの友達はどんな性格？',
       korean: '너의 친구는 어떤 성격이야?',
@@ -1401,13 +1475,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'personality_situation_response_1',
-        responseImage: '/images/conversations/personality/kind.jpg',
+        responseImage:
+          'assets/images/public/personality/personality_situation_response_1.webp',
         japanese: 'いいね！優しい人は心が温かいよね。',
         korean: '좋네! 상냥한 사람은 정말 마음이 따뜻해.',
       },
       {
         responseId: 'personality_situation_response_2',
-        responseImage: '/images/conversations/personality/strict.jpg',
+        responseImage:
+          'assets/images/public/personality/personality_situation_response_2.webp',
         japanese: '厳しいけど、頼りになるね！',
         korean: '엄격하지만, 믿을 수 있어!',
       },
@@ -1418,7 +1494,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'color_situation',
     theme: '색상',
-    situationImage: '/images/conversations/color/shirt.jpg',
+    situationImage: 'assets/images/public/color/color_situation.webp',
     question: {
       japanese: '新しいシャツ、何色がいい？',
       korean: '새 셔츠, 무슨 색이 좋을까?',
@@ -1438,13 +1514,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'color_situation_response_1',
-        responseImage: '/images/conversations/color/white_shirt.jpg',
+        responseImage:
+          'assets/images/public/color/color_situation_response_1.webp',
         japanese: '白はさっぱりして見えるね。',
         korean: '흰 것은 깔끔해 보여!',
       },
       {
         responseId: 'color_situation_response_2',
-        responseImage: '/images/conversations/color/black_shirt.jpg',
+        responseImage:
+          'assets/images/public/color/color_situation_response_2.webp',
         japanese: '黒はクールなイメージだよ。',
         korean: '검정 것은 시크한 느낌이야!',
       },
@@ -1455,7 +1533,8 @@ export const conversationData: Conversation[] = [
   {
     id: 'communication_situation',
     theme: '커뮤니케이션',
-    situationImage: '/images/conversations/communication/important_talk.jpg',
+    situationImage:
+      'assets/images/public/communication/communication_situation.webp',
     question: {
       japanese: '大事なこと、ちゃんと伝えた？',
       korean: '중요한 말, 제대로 전했어?',
@@ -1475,13 +1554,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'communication_situation_response_1',
-        responseImage: '/images/conversations/communication/success.jpg',
+        responseImage:
+          'assets/images/public/communication/communication_situation_response_1.webp',
         japanese: 'それなら安心だね。伝えるは大事！',
         korean: '그렇다면 안심이네. 전달하는 것은 정말 중요하지!',
       },
       {
         responseId: 'communication_situation_response_2',
-        responseImage: '/images/conversations/communication/hurry.jpg',
+        responseImage:
+          'assets/images/public/communication/communication_situation_response_2.webp',
         japanese: '早く伝えたほうがいいよ。',
         korean: '빨리 전하는 게 좋아!',
       },
@@ -1492,7 +1573,8 @@ export const conversationData: Conversation[] = [
   {
     id: 'transportation_situation',
     theme: '교통',
-    situationImage: '/images/conversations/transportation/commute.jpg',
+    situationImage:
+      'assets/images/public/transportation/transportation_situation.webp',
     question: {
       japanese: '今日の通勤、どうやって来た？',
       korean: '오늘 출근할 때 어떻게 왔어?',
@@ -1512,13 +1594,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'transportation_situation_response_1',
-        responseImage: '/images/conversations/transportation/train.jpg',
+        responseImage:
+          'assets/images/public/transportation/transportation_situation_response_1.webp',
         japanese: '電車は早くて便利だね。',
         korean: '전철은 빠르고 편하지!',
       },
       {
         responseId: 'transportation_situation_response_2',
-        responseImage: '/images/conversations/transportation/car.jpg',
+        responseImage:
+          'assets/images/public/transportation/transportation_situation_response_2.webp',
         japanese: '渋滞は大丈夫だった？',
         korean: '차 막히진 않았어?',
       },
@@ -1529,7 +1613,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'music_situation',
     theme: '음악',
-    situationImage: '/images/conversations/music/listening.jpg',
+    situationImage: 'assets/images/public/music/music_situation.webp',
     question: {
       japanese: '仕事のあと、どんな音楽を聴く？',
       korean: '퇴근하고 나서 어떤 음악 들어?',
@@ -1549,13 +1633,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'music_situation_response_1',
-        responseImage: '/images/conversations/music/piano.jpg',
+        responseImage:
+          'assets/images/public/music/music_situation_response_1.webp',
         japanese: 'リラックスできていいね。',
         korean: '편안해져서 좋지!',
       },
       {
         responseId: 'music_situation_response_2',
-        responseImage: '/images/conversations/music/rock.jpg',
+        responseImage:
+          'assets/images/public/music/music_situation_response_2.webp',
         japanese: 'ストレスが吹き飛びそう！',
         korean: '스트레스가 확 날아가겠는데!',
       },
@@ -1566,7 +1652,7 @@ export const conversationData: Conversation[] = [
     id: 'japanese_culture_situation',
     theme: '일본문화',
     situationImage:
-      '/images/conversations/japanese_culture/cultural_experience.jpg',
+      'assets/images/public/japanese-culture/japanese_culture_situation.webp',
     question: {
       japanese: '今度、日本の文化体験があるよ！何をやってみたい？',
       korean: '이번에 일본 문화 체험이 있어! 뭐 해보고 싶어?',
@@ -1586,13 +1672,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'japanese_culture_situation_response_1',
-        responseImage: '/images/conversations/japanese_culture/yukata.jpg',
+        responseImage:
+          'assets/images/public/japanese-culture/japanese_culture_situation_response_1.webp',
         japanese: 'いいね！夏祭りみたいな気分になれそう！',
         korean: '좋다! 마치 여름 축제 분위기겠네!',
       },
       {
         responseId: 'japanese_culture_situation_response_2',
-        responseImage: '/images/conversations/japanese_culture/origami.jpg',
+        responseImage:
+          'assets/images/public/japanese-culture/japanese_culture_situation_response_2.webp',
         japanese: '子どものころを思い出すね。',
         korean: '어릴 적 생각나겠다.',
       },
@@ -1603,7 +1691,8 @@ export const conversationData: Conversation[] = [
   {
     id: 'environment_situation',
     theme: '자연환경',
-    situationImage: '/images/conversations/environment/eco_life.jpg',
+    situationImage:
+      'assets/images/public/environment/environment_situation.webp',
     question: {
       japanese: '地球のために、どんなことをしてみたい？',
       korean: '지구를 위해 어떤 걸 해보고 싶어?',
@@ -1623,13 +1712,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'environment_situation_response_1',
-        responseImage: '/images/conversations/environment/save_energy.jpg',
+        responseImage:
+          'assets/images/public/environment/environment_situation_response_1.webp',
         japanese: 'いいね！小さなことから始めよう！',
         korean: '좋아! 작은 것부터 시작하자!',
       },
       {
         responseId: 'environment_situation_response_2',
-        responseImage: '/images/conversations/environment/reduce_waste.jpg',
+        responseImage:
+          'assets/images/public/environment/environment_situation_response_2.webp',
         japanese: 'エコな生活ってかっこいいね！',
         korean: '에코한 생활, 멋있어!',
       },
@@ -1640,7 +1731,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'memories_situation',
     theme: '기억과 회상',
-    situationImage: '/images/conversations/memories/reminisce.jpg',
+    situationImage: 'assets/images/public/memories/memories_situation.webp',
     question: {
       japanese: '昔の思い出で、一番心に残っているのは？',
       korean: '예전 추억 중에서 가장 기억에 남는 건 뭐야?',
@@ -1660,13 +1751,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'memories_situation_response_1',
-        responseImage: '/images/conversations/memories/reunion.jpg',
+        responseImage:
+          'assets/images/public/memories/memories_situation_response_1.webp',
         japanese: 'いいね。会えたとき、涙が出そうだね。',
         korean: '좋네. 다시 만났을 때 눈물 날 것 같아.',
       },
       {
         responseId: 'memories_situation_response_2',
-        responseImage: '/images/conversations/memories/family_trip.jpg',
+        responseImage:
+          'assets/images/public/memories/memories_situation_response_2.webp',
         japanese: 'あたたかい記憶だね。写真も残ってる？',
         korean: '따뜻한 기억이네. 사진도 남아 있어?',
       },
@@ -1677,7 +1770,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'solitude_situation',
     theme: '고독과 내면',
-    situationImage: '/images/conversations/solitude/reflection.jpg',
+    situationImage: 'assets/images/public/solitude/solitude_situation.webp',
     question: {
       japanese: 'もし、あなたがとても悲しい時、どう感じますか？',
       korean: '만약 정말 슬플 때, 어떻게 느끼나요?',
@@ -1697,13 +1790,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'solitude_situation_response_1',
-        responseImage: '/images/conversations/solitude/future_thinking.jpg',
+        responseImage:
+          'assets/images/public/solitude/solitude_situation_response_1.webp',
         japanese: 'それは大事だね。将来の目標は決まっている？',
         korean: '그건 중요하지. 미래 목표는 정해졌어?',
       },
       {
         responseId: 'solitude_situation_response_2',
-        responseImage: '/images/conversations/solitude/past_reflection.jpg',
+        responseImage:
+          'assets/images/public/solitude/solitude_situation_response_2.webp',
         japanese: '過去の経験は大切だよね。何か学んだことはあった？',
         korean: '과거의 경험은 소중하지. 배운 게 있었어?',
       },
@@ -1713,7 +1808,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'despair_situation',
     theme: '절망',
-    situationImage: '/images/conversations/despair/despair.jpg',
+    situationImage: 'assets/images/public/despair/despair_situation.webp',
     question: {
       japanese: 'つらい時、どう感じる？',
       korean: '힘들 때, 어떻게 느껴?',
@@ -1733,13 +1828,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'despair_situation_response_1',
-        responseImage: '/images/conversations/passion/burning_passion.jpg',
+        responseImage:
+          'assets/images/public/despair/despair_situation_response_1.webp',
         japanese: '泣いてもいいよ。',
         korean: '울어도 괜찮아.',
       },
       {
         responseId: 'despair_situation_response_2',
-        responseImage: '/images/conversations/passion/stronger_self.jpg',
+        responseImage:
+          'assets/images/public/despair/despair_situation_response_2.webp',
         japanese: '少し休むのも大切だよ。',
         korean: '조금 쉬는 것도 중요해.',
       },
@@ -1750,7 +1847,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'passion_situation',
     theme: '열정',
-    situationImage: '/images/conversations/passion/enthusiasm.jpg',
+    situationImage: 'assets/images/public/passion/passion_situation.webp',
     question: {
       japanese: '何かに熱中するとき、どんな気持ちになる？',
       korean: '무언가에 열중할 때, 어떤 기분이 들어?',
@@ -1770,13 +1867,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'passion_situation_response_1',
-        responseImage: '/images/conversations/passion/burning_passion.jpg',
+        responseImage:
+          'assets/images/public/passion/passion_situation_response_1.webp',
         japanese: 'その気持ち、大切にしてね！',
         korean: '그 마음, 소중히 해!',
       },
       {
         responseId: 'passion_situation_response_2',
-        responseImage: '/images/conversations/passion/stronger_self.jpg',
+        responseImage:
+          'assets/images/public/passion/passion_situation_response_2.webp',
         japanese: 'その気持ち、素晴らしいよ！',
         korean: '그 마음, 멋지다!',
       },
@@ -1787,7 +1886,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'freedom_situation',
     theme: '자유와 해방',
-    situationImage: '/images/conversations/freedom/liberation.jpg',
+    situationImage: 'assets/images/public/freedom/freedom_situation.webp',
     question: {
       japanese: '自由になったら、何をしたい？',
       korean: '자유로워지면, 무엇을 하고 싶어?',
@@ -1807,13 +1906,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'freedom_situation_response_1',
-        responseImage: '/images/conversations/freedom/doing_favorite.jpg',
+        responseImage:
+          'assets/images/public/freedom/freedom_situation_response_1.webp',
         japanese: 'それが一番大事だね！',
         korean: '그게 제일 중요하지!',
       },
       {
         responseId: 'freedom_situation_response_2',
-        responseImage: '/images/conversations/freedom/relaxation.jpg',
+        responseImage:
+          'assets/images/public/freedom/freedom_situation_response_2.webp',
         japanese: 'それも最高だね！',
         korean: '그것도 최고야!',
       },
@@ -1824,7 +1925,7 @@ export const conversationData: Conversation[] = [
   {
     id: 'dreams_situation',
     theme: '꿈과 희망',
-    situationImage: '/images/conversations/dreams/aspirations.jpg',
+    situationImage: 'assets/images/public/dreams/dreams_situation.webp',
     question: {
       japanese: '夢を追いかけるために、何をするべきだと思う？',
       korean: '꿈을 쫓기 위해서, 무엇을 해야 한다고 생각해?',
@@ -1844,13 +1945,15 @@ export const conversationData: Conversation[] = [
     response: [
       {
         responseId: 'dreams_situation_response_1',
-        responseImage: '/images/conversations/dreams/challenge.jpg',
+        responseImage:
+          'assets/images/public/dreams/dreams_situation_response_1.webp',
         japanese: 'その通り！挑戦は夢を叶えるために大事だね。',
         korean: '맞아! 도전은 꿈을 이루기 위한 중요한 부분이야.',
       },
       {
         responseId: 'dreams_situation_response_2',
-        responseImage: '/images/conversations/dreams/overcome_failure.jpg',
+        responseImage:
+          'assets/images/public/dreams/dreams_situation_response_2.webp',
         japanese: '素晴らしい考えだね！失敗から学ぶことも大切だよ。',
         korean: '멋진 생각이야! 실패에서 배우는 것도 중요하지.',
       },
