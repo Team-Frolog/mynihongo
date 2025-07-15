@@ -115,7 +115,7 @@ function SwipeCard({
       <Animated.View style={[styles.wordContainer, cardStyle]}>
         {/* 카드 내용 */}
         <Image
-          source={require('../../../assets/images/word-mock.png')}
+          source={require('../../../assets/images/public/word/word-mock.png')}
           style={styles.image}
         />
         <View style={styles.wordWrapper}>

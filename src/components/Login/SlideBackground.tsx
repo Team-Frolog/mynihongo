@@ -16,10 +16,10 @@ interface Props {
 }
 
 const backgroundImages = [
-  require('../../../assets/images/login-background.png'),
-  require('../../../assets/images/login-background2.png'),
-  require('../../../assets/images/login-background3.png'),
-  require('../../../assets/images/login-background4.png'),
+  require('../../../assets/images/feature/login/login-background.png'),
+  require('../../../assets/images/feature/login/login-background2.png'),
+  require('../../../assets/images/feature/login/login-background3.png'),
+  require('../../../assets/images/feature/login/login-background4.png'),
 ];
 
 function AutoSlideBackground({ children }: Props) {
