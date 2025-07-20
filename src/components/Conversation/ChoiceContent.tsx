@@ -3,18 +3,27 @@ import { View, Image, Text } from 'react-native';
 import Tts from '@/components/commons/Tts';
 import { styles } from '@/styles/Conversation/Conversation.style';
 import AnswerButton from '@/components/Conversation/AnswerButton';
+import {
+  conversationImages,
+  ConversationImageKey,
+} from '../../../assets/images/public/conversation';
 
 interface Props {
   npcDialogue: string;
   userChoice: string[];
+  choiceId: ConversationImageKey;
   onPress: (index: number) => void;
 }
 
-function ChoiceContent({ npcDialogue, userChoice, onPress }: Props) {
+function ChoiceContent({ npcDialogue, userChoice, choiceId, onPress }: Props) {
+  // 매핑 객체에서 이미지 가져오기
+  console.log('choiceId', choiceId);
+  const imageSource = conversationImages[choiceId];
+
   return (
     <>
       <View>
-        <Image source={require('assets/images/real-mock.png')} />
+        <Image source={imageSource} style={styles.image} />
         <View>
           <View style={styles.npcTriangle} />
           <View style={styles.npcAnswer}>

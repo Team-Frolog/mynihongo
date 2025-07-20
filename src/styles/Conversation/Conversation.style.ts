@@ -18,6 +18,10 @@ export const styles = StyleSheet.create({
     borderTopLeftRadius: 15,
     borderTopRightRadius: 15,
   },
+  image: {
+    width: 294,
+    height: 240,
+  },
   npcTriangle: {
     width: 0,
     height: 0,

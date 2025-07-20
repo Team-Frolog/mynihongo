@@ -18,6 +18,7 @@ import Animated, {
   Easing,
 } from 'react-native-reanimated';
 import SafeAreaScreen from '@/components/commons/SafeAreaScreen';
+import { ConversationImageKey } from '../../assets/images/public/conversation';
 
 function Conversation() {
   const route = useRoute<RouteProp<any>>();
@@ -104,6 +105,10 @@ function Conversation() {
               npcKorean={conversation?.response[selectedAnswer].korean}
               userDialogue={conversation?.userChoice[selectedAnswer].japanese}
               userKorean={conversation?.userChoice[selectedAnswer].korean}
+              responseId={
+                conversation?.response[selectedAnswer]
+                  .responseId as ConversationImageKey
+              }
             />
           ) : (
             <ChoiceContent
@@ -111,6 +116,7 @@ function Conversation() {
               userChoice={conversation?.userChoice.map(
                 (choice) => choice.japanese,
               )}
+              choiceId={conversation?.id as ConversationImageKey}
               onPress={handleClickAnswer}
             />
           )}
