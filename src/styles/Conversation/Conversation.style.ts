@@ -18,6 +18,11 @@ export const styles = StyleSheet.create({
     borderTopLeftRadius: 15,
     borderTopRightRadius: 15,
   },
+  dialogueWrapper: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 28,
+  },
   image: {
     width: 294,
     height: 240,
@@ -26,12 +31,11 @@ export const styles = StyleSheet.create({
     width: 0,
     height: 0,
     marginLeft: 35,
+    marginTop: -20,
 
-    borderTopWidth: 20,
     borderBottomWidth: 20,
     borderLeftWidth: 15,
     borderRightWidth: 15,
-    borderTopColor: 'transparent',
     borderBottomColor: '#FFDADA',
     borderLeftColor: 'transparent',
     borderRightColor: 'transparent',
@@ -71,11 +75,6 @@ export const styles = StyleSheet.create({
     flexShrink: 1,
   },
   answerWrapper: {
-    position: 'absolute',
-    bottom: '13%',
-    left: 0,
-    right: 0,
-
     flexDirection: 'column',
     gap: 18,
   },

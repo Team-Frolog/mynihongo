@@ -8,6 +8,8 @@ import {
 } from '../../../assets/images/public/conversation';
 
 interface Props {
+  npcQuestion: string;
+  npcQuestionKorean: string;
   npcDialogue: string;
   npcKorean: string;
   userDialogue: string;
@@ -16,6 +18,8 @@ interface Props {
 }
 
 function ResponseContent({
+  npcQuestion,
+  npcQuestionKorean,
   npcDialogue,
   npcKorean,
   userDialogue,
@@ -27,8 +31,27 @@ function ResponseContent({
 
   return (
     <>
-      <View>
+      <View style={styles.dialogueWrapper}>
         <Image source={imageSource} style={styles.image} />
+        <View>
+          <View style={styles.npcTriangle} />
+          <View style={styles.npcAnswer}>
+            <Tts color="#FF9A9A" text={npcQuestion} />
+            <View style={styles.textWrapper}>
+              <Text style={styles.npcAnswerText}>{npcQuestion}</Text>
+              <Text style={styles.koreanText}>{npcQuestionKorean}</Text>
+            </View>
+          </View>
+        </View>
+        <View style={styles.answerWrapper}>
+          <View style={[styles.answerButton]}>
+            <Tts text={userDialogue} />
+            <View style={styles.textWrapper}>
+              <Text style={styles.answerText}>{userDialogue}</Text>
+              <Text style={styles.koreanText}>{userKorean}</Text>
+            </View>
+          </View>
+        </View>
         <View>
           <View style={styles.npcTriangle} />
           <View style={styles.npcAnswer}>
@@ -37,15 +60,6 @@ function ResponseContent({
               <Text style={styles.npcAnswerText}>{npcDialogue}</Text>
               <Text style={styles.koreanText}>{npcKorean}</Text>
             </View>
-          </View>
-        </View>
-      </View>
-      <View style={[styles.answerWrapper, { bottom: '20%' }]}>
-        <View style={[styles.answerButton]}>
-          <Tts text={userDialogue} />
-          <View style={styles.textWrapper}>
-            <Text style={styles.answerText}>{userDialogue}</Text>
-            <Text style={styles.koreanText}>{userKorean}</Text>
           </View>
         </View>
       </View>

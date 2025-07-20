@@ -69,17 +69,6 @@ function Conversation() {
     }, 250);
   };
 
-  // const convertJapanese = (japanese: string) => {
-  //   if (!japanese.includes('。')) return japanese;
-
-  //   return japanese
-  //     .split('。')
-  //     .filter((text) => text.trim())
-  //     .map((text, index) => {
-  //       return index === 0 ? `${text}。` : `${text}。`;
-  //     });
-  // };
-
   return (
     <SafeAreaScreen>
       <View style={styles.container}>
@@ -101,6 +90,8 @@ function Conversation() {
         <Animated.View style={[styles.realContainer, animatedStyle]}>
           {isSelected ? (
             <ResponseContent
+              npcQuestion={conversation?.question.japanese}
+              npcQuestionKorean={conversation?.question.korean}
               npcDialogue={conversation?.response[selectedAnswer].japanese}
               npcKorean={conversation?.response[selectedAnswer].korean}
               userDialogue={conversation?.userChoice[selectedAnswer].japanese}
