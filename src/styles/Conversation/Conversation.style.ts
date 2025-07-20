@@ -1,4 +1,6 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
   container: {
@@ -113,5 +115,14 @@ export const styles = StyleSheet.create({
     color: '#313239',
     fontSize: 20,
     fontWeight: 500,
+  },
+  scrollable: {
+    position: 'absolute',
+    bottom: 50,
+    left: -24,
+    right: 0,
+    zIndex: 1000,
+    width: width + 24,
+    height: 60,
   },
 });

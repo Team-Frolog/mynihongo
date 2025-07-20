@@ -6,6 +6,7 @@ import {
   conversationImages,
   ConversationImageKey,
 } from '../../../assets/images/public/conversation';
+import LinearGradient from 'react-native-linear-gradient';
 
 interface Props {
   npcQuestion: string;
@@ -79,6 +80,12 @@ function ResponseContent({
           </View>
         </View>
       </ScrollView>
+      <LinearGradient
+        colors={['rgba(255, 255, 255, 0.00)', '#FFF']}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 0, y: 1 }}
+        style={styles.scrollable}
+      ></LinearGradient>
     </>
   );
 }

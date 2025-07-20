@@ -25,14 +25,13 @@ export const conversationData: Conversation[] = [
     theme: '카페',
     situationImage: 'assets/images/public/cafe/cafe_situation.webp',
     question: {
-      japanese:
-        'いらっしゃいませ。ご注文はお決まりですか？ いらっしゃいませ。ご注文はお決まりですか？',
+      japanese: 'いらっしゃいませ。ご注文はお決まりですか？',
       korean: '어서 오세요. 주문은 정하셨나요?',
     },
     userChoice: [
       {
         responseId: 'cafe_situation_response_1',
-        japanese: 'コーヒーとケーキをください。 コーヒーとケーキをください。',
+        japanese: 'コーヒーとケーキをください。',
         korean: '커피와 케이크 주세요.',
       },
       {
@@ -46,8 +45,7 @@ export const conversationData: Conversation[] = [
         responseId: 'cafe_situation_response_1',
         responseImage:
           'assets/images/public/cafe/cafe_situation_response_1.webp',
-        japanese:
-          'かしこまりました。お席でお待ちください。 かしこまりました。お席でお待ちください。',
+        japanese: 'かしこまりました。お席でお待ちください。',
         korean: '알겠습니다. 자리에서 기다려 주세요.',
       },
       {
