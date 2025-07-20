@@ -10,7 +10,10 @@ interface Props {
 
 function AnswerButton({ japanese, onPress }: Props) {
   return (
-    <PressButton extraStyles={[styles.answerButton]} onPress={onPress}>
+    <PressButton
+      extraStyles={[styles.answerButton, { marginLeft: -24 }]}
+      onPress={onPress}
+    >
       <Tts text={japanese} />
       <View style={styles.textWrapper}>
         <Text style={styles.answerText}>{japanese}</Text>

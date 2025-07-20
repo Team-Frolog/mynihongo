@@ -18,6 +18,16 @@ export const styles = StyleSheet.create({
     borderTopLeftRadius: 15,
     borderTopRightRadius: 15,
   },
+  scrollView: {
+    width: '130%',
+    marginLeft: -48,
+    flex: 1,
+  },
+  scrollContent: {
+    paddingTop: 20,
+    paddingBottom: 100,
+  },
+
   dialogueWrapper: {
     display: 'flex',
     flexDirection: 'column',
@@ -26,6 +36,7 @@ export const styles = StyleSheet.create({
   image: {
     width: 294,
     height: 240,
+    marginBottom: 28,
   },
   npcTriangle: {
     width: 0,
@@ -90,7 +101,6 @@ export const styles = StyleSheet.create({
     paddingVertical: 18,
     paddingLeft: 24,
     paddingRight: 24,
-    marginLeft: -24,
 
     flexDirection: 'row',
     gap: 15,
