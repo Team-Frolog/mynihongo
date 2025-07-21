@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Image, Text, ScrollView } from 'react-native';
 import Tts from '@/components/commons/Tts';
 import { styles } from '@/styles/Conversation/Conversation.style';
@@ -27,8 +27,23 @@ function ResponseContent({
   userKorean,
   responseId,
 }: Props) {
-  // 매핑 객체에서 이미지 가져오기
+  const [isVisible, setIsVisible] = useState(false);
   const imageSource = conversationImages[responseId];
+
+  const handleScroll = (event: any) => {
+    const { layoutMeasurement, contentOffset, contentSize } = event.nativeEvent;
+    const paddingToBottom = 20;
+
+    if (
+      layoutMeasurement.height + contentOffset.y >=
+      contentSize.height - paddingToBottom
+    ) {
+      setIsVisible(true);
+      return;
+    }
+
+    setIsVisible(false);
+  };
 
   return (
     <>
@@ -37,6 +52,8 @@ function ResponseContent({
         style={styles.scrollView}
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
+        onScroll={handleScroll}
+        scrollEventThrottle={16}
       >
         <View style={styles.dialogueWrapper}>
           <View style={{ marginLeft: 48 }}>
@@ -79,13 +96,17 @@ function ResponseContent({
             </View>
           </View>
         </View>
+        {/* 여기 위치한 요소가 화면에 보일경우 */}
       </ScrollView>
-      <LinearGradient
-        colors={['rgba(255, 255, 255, 0.00)', '#FFF']}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 0, y: 1 }}
-        style={styles.scrollable}
-      ></LinearGradient>
+
+      {!isVisible && (
+        <LinearGradient
+          colors={['rgba(255, 255, 255, 0.00)', '#FFF']}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 0, y: 1 }}
+          style={styles.scrollable}
+        ></LinearGradient>
+      )}
     </>
   );
 }
