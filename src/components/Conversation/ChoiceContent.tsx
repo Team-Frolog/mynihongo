@@ -34,7 +34,12 @@ function ChoiceContent({ npcDialogue, userChoice, choiceId, onPress }: Props) {
           </View>
         </View>
       </View>
-      <View style={styles.answerWrapper}>
+      <View
+        style={[
+          styles.answerWrapper,
+          { position: 'absolute', bottom: '13%', left: 0, right: 0 },
+        ]}
+      >
         <Text style={styles.answerGuide}>
           질문에 원하는 대답을 선택해주세요
         </Text>

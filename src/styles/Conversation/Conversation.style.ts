@@ -1,4 +1,6 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
   container: {
@@ -18,20 +20,35 @@ export const styles = StyleSheet.create({
     borderTopLeftRadius: 15,
     borderTopRightRadius: 15,
   },
+  scrollView: {
+    width: '130%',
+    marginLeft: -48,
+    flex: 1,
+  },
+  scrollContent: {
+    paddingTop: 20,
+    paddingBottom: 100,
+  },
+
+  dialogueWrapper: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 28,
+  },
   image: {
     width: 294,
     height: 240,
+    marginBottom: 28,
   },
   npcTriangle: {
     width: 0,
     height: 0,
     marginLeft: 35,
+    marginTop: -20,
 
-    borderTopWidth: 20,
     borderBottomWidth: 20,
     borderLeftWidth: 15,
     borderRightWidth: 15,
-    borderTopColor: 'transparent',
     borderBottomColor: '#FFDADA',
     borderLeftColor: 'transparent',
     borderRightColor: 'transparent',
@@ -71,11 +88,6 @@ export const styles = StyleSheet.create({
     flexShrink: 1,
   },
   answerWrapper: {
-    position: 'absolute',
-    bottom: '13%',
-    left: 0,
-    right: 0,
-
     flexDirection: 'column',
     gap: 18,
   },
@@ -91,7 +103,6 @@ export const styles = StyleSheet.create({
     paddingVertical: 18,
     paddingLeft: 24,
     paddingRight: 24,
-    marginLeft: -24,
 
     flexDirection: 'row',
     gap: 15,
@@ -104,5 +115,14 @@ export const styles = StyleSheet.create({
     color: '#313239',
     fontSize: 20,
     fontWeight: 500,
+  },
+  scrollable: {
+    position: 'absolute',
+    bottom: 50,
+    left: -24,
+    right: 0,
+    zIndex: 1000,
+    width: width + 24,
+    height: 60,
   },
 });
