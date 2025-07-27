@@ -18,6 +18,12 @@
       "@/*": ["src/*"] // `@/components/Button` 같은 경로 단축(alias) 기능 제공
     }
   },
-  "include": ["src", "App.tsx", "index.tsx", "eslint.config.mjs"], // 프로젝트에서 TypeScript가 적용될 파일들
+  "include": [
+    "src",
+    "App.tsx",
+    "index.tsx",
+    "eslint.config.mjs",
+    "assets/**/*"
+  ], // 프로젝트에서 TypeScript가 적용될 파일들
   "exclude": ["node_modules", "babel.config.js", "metro.config.js"] // 빌드 대상에서 제외할 파일들
 }

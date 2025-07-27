@@ -33,6 +33,7 @@ export const styles = StyleSheet.create({
     margin: 0,
   },
   image: {
+    width: 294,
     height: 240,
   },
   wordWrapper: {
