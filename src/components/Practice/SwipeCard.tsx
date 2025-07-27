@@ -14,6 +14,7 @@ import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import { styles } from '@/styles/Practice/Practice.style';
 import { QuizDirection } from '@/types/quiz';
 import Tts from '@/components/commons/Tts';
+import { wordImages, WordImageKey } from '../../../assets/images/public/word';
 
 const { width: screenWidth } = Dimensions.get('window');
 const SWIPE_THRESHOLD = screenWidth * 0.3;
@@ -38,6 +39,8 @@ function SwipeCard({
   const translateX = useSharedValue(0);
   const scale = useSharedValue(1);
   const currentDirection = useSharedValue<QuizDirection>('center');
+
+  const imageSource = wordImages[item.id as WordImageKey];
 
   // 새로운 Gesture API 사용
   const panGesture = Gesture.Pan()
@@ -114,10 +117,7 @@ function SwipeCard({
     <GestureDetector gesture={panGesture}>
       <Animated.View style={[styles.wordContainer, cardStyle]}>
         {/* 카드 내용 */}
-        <Image
-          source={require('../../../assets/images/public/word/word-mock.png')}
-          style={styles.image}
-        />
+        <Image source={imageSource} style={styles.image} />
         <View style={styles.wordWrapper}>
           <Text style={styles.jWord}>{item.hiragana}</Text>
           <Text style={styles.kanji}>{item.kanji}</Text>

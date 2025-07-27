@@ -47,28 +47,48 @@ import comm_9 from './comm/comm_9.webp';
 import comm_10 from './comm/comm_10.webp';
 
 // Company
-import company_1 from './company/company_1.webp';
-import company_2 from './company/company_2.webp';
-import company_3 from './company/company_3.webp';
-import company_4 from './company/company_4.webp';
-import company_5 from './company/company_5.webp';
-import company_6 from './company/company_6.webp';
-import company_7 from './company/company_7.webp';
-import company_8 from './company/company_8.webp';
-import company_9 from './company/company_9.webp';
-import company_10 from './company/company_10.webp';
+import company1_1 from './company/company1_1.webp';
+import company1_2 from './company/company1_2.webp';
+import company1_3 from './company/company1_3.webp';
+import company1_4 from './company/company1_4.webp';
+import company1_5 from './company/company1_5.webp';
+import company1_6 from './company/company1_6.webp';
+import company1_7 from './company/company1_7.webp';
+import company1_8 from './company/company1_8.webp';
+import company1_9 from './company/company1_9.webp';
+import company1_10 from './company/company1_10.webp';
+import company2_1 from './company/company2_1.webp';
+import company2_2 from './company/company2_2.webp';
+import company2_3 from './company/company2_3.webp';
+import company2_4 from './company/company2_4.webp';
+import company2_5 from './company/company2_5.webp';
+import company2_6 from './company/company2_6.webp';
+import company2_7 from './company/company2_7.webp';
+import company2_8 from './company/company2_8.webp';
+import company2_9 from './company/company2_9.webp';
+import company2_10 from './company/company2_10.webp';
 
 // Daily
-import daily_1 from './daily/daily_1.webp';
-import daily_2 from './daily/daily_2.webp';
-import daily_3 from './daily/daily_3.webp';
-import daily_4 from './daily/daily_4.webp';
-import daily_5 from './daily/daily_5.webp';
-import daily_6 from './daily/daily_6.webp';
-import daily_7 from './daily/daily_7.webp';
-import daily_8 from './daily/daily_8.webp';
-import daily_9 from './daily/daily_9.webp';
-import daily_10 from './daily/daily_10.webp';
+import daily1_1 from './daily/daily1_1.webp';
+import daily1_2 from './daily/daily1_2.webp';
+import daily1_3 from './daily/daily1_3.webp';
+import daily1_4 from './daily/daily1_4.webp';
+import daily1_5 from './daily/daily1_5.webp';
+import daily1_6 from './daily/daily1_6.webp';
+import daily1_7 from './daily/daily1_7.webp';
+import daily1_8 from './daily/daily1_8.webp';
+import daily1_9 from './daily/daily1_9.webp';
+import daily1_10 from './daily/daily1_10.webp';
+import daily2_1 from './daily/daily2_1.webp';
+import daily2_2 from './daily/daily2_2.webp';
+import daily2_3 from './daily/daily2_3.webp';
+import daily2_4 from './daily/daily2_4.webp';
+import daily2_5 from './daily/daily2_5.webp';
+import daily2_6 from './daily/daily2_6.webp';
+import daily2_7 from './daily/daily2_7.webp';
+import daily2_8 from './daily/daily2_8.webp';
+import daily2_9 from './daily/daily2_9.webp';
+import daily2_10 from './daily/daily2_10.webp';
 
 // Despair
 import despair_1 from './despair/despair_1.webp';
@@ -435,16 +455,26 @@ import selfdev_9 from './selfdev/selfdev_9.webp';
 import selfdev_10 from './selfdev/selfdev_10.webp';
 
 // Shopping
-import shopping_1 from './shopping/shopping_1.webp';
-import shopping_2 from './shopping/shopping_2.webp';
-import shopping_3 from './shopping/shopping_3.webp';
-import shopping_4 from './shopping/shopping_4.webp';
-import shopping_5 from './shopping/shopping_5.webp';
-import shopping_6 from './shopping/shopping_6.webp';
-import shopping_7 from './shopping/shopping_7.webp';
-import shopping_8 from './shopping/shopping_8.webp';
-import shopping_9 from './shopping/shopping_9.webp';
-import shopping_10 from './shopping/shopping_10.webp';
+import shopping1_1 from './shopping/shopping1_1.webp';
+import shopping1_2 from './shopping/shopping1_2.webp';
+import shopping1_3 from './shopping/shopping1_3.webp';
+import shopping1_4 from './shopping/shopping1_4.webp';
+import shopping1_5 from './shopping/shopping1_5.webp';
+import shopping1_6 from './shopping/shopping1_6.webp';
+import shopping1_7 from './shopping/shopping1_7.webp';
+import shopping1_8 from './shopping/shopping1_8.webp';
+import shopping1_9 from './shopping/shopping1_9.webp';
+import shopping1_10 from './shopping/shopping1_10.webp';
+import shopping2_1 from './shopping/shopping2_1.webp';
+import shopping2_2 from './shopping/shopping2_2.webp';
+import shopping2_3 from './shopping/shopping2_3.webp';
+import shopping2_4 from './shopping/shopping2_4.webp';
+import shopping2_5 from './shopping/shopping2_5.webp';
+import shopping2_6 from './shopping/shopping2_6.webp';
+import shopping2_7 from './shopping/shopping2_7.webp';
+import shopping2_8 from './shopping/shopping2_8.webp';
+import shopping2_9 from './shopping/shopping2_9.webp';
+import shopping2_10 from './shopping/shopping2_10.webp';
 
 // Sns
 import sns_1 from './sns/sns_1.webp';
@@ -507,28 +537,48 @@ import traffic_9 from './traffic/traffic_9.webp';
 import traffic_10 from './traffic/traffic_10.webp';
 
 // Travel
-import travel_1 from './travel/travel_1.webp';
-import travel_2 from './travel/travel_2.webp';
-import travel_3 from './travel/travel_3.webp';
-import travel_4 from './travel/travel_4.webp';
-import travel_5 from './travel/travel_5.webp';
-import travel_6 from './travel/travel_6.webp';
-import travel_7 from './travel/travel_7.webp';
-import travel_8 from './travel/travel_8.webp';
-import travel_9 from './travel/travel_9.webp';
-import travel_10 from './travel/travel_10.webp';
+import travel1_1 from './travel/travel1_1.webp';
+import travel1_2 from './travel/travel1_2.webp';
+import travel1_3 from './travel/travel1_3.webp';
+import travel1_4 from './travel/travel1_4.webp';
+import travel1_5 from './travel/travel1_5.webp';
+import travel1_6 from './travel/travel1_6.webp';
+import travel1_7 from './travel/travel1_7.webp';
+import travel1_8 from './travel/travel1_8.webp';
+import travel1_9 from './travel/travel1_9.webp';
+import travel1_10 from './travel/travel1_10.webp';
+import travel2_1 from './travel/travel2_1.webp';
+import travel2_2 from './travel/travel2_2.webp';
+import travel2_3 from './travel/travel2_3.webp';
+import travel2_4 from './travel/travel2_4.webp';
+import travel2_5 from './travel/travel2_5.webp';
+import travel2_6 from './travel/travel2_6.webp';
+import travel2_7 from './travel/travel2_7.webp';
+import travel2_8 from './travel/travel2_8.webp';
+import travel2_9 from './travel/travel2_9.webp';
+import travel2_10 from './travel/travel2_10.webp';
 
 // Weather
-import weather_1 from './weather/weather_1.webp';
-import weather_2 from './weather/weather_2.webp';
-import weather_3 from './weather/weather_3.webp';
-import weather_4 from './weather/weather_4.webp';
-import weather_5 from './weather/weather_5.webp';
-import weather_6 from './weather/weather_6.webp';
-import weather_7 from './weather/weather_7.webp';
-import weather_8 from './weather/weather_8.webp';
-import weather_9 from './weather/weather_9.webp';
-import weather_10 from './weather/weather_10.webp';
+import weather1_1 from './weather/weather1_1.webp';
+import weather1_2 from './weather/weather1_2.webp';
+import weather1_3 from './weather/weather1_3.webp';
+import weather1_4 from './weather/weather1_4.webp';
+import weather1_5 from './weather/weather1_5.webp';
+import weather1_6 from './weather/weather1_6.webp';
+import weather1_7 from './weather/weather1_7.webp';
+import weather1_8 from './weather/weather1_8.webp';
+import weather1_9 from './weather/weather1_9.webp';
+import weather1_10 from './weather/weather1_10.webp';
+import weather2_1 from './weather/weather2_1.webp';
+import weather2_2 from './weather/weather2_2.webp';
+import weather2_3 from './weather/weather2_3.webp';
+import weather2_4 from './weather/weather2_4.webp';
+import weather2_5 from './weather/weather2_5.webp';
+import weather2_6 from './weather/weather2_6.webp';
+import weather2_7 from './weather/weather2_7.webp';
+import weather2_8 from './weather/weather2_8.webp';
+import weather2_9 from './weather/weather2_9.webp';
+import weather2_10 from './weather/weather2_10.webp';
 
 // 이미지 매핑 객체
 export const wordImages = {
@@ -581,28 +631,48 @@ export const wordImages = {
   comm_10: comm_10,
 
   // Company
-  company_1: company_1,
-  company_2: company_2,
-  company_3: company_3,
-  company_4: company_4,
-  company_5: company_5,
-  company_6: company_6,
-  company_7: company_7,
-  company_8: company_8,
-  company_9: company_9,
-  company_10: company_10,
+  company1_1: company1_1,
+  company1_2: company1_2,
+  company1_3: company1_3,
+  company1_4: company1_4,
+  company1_5: company1_5,
+  company1_6: company1_6,
+  company1_7: company1_7,
+  company1_8: company1_8,
+  company1_9: company1_9,
+  company1_10: company1_10,
+  company2_1: company2_1,
+  company2_2: company2_2,
+  company2_3: company2_3,
+  company2_4: company2_4,
+  company2_5: company2_5,
+  company2_6: company2_6,
+  company2_7: company2_7,
+  company2_8: company2_8,
+  company2_9: company2_9,
+  company2_10: company2_10,
 
   // Daily
-  daily_1: daily_1,
-  daily_2: daily_2,
-  daily_3: daily_3,
-  daily_4: daily_4,
-  daily_5: daily_5,
-  daily_6: daily_6,
-  daily_7: daily_7,
-  daily_8: daily_8,
-  daily_9: daily_9,
-  daily_10: daily_10,
+  daily1_1: daily1_1,
+  daily1_2: daily1_2,
+  daily1_3: daily1_3,
+  daily1_4: daily1_4,
+  daily1_5: daily1_5,
+  daily1_6: daily1_6,
+  daily1_7: daily1_7,
+  daily1_8: daily1_8,
+  daily1_9: daily1_9,
+  daily1_10: daily1_10,
+  daily2_1: daily2_1,
+  daily2_2: daily2_2,
+  daily2_3: daily2_3,
+  daily2_4: daily2_4,
+  daily2_5: daily2_5,
+  daily2_6: daily2_6,
+  daily2_7: daily2_7,
+  daily2_8: daily2_8,
+  daily2_9: daily2_9,
+  daily2_10: daily2_10,
 
   // Despair
   despair_1: despair_1,
@@ -969,16 +1039,26 @@ export const wordImages = {
   selfdev_10: selfdev_10,
 
   // Shopping
-  shopping_1: shopping_1,
-  shopping_2: shopping_2,
-  shopping_3: shopping_3,
-  shopping_4: shopping_4,
-  shopping_5: shopping_5,
-  shopping_6: shopping_6,
-  shopping_7: shopping_7,
-  shopping_8: shopping_8,
-  shopping_9: shopping_9,
-  shopping_10: shopping_10,
+  shopping1_1: shopping1_1,
+  shopping1_2: shopping1_2,
+  shopping1_3: shopping1_3,
+  shopping1_4: shopping1_4,
+  shopping1_5: shopping1_5,
+  shopping1_6: shopping1_6,
+  shopping1_7: shopping1_7,
+  shopping1_8: shopping1_8,
+  shopping1_9: shopping1_9,
+  shopping1_10: shopping1_10,
+  shopping2_1: shopping2_1,
+  shopping2_2: shopping2_2,
+  shopping2_3: shopping2_3,
+  shopping2_4: shopping2_4,
+  shopping2_5: shopping2_5,
+  shopping2_6: shopping2_6,
+  shopping2_7: shopping2_7,
+  shopping2_8: shopping2_8,
+  shopping2_9: shopping2_9,
+  shopping2_10: shopping2_10,
 
   // Sns
   sns_1: sns_1,
@@ -1041,28 +1121,48 @@ export const wordImages = {
   traffic_10: traffic_10,
 
   // Travel
-  travel_1: travel_1,
-  travel_2: travel_2,
-  travel_3: travel_3,
-  travel_4: travel_4,
-  travel_5: travel_5,
-  travel_6: travel_6,
-  travel_7: travel_7,
-  travel_8: travel_8,
-  travel_9: travel_9,
-  travel_10: travel_10,
+  travel1_1: travel1_1,
+  travel1_2: travel1_2,
+  travel1_3: travel1_3,
+  travel1_4: travel1_4,
+  travel1_5: travel1_5,
+  travel1_6: travel1_6,
+  travel1_7: travel1_7,
+  travel1_8: travel1_8,
+  travel1_9: travel1_9,
+  travel1_10: travel1_10,
+  travel2_1: travel2_1,
+  travel2_2: travel2_2,
+  travel2_3: travel2_3,
+  travel2_4: travel2_4,
+  travel2_5: travel2_5,
+  travel2_6: travel2_6,
+  travel2_7: travel2_7,
+  travel2_8: travel2_8,
+  travel2_9: travel2_9,
+  travel2_10: travel2_10,
 
   // Weather
-  weather_1: weather_1,
-  weather_2: weather_2,
-  weather_3: weather_3,
-  weather_4: weather_4,
-  weather_5: weather_5,
-  weather_6: weather_6,
-  weather_7: weather_7,
-  weather_8: weather_8,
-  weather_9: weather_9,
-  weather_10: weather_10,
+  weather1_1: weather1_1,
+  weather1_2: weather1_2,
+  weather1_3: weather1_3,
+  weather1_4: weather1_4,
+  weather1_5: weather1_5,
+  weather1_6: weather1_6,
+  weather1_7: weather1_7,
+  weather1_8: weather1_8,
+  weather1_9: weather1_9,
+  weather1_10: weather1_10,
+  weather2_1: weather2_1,
+  weather2_2: weather2_2,
+  weather2_3: weather2_3,
+  weather2_4: weather2_4,
+  weather2_5: weather2_5,
+  weather2_6: weather2_6,
+  weather2_7: weather2_7,
+  weather2_8: weather2_8,
+  weather2_9: weather2_9,
+  weather2_10: weather2_10,
 } as const;
 
 export type WordImageKey = keyof typeof wordImages;
