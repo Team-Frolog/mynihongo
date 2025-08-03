@@ -22,7 +22,7 @@ export const useUser = () => {
     },
   });
 
-  const { data: userInfo } = useQuery({
+  const { data: userInfo, isLoading } = useQuery({
     queryKey: ['user', userId],
     queryFn: async () => {
       const userInfo = await getUserInfo(userId);
@@ -31,5 +31,5 @@ export const useUser = () => {
     enabled: userId !== '',
   });
 
-  return { createUser, isLoggedIn, userInfo };
+  return { createUser, isLoggedIn, userInfo, isLoading };
 };

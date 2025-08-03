@@ -25,7 +25,11 @@ export const getUserInfo = async (userId: string) => {
   const userRef = doc(db, 'users', userId);
   const userDoc = await getDoc(userRef);
 
-  return userDoc.data();
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(userDoc.data());
+    }, 3000);
+  });
 };
 
 export const updateUserVisitedDate = async (userId: string) => {
