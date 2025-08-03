@@ -58,7 +58,6 @@ function Practice() {
   // 모름
   const handleSwipeLeft = () => {
     setCurrentIndex((prev) => prev + 1);
-    console.log(currentIndex);
   };
 
   // 앎
@@ -66,7 +65,6 @@ function Practice() {
     updateWordToLearned({ wordId: words[currentIndex].id, themeId });
     setCurrentIndex((prev) => prev + 1);
     setLearnedCount((prev) => prev + 1);
-    console.log(currentIndex);
   };
 
   const handleSetDirection = (direction: QuizDirection) => {

@@ -1,10 +1,10 @@
 import { useMutation } from '@tanstack/react-query';
-import { updateUserVisitedDate } from '@/services/user';
+import { updateUserVisited } from '@/services/user';
 
 export const useVisitedDate = () => {
-  const { mutate: updateVisitedDate } = useMutation({
-    mutationFn: updateUserVisitedDate,
+  const { mutate: updateVisited } = useMutation({
+    mutationFn: updateUserVisited,
   });
 
-  return { updateVisitedDate };
+  return { updateVisited };
 };

@@ -45,7 +45,10 @@ function ThemeListItem({ item, status = 'learning', words }: Props) {
         <Text style={styles.titleHanza}>{item.japaneseName}</Text>
       </View>
       <View style={styles.stepStatusWrapper}>
-        <Text style={styles.stepStatus}>{words ? words.length : 0} / 10</Text>
+        {status === 'quiz' && <Text style={styles.stepStatus}>0 / 10</Text>}
+        {status !== 'quiz' && (
+          <Text style={styles.stepStatus}>{words ? words.length : 0} / 10</Text>
+        )}
         <ChevronRight width={24} height={24} />
         {status !== 'learning' && (
           <StudyProgressStatus status={status} width={59} height={100} />

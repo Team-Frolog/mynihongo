@@ -7,6 +7,19 @@
     "preview": {
       "distribution": "internal"
     },
+    "simulator": {
+      "ios": {
+        "simulator": true,
+        "buildConfiguration": "Debug"
+      },
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "env": {
+        "GOOGLE_SERVICES_FILE": "./google-services.json"
+      }
+    },
     "production": {
       "android": {
         "buildType": "apk"

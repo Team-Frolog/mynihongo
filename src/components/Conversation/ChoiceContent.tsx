@@ -17,7 +17,6 @@ interface Props {
 
 function ChoiceContent({ npcDialogue, userChoice, choiceId, onPress }: Props) {
   // 매핑 객체에서 이미지 가져오기
-  console.log('choiceId', choiceId);
   const imageSource = conversationImages[choiceId];
 
   return (

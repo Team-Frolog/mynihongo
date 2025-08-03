@@ -8,7 +8,7 @@ export const createUserIfNotExists = async (userId: string) => {
     uid: userId,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
-    visitedDate: { lastDate: '', totalVisited: 0 },
+    visitedDate: { lastDate: '', totalVisited: 1 },
     themeStatus: [],
   };
 
@@ -25,22 +25,16 @@ export const getUserInfo = async (userId: string) => {
   const userRef = doc(db, 'users', userId);
   const userDoc = await getDoc(userRef);
 
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(userDoc.data());
-    }, 3000);
-  });
+  return userDoc.data();
 };
 
-export const updateUserVisitedDate = async (userId: string) => {
+export const updateUserVisited = async (userId: string) => {
   const userRef = doc(db, 'users', userId);
   const userDoc = await getDoc(userRef);
 
   const today = new Date().toISOString().split('T')[0];
 
   const visitedDate = userDoc.data()?.visitedDate;
-
-  if (visitedDate.lastDate === today) return;
 
   const newVisitedDate = {
     lastDate: today,
