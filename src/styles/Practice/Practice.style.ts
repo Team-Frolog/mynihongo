@@ -33,8 +33,9 @@ export const styles = StyleSheet.create({
     margin: 0,
   },
   image: {
-    width: 294,
-    height: 240,
+    width: '100%',
+    height: 'auto',
+    aspectRatio: 294 / 240,
   },
   wordWrapper: {
     flexDirection: 'column',
