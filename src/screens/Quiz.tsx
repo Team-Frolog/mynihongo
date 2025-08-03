@@ -25,7 +25,7 @@ function Quiz() {
   const [overlayState, setOverLayState] = useState<'correct' | 'wrong' | null>(
     null,
   );
-  const [correctCount, setCorrectCount] = useState(0);
+  const [quizCount, setQuizCount] = useState(0);
   const [streak, setStreak] = useState(0);
 
   const { updateThemeStatus } = useWord();
@@ -34,6 +34,7 @@ function Quiz() {
     if (overlayState) {
       const timer = setTimeout(() => {
         setOverLayState(null);
+        setCurrentIndex((prev) => prev + 1);
       }, 1000);
 
       return () => clearTimeout(timer);
@@ -41,22 +42,24 @@ function Quiz() {
   }, [overlayState]);
 
   useEffect(() => {
-    if (currentIndex === words.length - 1) {
+    if (currentIndex === words.length && overlayState === null) {
       return updateThemeStatus({ themeId, status: 'conversation' });
     }
-  }, [currentIndex]);
+  }, [currentIndex, overlayState]);
 
   const handleAnswer = (answer: string) => {
     if (answer === 'correct') {
       setOverLayState('correct');
-      setCorrectCount((prev) => prev + 1);
       setStreak((prev) => prev + 1);
     } else {
       setOverLayState('wrong');
       setStreak(0);
     }
-    setCurrentIndex((prev) => prev + 1);
+
+    setQuizCount((prev) => prev + 1);
   };
+
+  if (currentIndex === words.length) return null;
 
   return (
     <SafeAreaScreen>
@@ -64,8 +67,8 @@ function Quiz() {
         <BackHeader title="퀴즈" />
         <View style={styles.status}>
           <ProgressBar
-            text={`${correctCount} / ${words.length}`}
-            status={(correctCount / words.length) * 100}
+            text={`${quizCount} / ${words.length}`}
+            status={(quizCount / words.length) * 100}
           />
           <Text style={styles.statusText}>{streak}회 연속 정답</Text>
         </View>

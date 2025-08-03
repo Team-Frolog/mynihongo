@@ -85,16 +85,6 @@ function ResponseContent({
               </View>
             </View>
           </View>
-          <View style={{ marginLeft: 48 }}>
-            <View style={styles.npcTriangle} />
-            <View style={[styles.npcAnswer, { width: '100%' }]}>
-              <Tts color="#FF9A9A" text={npcDialogue} />
-              <View style={styles.textWrapper}>
-                <Text style={styles.npcAnswerText}>{npcDialogue}</Text>
-                <Text style={styles.koreanText}>{npcKorean}</Text>
-              </View>
-            </View>
-          </View>
         </View>
         {/* 여기 위치한 요소가 화면에 보일경우 */}
       </ScrollView>
