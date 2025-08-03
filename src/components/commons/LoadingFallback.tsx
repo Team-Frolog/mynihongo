@@ -2,7 +2,6 @@ import LottieView from 'lottie-react-native';
 import { StyleSheet, View } from 'react-native';
 
 function LoadingFallback() {
-  console.log('LoadingFallback');
   return (
     <View style={styles.container}>
       <LottieView
