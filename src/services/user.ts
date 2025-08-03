@@ -8,7 +8,7 @@ export const createUserIfNotExists = async (userId: string) => {
     uid: userId,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
-    visitedDate: { lastDate: '', totalVisited: 0 },
+    visitedDate: { lastDate: '', totalVisited: 1 },
     themeStatus: [],
   };
 
