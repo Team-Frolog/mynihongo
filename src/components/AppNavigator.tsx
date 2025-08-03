@@ -20,12 +20,12 @@ const Stack = createNativeStackNavigator();
 function AppNavigator() {
   const { createUser, isLoggedIn } = useUser();
   const [isLoading, setIsLoading] = useState(true);
-  const { updateVisitedDate } = useVisitedDate();
+  const { updateVisited } = useVisitedDate();
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       if (user) {
         createUser(user.uid);
-        updateVisitedDate(user.uid);
+        updateVisited(user.uid);
       } else {
         setIsLoading(false);
       }

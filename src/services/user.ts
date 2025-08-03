@@ -28,15 +28,13 @@ export const getUserInfo = async (userId: string) => {
   return userDoc.data();
 };
 
-export const updateUserVisitedDate = async (userId: string) => {
+export const updateUserVisited = async (userId: string) => {
   const userRef = doc(db, 'users', userId);
   const userDoc = await getDoc(userRef);
 
   const today = new Date().toISOString().split('T')[0];
 
   const visitedDate = userDoc.data()?.visitedDate;
-
-  if (visitedDate.lastDate === today) return;
 
   const newVisitedDate = {
     lastDate: today,
