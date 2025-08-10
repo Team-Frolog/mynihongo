@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
   filterWrapper: {
     position: 'relative',
 
-    width: 100,
+    width: 110,
     paddingLeft: 12,
     paddingRight: 9,
     paddingTop: 5,
@@ -24,6 +24,7 @@ export const styles = StyleSheet.create({
     borderRadius: 8,
     borderWidth: 1,
     borderColor: '#000',
+    zIndex: 100,
   },
   filterText: {
     fontSize: 12,
@@ -34,7 +35,6 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     top: 38,
     left: -1,
-    zIndex: 100,
 
     width: 100,
     padding: 12,
