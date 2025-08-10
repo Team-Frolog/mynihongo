@@ -10,6 +10,7 @@ import ChevronDownArrow from 'assets/icons/ChevronDownArrow';
 function ThemeList() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedFilter, setSelectedFilter] = useState('전부 보기');
+  const [list, setList] = useState(themeData);
   const { userInfo } = useUser();
   const themeStatus = userInfo?.themeStatus;
 
@@ -20,6 +21,17 @@ function ThemeList() {
   const handleClickFilterItem = (filter: string) => {
     setSelectedFilter(filter);
     setIsDropdownOpen(false);
+
+    if (filter === '전부 보기') setList(themeData);
+    if (filter === '미완료 보기') {
+      const filteredList = themeData.filter((theme) => {
+        const targetThemeStatus = themeStatus?.find(
+          (status) => status.themeId === theme.id,
+        );
+        return targetThemeStatus?.status !== 'completed';
+      });
+      setList(filteredList);
+    }
   };
 
   return (
@@ -44,7 +56,7 @@ function ThemeList() {
       </Pressable>
       <FlatList
         contentContainerStyle={styles.list}
-        data={themeData}
+        data={list}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => {
           const targetThemeData = themeStatus?.find(
