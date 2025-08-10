@@ -1,6 +1,56 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 16,
+  },
+  filterWrapper: {
+    position: 'relative',
+
+    width: 110,
+    paddingLeft: 12,
+    paddingRight: 9,
+    paddingTop: 5,
+    paddingBottom: 5,
+
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#000',
+    zIndex: 100,
+  },
+  filterText: {
+    fontSize: 12,
+    fontWeight: 500,
+    lineHeight: 18,
+  },
+  filterDropdownList: {
+    position: 'absolute',
+    top: 38,
+    left: -1,
+
+    width: 100,
+    padding: 12,
+
+    gap: 12,
+
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#000',
+  },
+  filterDropdownItem: {
+    fontSize: 12,
+    fontWeight: 500,
+    lineHeight: 18,
+  },
   list: {
     width: '100%',
 
