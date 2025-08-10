@@ -7,6 +7,8 @@ export const styles = StyleSheet.create({
     gap: 16,
   },
   filterWrapper: {
+    position: 'relative',
+
     width: 100,
     paddingLeft: 12,
     paddingRight: 9,
@@ -24,6 +26,27 @@ export const styles = StyleSheet.create({
     borderColor: '#000',
   },
   filterText: {
+    fontSize: 12,
+    fontWeight: 500,
+    lineHeight: 18,
+  },
+  filterDropdownList: {
+    position: 'absolute',
+    top: 38,
+    left: -1,
+    zIndex: 100,
+
+    width: 100,
+    padding: 12,
+
+    gap: 12,
+
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#000',
+  },
+  filterDropdownItem: {
     fontSize: 12,
     fontWeight: 500,
     lineHeight: 18,

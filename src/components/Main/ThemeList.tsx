@@ -1,4 +1,4 @@
-import { FlatList } from 'react-native';
+import { FlatList, TouchableOpacity } from 'react-native';
 import { styles } from '@/styles/Main/ThemeList.style';
 import { themeData } from '@/data/theme';
 import { useUser } from '@/hooks/useUser';
@@ -15,6 +15,14 @@ function ThemeList() {
       <View style={styles.filterWrapper}>
         <Text>전부 보기</Text>
         <ChevronDownArrow width={11} height={6} color="#666" />
+        <View style={styles.filterDropdownList}>
+          <TouchableOpacity>
+            <Text style={styles.filterDropdownItem}>전부 보기</Text>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Text style={styles.filterDropdownItem}>미완료 보기</Text>
+          </TouchableOpacity>
+        </View>
       </View>
       <FlatList
         contentContainerStyle={styles.list}
